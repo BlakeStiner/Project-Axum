@@ -1,0 +1,51 @@
+name: Discord - Drug Trade Updates
+
+on:
+  pull_request:
+    branches: [main]
+    types: [closed]
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      message:
+        description: Update to post in the drug-trade thread
+        required: true
+        default: 'Axum Discord integration test: drug-trade thread routing is working.'
+        type: string
+      dry_run:
+        description: Preview without sending to Discord
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: discord-drugtrade-${{ github.event_name }}-${{ github.event.pull_request.number || github.event.release.id || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    if: >-
+      (github.event_name == 'pull_request' &&
+       github.event.pull_request.merged == true &&
+       github.event.pull_request.head.repo.full_name == github.repository &&
+       (contains(github.event.pull_request.labels.*.name, 'area:drug-trade') ||
+        startsWith(github.event.pull_request.head.ref, 'codex/drug-trade-'))) ||
+      (github.event_name == 'release' && startsWith(github.event.release.tag_name, 'drugtrade-')) ||
+      (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out trusted default-branch sender
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+          submodules: false
+      - name: Post update
+        env:
+          DISCORD_UPDATES_WEBHOOK_URL: ${{ secrets.DISCORD_UPDATES_WEBHOOK_URL }}
+          DISCORD_DRUGTRADEFRAMEWORK_THREAD_ID: ${{ vars.DISCORD_DRUGTRADEFRAMEWORK_THREAD_ID }}
+        run: python3 .github/scripts/discord_updates.py

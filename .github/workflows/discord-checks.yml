@@ -1,0 +1,30 @@
+name: Check Discord Integration
+
+on:
+  push:
+    branches: [main, codex/discord-drugtrade-updates]
+    paths:
+      - '.github/scripts/discord_updates.py'
+      - '.github/tests/test_discord_updates.py'
+      - '.github/workflows/discord-*.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/scripts/discord_updates.py'
+      - '.github/tests/test_discord_updates.py'
+      - '.github/workflows/discord-*.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+          submodules: false
+      - name: Test without Discord credentials or network calls
+        run: python3 -m unittest discover -s .github/tests -v
