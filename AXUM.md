@@ -9,5 +9,9 @@ and the [drug-trade architecture](docs/axum/DRUG_TRADE_ARCHITECTURE.md).
 This branch establishes dependencies and project structure; it does not yet
 contain playable Axum trading, processing, or property systems.
 
+Implementation has started with the [appointment core](docs/axum/DRUG_TRADE_CORE.md):
+finite buyer reservations, region-aware meeting selection, order state, and
+settlement boundaries, verified by native Enforce tests in `axum-tests/`.
+
 The root README and existing framework documentation are retained upstream
 material. Axum-specific development instructions live under `docs/axum/`.

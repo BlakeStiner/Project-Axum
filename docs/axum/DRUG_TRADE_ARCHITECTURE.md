@@ -3,7 +3,9 @@
 _Design draft: 2026-10-14. Owner direction: primarily NPC sales arranged by
 text, changing meeting locations, forest/offshore bulk orders, and processing
 equipment placed inside purchased player property. Technical choices below
-are proposals; no gameplay implementation or multiplayer validation yet._
+are proposals. Implementation has started with the isolated appointment core;
+see [current implementation status](DRUG_TRADE_CORE.md). Playable encounters and
+multiplayer/persistence validation remain pending._
 
 ## Player experience
 

@@ -14,5 +14,8 @@ production, and transaction services separate within this addon. Use adapters
 for EveronLife inventory/account behavior. Do not implement custom drug trading
 by changing the upstream barter or quantity classes in place.
 
-No Axum game mode, mission, map, scripts, or Workshop release is created by
-this scaffold. Workbench compilation and runtime validation remain pending.
+The first appointment-domain scripts now live under `Scripts/Game/Axum/DrugTrade/`.
+See [implementation status](../docs/axum/DRUG_TRADE_CORE.md) and the separate
+`axum-tests/` addon. Native headless compilation/tests have passed on Reforger
+1.8.0.13. There is no playable Axum mission, UI, live settlement adapter, or
+Workshop release yet; multiplayer and persistence validation remain pending.

@@ -8,6 +8,7 @@ _2026-10-14. Branch: `codex/drug-trade-foundation`._
 |---|---|
 | `src/EveronLife.gproj` | EveronLife baseline retained in this fork |
 | `axum/ProjectAxum.gproj` | Custom addon; depends on EveronLife and vanilla Reforger |
+| `axum-tests/ProjectAxum.Tests.gproj` | Separate native Enforce appointment tests; not a live-server addon |
 | `dependencies/EnfusionDatabaseFramework/` | EDF, pinned Git submodule |
 | `dependencies/EnfusionPersistenceFramework/` | EPF, pinned Git submodule |
 | `docs/axum/` | Axum design, historical audit, and this setup guide |
@@ -73,9 +74,17 @@ gather/process flow. The custom addon currently has no mission of its own.
 Historical evidence from a separate local checkout reports successful compile
 and single-player gather/process testing on Reforger 1.8.0.13, 2026-09-12.
 This branch starts from that same EveronLife commit and dependency pins. It
-has not yet been compiled or run in Workbench; matching source alone does not
-certify the new addon or current installed game version. See the
+was subsequently compiled with the native diagnostic server on 2026-10-14:
+the complete source dependency graph and 11 appointment-domain tests pass on
+Reforger 1.8.0.13. This is a headless code test, not Workbench world validation,
+multiplayer proof, or restart-safe economy certification. See the
 [historical audit](EVERONLIFE_AUDIT.md).
+
+For the repeatable native test command and evidence, see
+[Drug Trade Core](DRUG_TRADE_CORE.md). Add `axum-tests/ProjectAxum.Tests.gproj`
+after Project Axum when using the Workbench Autotest tools. The suite overrides
+the default world with an empty resource name: these pure domain tests do not
+spawn a character or load the client-oriented default test world's HUD.
 
 Before building the sale against these primitives, use upstream
 [PeerTool setup](../development_setup.md#setting-up-the-peer-tool) to test two
