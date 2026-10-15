@@ -13,12 +13,65 @@ class NotificationError(Exception):
     pass
 
 
-def build_message(event_name, event):
+def clip_text(text, limit):
+    """Respect Discord text limits without splitting a supplementary character."""
+    encoded = text.encode("utf-16-le")
+    if len(encoded) // 2 <= limit:
+        return text
+    return encoded[: (limit - 1) * 2].decode("utf-16-le", errors="ignore") + "…"
+
+
+def note_section(body, name):
+    """Read a named Markdown section or a compact 'Validation: ...' paragraph."""
+    heading = re.search(rf"(?im)^#{{1,6}}\s+{re.escape(name)}\s*:?\s*$", body)
+    if heading:
+        tail = body[heading.end():]
+        return re.split(r"(?m)^#{1,6}\s+", tail, maxsplit=1)[0].strip()
+    paragraph = re.search(rf"(?im)^{re.escape(name)}:\s*(.+(?:\n(?!\s*$).+)*)", body)
+    return paragraph.group(1).strip() if paragraph else ""
+
+
+def brief_summary(body, fallback):
+    summary = note_section(body, "Discord summary") or note_section(body, "Summary")
+    if not summary:
+        paragraphs = re.split(r"\n\s*\n", body.strip())
+        summary = next((p for p in paragraphs if p and not p.startswith("#")), fallback)
+    return clip_text(summary, 1200)
+
+
+def github_line(branch, commit, link, link_label, repository_url, ref_label="Branch"):
+    pieces = []
+    if branch:
+        # Keep repository-controlled reference names on one readable line.
+        display_branch = clip_text(str(branch).replace("`", "'").replace("\n", " "), 120)
+        pieces.append(f"{ref_label} `{display_branch}`")
+    if re.fullmatch(r"[a-fA-F0-9]{7,40}", commit or ""):
+        pieces.append(f"Commit [{commit[:7]}]({repository_url}/commit/{commit})")
+    if link:
+        pieces.append(f"[{link_label}]({link})")
+    return "**GitHub** — " + " • ".join(pieces) if pieces else ""
+
+
+def build_payload(event_name, event):
+    repository = event.get("repository", {})
+    repository_url = repository.get("html_url") or "https://github.com/BlakeStiner/Project-Axum"
+    branch, commit, validation = "", "", ""
+    ref_label = "Branch"
     if event_name == "workflow_dispatch":
-        message = str(event.get("inputs", {}).get("message", "")).strip()
+        inputs = event.get("inputs", {})
+        message = str(inputs.get("message", "")).strip()
         if not message:
             raise NotificationError("Enter an update message before running the workflow.")
-        heading, body, link = "Development update", message, ""
+        topic = str(inputs.get("title", "")).strip() or "Drug Trade Framework"
+        heading, body, link = f"Development Update • {topic}", message, repository_url
+        status = str(inputs.get("status", "")).strip() or "In development"
+        validation = str(inputs.get("validation", "")).strip()
+        branch = str(inputs.get("branch", "")).strip()
+        commit = str(inputs.get("commit", "")).strip()
+        if commit and not re.fullmatch(r"[a-fA-F0-9]{7,40}", commit):
+            raise NotificationError("The optional commit must be a 7–40 character hexadecimal Git SHA.")
+        color = {"Ready for testing": 0x2E8B57, "Blocked": 0xE0AC00}.get(status, 0x5865F2)
+        link_label = "Repository"
     elif event_name == "pull_request":
         pr = event.get("pull_request", {})
         labels = {item.get("name") for item in pr.get("labels", [])}
@@ -31,30 +84,43 @@ def build_message(event_name, event):
             and ("area:drug-trade" in labels or head.get("ref", "").startswith("codex/drug-trade-"))
         ):
             return None
-        heading = f"Merged #{pr['number']}: {pr['title']}"
-        body = (pr.get("body") or "See the pull request for the change details.").strip()
+        heading = f"Development Update • {pr['title']}"
+        notes = (pr.get("body") or "").strip()
+        body = brief_summary(notes, "See the pull request for the change details.")
+        validation = note_section(notes, "Validation")
         link = pr["html_url"]
+        branch, commit = head.get("ref", ""), head.get("sha", "")
+        color, status, link_label = 0x2E8B57, "Merged into `main`.", "Open pull request"
     elif event_name == "release":
         release = event.get("release", {})
         if event.get("action") != "published" or not release.get("tag_name", "").startswith("drugtrade-"):
             return None
-        heading = f"Release: {release.get('name') or release['tag_name']}"
-        body = (release.get("body") or "See the release for details.").strip()
+        heading = f"Release Update • {release.get('name') or release['tag_name']}"
+        notes = (release.get("body") or "").strip()
+        body = brief_summary(notes, "See the release for details.")
+        validation = note_section(notes, "Validation")
         link = release["html_url"]
+        branch, ref_label = release["tag_name"], "Tag"
+        color, status, link_label = 0x3498DB, "GitHub release published.", "View release"
     else:
         return None
 
-    # Reserve room for the source link; measure UTF-16 units conservatively for emoji.
-    prefix = "**Project Axum | Drug Trade**\n"
-    suffix = f"\n\n{link}" if link else ""
-    text = f"{heading}\n\n{body}"
-    budget = 1900 - len((prefix + suffix).encode("utf-16-le")) // 2
-    if budget < 10:
-        raise NotificationError("The source link is too long to publish safely.")
-    encoded = text.encode("utf-16-le")
-    if len(encoded) // 2 > budget:
-        text = encoded[: (budget - 1) * 2].decode("utf-16-le", errors="ignore") + "…"
-    return prefix + text + suffix
+    sections = [clip_text(body, 1200)]
+    metadata = github_line(branch, commit, link, link_label, repository_url, ref_label)
+    if metadata:
+        sections.append(metadata)
+    sections.append("**Status** — " + clip_text(status, 200))
+    if validation:
+        sections.append("**Validation** — " + clip_text(validation, 600))
+    # Compact CAD-style card; sender name/avatar provide the project identity.
+    embed = {
+        "title": clip_text(heading, 256),
+        "description": clip_text("\n\n".join(sections), 4096),
+        "color": color,
+    }
+    if link:
+        embed["url"] = link
+    return {"embeds": [embed], "allowed_mentions": {"parse": []}}
 
 
 def webhook_target(webhook, thread_id):
@@ -86,15 +152,12 @@ class NoRedirects(request.HTTPRedirectHandler):
         return None
 
 
-def publish(webhook, thread_id, message):
+def publish(webhook, thread_id, payload):
     target = webhook_target(webhook.strip(), thread_id.strip())
-    payload = json.dumps({
-        "content": message,
-        "allowed_mentions": {"parse": []},
-    }).encode("utf-8")
+    encoded_payload = json.dumps(payload).encode("utf-8")
     opener = request.build_opener(NoRedirects())
     for attempt in range(3):
-        req = request.Request(target, data=payload, headers={
+        req = request.Request(target, data=encoded_payload, headers={
             "Content-Type": "application/json",
             "User-Agent": "Project-Axum-Updates/1.0",
         }, method="POST")
@@ -114,7 +177,7 @@ def publish(webhook, thread_id, message):
                     time.sleep(delay)
                     continue
             hint = {
-                400: "Check that the thread ID is valid and belongs to the webhook's parent channel.",
+                400: "Check the thread/parent-channel match and Discord embed limits.",
                 403: "Check channel/thread permissions and whether the thread is locked.",
                 404: "Check the webhook URL and thread ID, including their parent-channel match.",
                 429: "Discord is rate limiting updates. Wait before retrying.",
@@ -128,20 +191,20 @@ def publish(webhook, thread_id, message):
 def main():
     try:
         event = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text(encoding="utf-8"))
-        message = build_message(os.environ.get("GITHUB_EVENT_NAME", ""), event)
-        if message is None:
+        payload = build_payload(os.environ.get("GITHUB_EVENT_NAME", ""), event)
+        if payload is None:
             print("No drug-trade update for this event.")
             return 0
         dry_run = str(event.get("inputs", {}).get("dry_run", "false")).lower() == "true"
         if dry_run:
-            print("Preview only; no Discord request was made.\n" + message)
+            print("Preview only; no Discord request was made.\n" + json.dumps(payload, indent=2))
             return 0
         if int(os.environ.get("GITHUB_RUN_ATTEMPT", "1")) > 1:
             raise NotificationError("This run has already been attempted. Check Discord, then start a fresh manual update if needed.")
         message_id = publish(
             os.environ.get("DISCORD_UPDATES_WEBHOOK_URL", ""),
             os.environ.get("DISCORD_DRUGTRADEFRAMEWORK_THREAD_ID", ""),
-            message,
+            payload,
         )
         print(f"Discord confirmed message {message_id} in the configured thread.")
         return 0

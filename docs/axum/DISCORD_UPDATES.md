@@ -32,8 +32,35 @@ No webhook URL or token belongs in Git, a PR body, screenshots, or chat.
    webhook URL. A missing setting fails the run with its exact required name.
 
 For a preview, check **Preview without sending to Discord**. It prints the
-formatted message in the workflow log without using the webhook. A preview
+embed payload as JSON in the workflow log without using the webhook. A preview
 does not verify Discord credentials, permissions, or thread routing.
+
+## Embed appearance
+
+Each new update is a compact rich embed modeled on the Lakeside Medical CAD
+development posts: **Development Update • Feature**, a short summary, a GitHub
+line with available branch/commit/source links, then status and optional
+validation. The webhook's configured name/avatar provide the posting identity;
+there is no duplicate author banner or footer inside the card.
+
+Manual updates offer title, summary, status, validation, and optional feature
+branch/commit inputs. In-development posts use purple, ready-for-testing and
+merged-PR posts green, blocked posts yellow, and releases blue. Colors represent
+the supplied/known status rather than inferring test success from a merge.
+
+For merged PRs, use `## Summary` (or `## Discord summary`) and `## Validation`
+in the PR body. A plain `Validation: ...` paragraph also works. Without a summary
+section, only the first non-heading paragraph is used; the rest of the PR body
+stays on GitHub. Validation is omitted when not explicitly reported. Release
+notes follow the same summary/validation rules, and titles link to their source.
+"GitHub release published" describes the release event, not a server deployment.
+
+Titles and descriptions are clipped independently to Discord's 256- and
+4096-character limits, conservatively counting UTF-16 units for emoji. Summaries
+are additionally capped at 1200 units and validation at 600 to keep cards short.
+The single embed stays below the combined 6000-character text limit. Longer notes
+remain available through the source link. Existing Discord messages are not
+edited; merge this change and run the manual workflow to send an embed test.
 
 ## Automatic routing
 
@@ -56,7 +83,7 @@ destinations explicitly rather than sending every project event to one thread.
 
 The workflow executes the sender from the trusted default branch; PR bodies
 and manual messages are treated as data. Tests run separately without secrets.
-Messages suppress mentions, retain the GitHub source link, and truncate long
+Embeds suppress mentions, retain the GitHub source link, and truncate long
 notes to fit Discord limits. No inventory or server credentials are involved.
 
 The sender retries explicit rate-limit responses, up to three attempts, with a
