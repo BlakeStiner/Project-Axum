@@ -1,6 +1,7 @@
 """Publish scoped GitHub updates to a configured Discord thread (stdlib only)."""
 
 import json
+from datetime import datetime, timezone
 import os
 from pathlib import Path
 import re
@@ -13,12 +14,23 @@ class NotificationError(Exception):
     pass
 
 
-def build_message(event_name, event):
+def clip_text(text, limit):
+    """Respect Discord text limits without splitting a supplementary character."""
+    encoded = text.encode("utf-16-le")
+    if len(encoded) // 2 <= limit:
+        return text
+    return encoded[: (limit - 1) * 2].decode("utf-16-le", errors="ignore") + "…"
+
+
+def build_payload(event_name, event):
+    timestamp = None
     if event_name == "workflow_dispatch":
         message = str(event.get("inputs", {}).get("message", "")).strip()
         if not message:
             raise NotificationError("Enter an update message before running the workflow.")
         heading, body, link = "Development update", message, ""
+        color, category = 0xC7A34D, "Progress update"
+        timestamp = datetime.now(timezone.utc).isoformat()
     elif event_name == "pull_request":
         pr = event.get("pull_request", {})
         labels = {item.get("name") for item in pr.get("labels", [])}
@@ -32,29 +44,35 @@ def build_message(event_name, event):
         ):
             return None
         heading = f"Merged #{pr['number']}: {pr['title']}"
-        body = (pr.get("body") or "See the pull request for the change details.").strip()
+        body = (pr.get("body") or "").strip() or "See the pull request for the change details."
         link = pr["html_url"]
+        color, category = 0x2E8B57, "Merged pull request"
+        timestamp = pr.get("merged_at")
     elif event_name == "release":
         release = event.get("release", {})
         if event.get("action") != "published" or not release.get("tag_name", "").startswith("drugtrade-"):
             return None
         heading = f"Release: {release.get('name') or release['tag_name']}"
-        body = (release.get("body") or "See the release for details.").strip()
+        body = (release.get("body") or "").strip() or "See the release for details."
         link = release["html_url"]
+        color, category = 0x3498DB, "Published release"
+        timestamp = release.get("published_at")
     else:
         return None
 
-    # Reserve room for the source link; measure UTF-16 units conservatively for emoji.
-    prefix = "**Project Axum | Drug Trade**\n"
-    suffix = f"\n\n{link}" if link else ""
-    text = f"{heading}\n\n{body}"
-    budget = 1900 - len((prefix + suffix).encode("utf-16-le")) // 2
-    if budget < 10:
-        raise NotificationError("The source link is too long to publish safely.")
-    encoded = text.encode("utf-16-le")
-    if len(encoded) // 2 > budget:
-        text = encoded[: (budget - 1) * 2].decode("utf-16-le", errors="ignore") + "…"
-    return prefix + text + suffix
+    # One embed stays below the 6000-character aggregate limit even at both caps.
+    embed = {
+        "author": {"name": "Project Axum | Drug Trade"},
+        "title": clip_text(heading, 256),
+        "description": clip_text(body, 4096),
+        "color": color,
+        "footer": {"text": f"Axum Development • {category}"},
+    }
+    if link:
+        embed["url"] = link
+    if timestamp:
+        embed["timestamp"] = timestamp
+    return {"embeds": [embed], "allowed_mentions": {"parse": []}}
 
 
 def webhook_target(webhook, thread_id):
@@ -86,15 +104,12 @@ class NoRedirects(request.HTTPRedirectHandler):
         return None
 
 
-def publish(webhook, thread_id, message):
+def publish(webhook, thread_id, payload):
     target = webhook_target(webhook.strip(), thread_id.strip())
-    payload = json.dumps({
-        "content": message,
-        "allowed_mentions": {"parse": []},
-    }).encode("utf-8")
+    encoded_payload = json.dumps(payload).encode("utf-8")
     opener = request.build_opener(NoRedirects())
     for attempt in range(3):
-        req = request.Request(target, data=payload, headers={
+        req = request.Request(target, data=encoded_payload, headers={
             "Content-Type": "application/json",
             "User-Agent": "Project-Axum-Updates/1.0",
         }, method="POST")
@@ -114,7 +129,7 @@ def publish(webhook, thread_id, message):
                     time.sleep(delay)
                     continue
             hint = {
-                400: "Check that the thread ID is valid and belongs to the webhook's parent channel.",
+                400: "Check the thread/parent-channel match and Discord embed limits.",
                 403: "Check channel/thread permissions and whether the thread is locked.",
                 404: "Check the webhook URL and thread ID, including their parent-channel match.",
                 429: "Discord is rate limiting updates. Wait before retrying.",
@@ -128,20 +143,20 @@ def publish(webhook, thread_id, message):
 def main():
     try:
         event = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text(encoding="utf-8"))
-        message = build_message(os.environ.get("GITHUB_EVENT_NAME", ""), event)
-        if message is None:
+        payload = build_payload(os.environ.get("GITHUB_EVENT_NAME", ""), event)
+        if payload is None:
             print("No drug-trade update for this event.")
             return 0
         dry_run = str(event.get("inputs", {}).get("dry_run", "false")).lower() == "true"
         if dry_run:
-            print("Preview only; no Discord request was made.\n" + message)
+            print("Preview only; no Discord request was made.\n" + json.dumps(payload, indent=2))
             return 0
         if int(os.environ.get("GITHUB_RUN_ATTEMPT", "1")) > 1:
             raise NotificationError("This run has already been attempted. Check Discord, then start a fresh manual update if needed.")
         message_id = publish(
             os.environ.get("DISCORD_UPDATES_WEBHOOK_URL", ""),
             os.environ.get("DISCORD_DRUGTRADEFRAMEWORK_THREAD_ID", ""),
-            message,
+            payload,
         )
         print(f"Discord confirmed message {message_id} in the configured thread.")
         return 0

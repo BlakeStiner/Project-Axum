@@ -32,8 +32,23 @@ No webhook URL or token belongs in Git, a PR body, screenshots, or chat.
    webhook URL. A missing setting fails the run with its exact required name.
 
 For a preview, check **Preview without sending to Discord**. It prints the
-formatted message in the workflow log without using the webhook. A preview
+embed payload as JSON in the workflow log without using the webhook. A preview
 does not verify Discord credentials, permissions, or thread routing.
+
+## Embed appearance
+
+Each new update is a single rich embed with the Project Axum / Drug Trade
+author line, title, Markdown summary, event color, and Axum Development footer.
+Progress updates use gold, merged PRs use green, and releases use blue. PR and
+release titles link to their GitHub source. Timestamps use the merge/publication
+time where available, or the current time for manual updates. The webhook's
+configured avatar remains the posting identity.
+
+Titles and descriptions are clipped independently to Discord's 256- and
+4096-character limits, conservatively counting UTF-16 units for emoji. The
+single embed stays below the combined 6000-character text limit. Longer notes
+remain available through the source link. Existing Discord messages are not
+edited; merge this change and run the manual workflow to send an embed test.
 
 ## Automatic routing
 
@@ -56,7 +71,7 @@ destinations explicitly rather than sending every project event to one thread.
 
 The workflow executes the sender from the trusted default branch; PR bodies
 and manual messages are treated as data. Tests run separately without secrets.
-Messages suppress mentions, retain the GitHub source link, and truncate long
+Embeds suppress mentions, retain the GitHub source link, and truncate long
 notes to fit Discord limits. No inventory or server credentials are involved.
 
 The sender retries explicit rate-limit responses, up to three attempts, with a
