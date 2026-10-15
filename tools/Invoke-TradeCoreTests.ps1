@@ -1,6 +1,8 @@
 param(
     [Parameter(Mandatory = $true)]
     [string] $ServerExe,
+    [ValidateSet('AX_TradeCoreSuite', 'AX_PhoneSuite')]
+    [string] $Suite = 'AX_TradeCoreSuite',
     [ValidateRange(10, 300)]
     [int] $TimeoutSeconds = 90
 )
@@ -38,7 +40,8 @@ foreach ($name in $targets.Keys) {
     }
 }
 
-$arguments = '-addonsDir "' + $addonRoot + '" -addons 4E6001DE6EAF45DA -autotest AX_TradeCoreSuite -profile "' + $profileRoot + '" -logStats 0'
+$expectedCases = @{ AX_TradeCoreSuite = 11; AX_PhoneSuite = 6 }[$Suite]
+$arguments = '-addonsDir "' + $addonRoot + '" -addons 4E6001DE6EAF45DA -autotest ' + $Suite + ' -profile "' + $profileRoot + '" -logStats 0'
 $stdout = Join-Path $profileRoot 'stdout.log'
 $stderr = Join-Path $profileRoot 'stderr.log'
 $process = $null
@@ -59,10 +62,10 @@ try {
     $reports = @(Get-ChildItem -LiteralPath $profileRoot -Recurse -File -Filter junit.xml)
     if ($reports.Count -ne 1) { throw "Expected exactly one native JUnit report. No pass is inferred from exit code alone. See $profileRoot." }
     [xml]$report = Get-Content -LiteralPath $reports[0].FullName -Raw
-    $cases = @($report.SelectNodes('//testsuite[@name="AX_TradeCoreSuite"]/testcase'))
+    $cases = @($report.SelectNodes('//testsuite[@name="' + $Suite + '"]/testcase'))
     $failures = @($report.SelectNodes('//failure|//error|//skipped'))
-    if ($cases.Count -ne 11 -or $failures.Count -ne 0) {
-        throw "Expected 11 passing cases; found $($cases.Count) cases and $($failures.Count) failed/errored/skipped results. See $($reports[0].FullName)."
+    if ($cases.Count -ne $expectedCases -or $failures.Count -ne 0) {
+        throw "Expected $expectedCases passing cases; found $($cases.Count) cases and $($failures.Count) failed/errored/skipped results. See $($reports[0].FullName)."
     }
     Write-Output "PASS: $($cases.Count) native Enforce cases, no failures/errors/skips."
     Write-Output "Report: $($reports[0].FullName)"

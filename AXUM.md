@@ -13,6 +13,11 @@ Implementation has started with the [appointment core](docs/axum/DRUG_TRADE_CORE
 finite buyer reservations, region-aware meeting selection, order state, and
 settlement boundaries, verified by native Enforce tests in `axum-tests/`.
 
+The [phone preview](docs/axum/PHONE_PREVIEW.md) adds an RPPhone visual shell and
+Axum's Street trade app: conversations, offers and rotating test appointments.
+It is restricted to the single-player Workbench debug world; spawned buyers,
+real goods/payment, multiplayer transport and persistence remain unfinished.
+
 The [Drugs Economy assessment](docs/axum/DRUGS_ECONOMY_ASSESSMENT.md) evaluates
 optional visuals/UI and records isolated compatibility results. Its
 [`compat/drugs-economy/`](compat/drugs-economy/README.md) probe does not change

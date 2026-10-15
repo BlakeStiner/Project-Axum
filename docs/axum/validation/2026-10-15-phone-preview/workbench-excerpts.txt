@@ -1,0 +1,27 @@
+13:35:52.676    SCRIPT       : Module: Game; loaded 5816x files; 11729x classes; used 33601K of static memory; defines: "ENF_WB,WORKBENCH,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE,ENABLE_BASE_DESTRUCTION,BUDGET_OPTIMIZATION_CHECKS,SHOW_DISCLAIMER,DEBUG,RESPAWN_TIMER_COMPONENT_DEBUG,GAME_MODE_DEBUG,DEBUG_CONFIGURABLE_DIALOGS,DISABLE_WEAPON_SWITCHING,SCRIPTED_AIM_MODIFIER_DEBUG"; CRC32: cdbc0bda
+13:36:29.306  ENGINE       : Game destroyed.
+13:38:11.821  ENGINE       : Game destroyed.
+13:38:20.435 SCRIPT       : [Axum Phone] Opened
+13:38:20.679 SCRIPT       : [Axum Phone] Live geometry: root 1121 x 595; shell 889.611,154.259 209.352 x 418.704
+13:38:20.679 SCRIPT       : [Axum Phone] Root visible=true opacity=1; shell visible=true opacity=1
+13:38:51.003 SCRIPT       : [Axum Phone] Closed
+13:39:21.164 SCRIPT       : [Axum Phone] Opened
+13:39:21.418 SCRIPT       : [Axum Phone] Live geometry: root 1121 x 716; shell 875.781,248.917 221.865 x 443.729
+13:39:21.418 SCRIPT       : [Axum Phone] Root visible=true opacity=1; shell visible=true opacity=1
+13:39:35.554 SCRIPT       : [Axum Phone] Closed
+13:39:38.544 SCRIPT       : [Axum Phone] Opened
+13:39:38.798 SCRIPT       : [Axum Phone] Live geometry: root 1121 x 716; shell 875.781,248.917 221.865 x 443.729
+13:39:38.798 SCRIPT       : [Axum Phone] Root visible=true opacity=1; shell visible=true opacity=1
+13:39:38.897 SCRIPT       : [Axum Phone] Closed
+13:39:39.849 SCRIPT       : [Axum Phone] Opened
+13:39:40.101 SCRIPT       : [Axum Phone] Live geometry: root 1121 x 716; shell 875.781,248.917 221.865 x 443.729
+13:39:40.101 SCRIPT       : [Axum Phone] Root visible=true opacity=1; shell visible=true opacity=1
+13:39:40.344 SCRIPT       : [Axum Phone] Closed
+13:39:40.654 SCRIPT       : [Axum Phone] Opened
+13:39:40.906 SCRIPT       : [Axum Phone] Live geometry: root 1121 x 716; shell 875.781,248.917 221.865 x 443.729
+13:39:40.906 SCRIPT       : [Axum Phone] Root visible=true opacity=1; shell visible=true opacity=1
+13:39:41.058 SCRIPT       : [Axum Phone] Closed
+13:40:22.571 SCRIPT       : [Axum Phone] Opened
+13:40:22.823 SCRIPT       : [Axum Phone] Live geometry: root 1121 x 553; shell 905.944,143.37 194.574 x 389.148
+13:40:22.823 SCRIPT       : [Axum Phone] Root visible=true opacity=1; shell visible=true opacity=1
+13:40:26.227  ENGINE       : Game destroyed.

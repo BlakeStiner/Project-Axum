@@ -3,7 +3,8 @@
 Owner direction, October 14, 2026: use **RPPhone as the starting point** for
 Axum's reusable phone. Keep EveronLife as the gameplay baseline. This records a
 preferred implementation direction and preliminary static findings; it does not
-claim a working phone integration.
+claim a working phone integration. The October 15 implementation is now described
+in [Phone preview](PHONE_PREVIEW.md); the full-package findings below remain static.
 
 ## Inspected material
 
@@ -37,9 +38,11 @@ mode, inventory, map, shop, vehicle access and menu enums. It also supplies shar
 character/vehicle prefab paths and unrelated policing/job systems. Full-package
 loading therefore has a larger integration surface than its phone screen.
 
-No native compile, widget creation, rendered preview, RPC ownership test,
-multiplayer test or persistence test of RPPhone has been performed here. The
-earlier Drugs Economy compatibility results do not apply to RPPhone.
+The complete RPPhone package has not been compiled or runtime tested here. The
+small visual adaptation now has native Axum compile and widget-creation tests;
+those do not establish full-package compatibility, graphical appearance, RPC
+ownership, multiplayer or persistence. The earlier Drugs Economy compatibility
+results do not apply to RPPhone.
 
 ## Adaptation boundary and first proof
 
@@ -70,5 +73,8 @@ APL permits adaptation for NonCommercial and ArmaOnly purposes. Retain supplied
 creator/copyright/license/disclaimer/source notices, identify modifications and
 preserve earlier modification notices. Include the license text or link with
 reused material; it does not become MIT merely by entering this repository.
-Keep additional supplied asset credits. No RPPhone code, layouts or art are
-redistributed by this decision note, and installed files remain unmodified.
+Keep additional supplied asset credits. The implementation redistributes only
+the phone-frame and message-icon textures plus an adapted layout under
+`axum/ThirdParty/RPPhone/`, with its own notice and source/destination hashes.
+Installed RPPhone files remain unmodified. No RPPhone gameplay scripts or
+additional runtime dependencies were imported.

@@ -24,7 +24,9 @@ It is a session-only domain layer, not a playable drug-sales mission.
 No global service, RPC, inventory patch, cash grant, automatic replenishment,
 map marker, or production startup hook is installed. Base environment checks
 return false and base settlement returns rejected; game adapters must opt in.
-Test adapters exist only in the separate test addon.
+The [phone preview](PHONE_PREVIEW.md) adds a restricted Workbench environment
+adapter for test appointments; it retains the rejecting settlement port.
+Simulated successful/ambiguous settlements exist only in the test addon.
 
 ## Code boundaries
 

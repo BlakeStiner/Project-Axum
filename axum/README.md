@@ -17,5 +17,9 @@ by changing the upstream barter or quantity classes in place.
 The first appointment-domain scripts now live under `Scripts/Game/Axum/DrugTrade/`.
 See [implementation status](../docs/axum/DRUG_TRADE_CORE.md) and the separate
 `axum-tests/` addon. Native headless compilation/tests have passed on Reforger
-1.8.0.13. There is no playable Axum mission, UI, live settlement adapter, or
-Workshop release yet; multiplayer and persistence validation remain pending.
+1.8.0.13. The [phone preview](../docs/axum/PHONE_PREVIEW.md) adds a reusable
+phone shell and Street trade app for the single-player Workbench debug world.
+Press F6 after loading/compiling the resources. RPPhone art and the adapted
+layout retain their separate APL notice under `ThirdParty/RPPhone/`.
+There is no live settlement adapter or Workshop release yet; multiplayer and
+persistence validation remain pending.
