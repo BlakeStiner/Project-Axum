@@ -30,7 +30,7 @@ def merged_pr(**changes):
 
 class DiscordUpdatesTests(unittest.TestCase):
     def test_only_merged_scoped_same_repository_prs_post(self):
-        self.assertIn("Merged #7", sender.build_payload("pull_request", merged_pr())["embeds"][0]["title"])
+        self.assertIn("Development Update • Improve buyer meetings", sender.build_payload("pull_request", merged_pr())["embeds"][0]["title"])
         self.assertIsNone(sender.build_payload("pull_request", merged_pr(merged=False)))
         unrelated = merged_pr()
         unrelated["pull_request"]["head"]["ref"] = "codex/terrain"
@@ -55,25 +55,56 @@ class DiscordUpdatesTests(unittest.TestCase):
         self.assertLessEqual(len(embed["title"].encode("utf-16-le")) // 2, 256)
         self.assertLessEqual(len(embed["description"].encode("utf-16-le")) // 2, 4096)
         self.assertEqual(embed["url"], event["pull_request"]["html_url"])
-        combined = embed["title"] + embed["description"] + embed["author"]["name"] + embed["footer"]["text"]
+        combined = embed["title"] + embed["description"]
         self.assertLessEqual(len(combined.encode("utf-16-le")) // 2, 6000)
 
     def test_manual_update_has_branded_embed_and_suppresses_mentions(self):
         payload = sender.build_payload("workflow_dispatch", {"inputs": {"message": "@everyone **Update**"}})
         embed = payload["embeds"][0]
-        self.assertEqual(embed["description"], "@everyone **Update**")
-        self.assertEqual(embed["author"]["name"], "Project Axum | Drug Trade")
-        self.assertEqual(embed["color"], 0xC7A34D)
-        self.assertIn("timestamp", embed)
-        self.assertNotIn("url", embed)
+        self.assertTrue(embed["description"].startswith("@everyone **Update**"))
+        self.assertIn("**Status** — In development", embed["description"])
+        self.assertEqual(embed["title"], "Development Update • Drug Trade Framework")
+        self.assertEqual(embed["color"], 0x5865F2)
+        self.assertNotIn("author", embed)
+        self.assertNotIn("footer", embed)
         self.assertEqual(payload["allowed_mentions"], {"parse": []})
 
-    def test_pr_embed_uses_merge_timestamp_and_nonempty_body(self):
-        event = merged_pr(body="   ", merged_at="2026-10-15T04:30:00Z")
+    def test_pr_embed_has_truthful_status_and_nonempty_body(self):
+        event = merged_pr(body="   ")
         embed = sender.build_payload("pull_request", event)["embeds"][0]
-        self.assertEqual(embed["timestamp"], "2026-10-15T04:30:00Z")
         self.assertEqual(embed["color"], 0x2E8B57)
-        self.assertTrue(embed["description"].strip())
+        self.assertIn("See the pull request", embed["description"])
+        self.assertIn("Merged into `main`", embed["description"])
+
+    def test_cad_style_card_separates_summary_github_and_validation(self):
+        event = merged_pr(body="## Summary\nPlayers can arrange buyer meetings.\n\n## Validation\nTwo-client test passed.\n\n## Internal notes\nDo not dump this paragraph.")
+        event["pull_request"]["head"]["sha"] = "a" * 40
+        embed = sender.build_payload("pull_request", event)["embeds"][0]
+        description = embed["description"]
+        self.assertTrue(description.startswith("Players can arrange buyer meetings."))
+        self.assertIn("Branch `codex/drug-trade-buyers`", description)
+        self.assertIn("Commit [aaaaaaa]", description)
+        self.assertIn("[Open pull request]", description)
+        self.assertIn("**Validation** — Two-client test passed.", description)
+        self.assertNotIn("Do not dump", description)
+
+    def test_manual_feature_and_status_are_explicit_and_commit_is_validated(self):
+        inputs = {"title": "Property Processing", "message": "Machine placement is ready.", "status": "Ready for testing", "validation": "Placement boundary checks passed.", "branch": "feature/processing", "commit": "abc1234"}
+        embed = sender.build_payload("workflow_dispatch", {"inputs": inputs})["embeds"][0]
+        self.assertEqual(embed["title"], "Development Update • Property Processing")
+        self.assertIn("Commit [abc1234]", embed["description"])
+        self.assertIn("Ready for testing", embed["description"])
+        self.assertIn("**Validation**", embed["description"])
+        inputs["commit"] = "not-a-sha"
+        with self.assertRaises(sender.NotificationError):
+            sender.build_payload("workflow_dispatch", {"inputs": inputs})
+
+    def test_plain_validation_paragraph_and_first_summary_paragraph(self):
+        event = merged_pr(body="First summary paragraph.\n\nImplementation details.\n\nValidation: Ten checks passed.")
+        description = sender.build_payload("pull_request", event)["embeds"][0]["description"]
+        self.assertTrue(description.startswith("First summary paragraph."))
+        self.assertNotIn("Implementation details.", description)
+        self.assertIn("**Validation** — Ten checks passed.", description)
 
     def test_url_requires_discord_and_sets_exact_thread_with_confirmation(self):
         result = parse.urlsplit(sender.webhook_target(WEBHOOK + "?thread_id=wrong", THREAD))

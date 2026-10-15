@@ -37,16 +37,28 @@ does not verify Discord credentials, permissions, or thread routing.
 
 ## Embed appearance
 
-Each new update is a single rich embed with the Project Axum / Drug Trade
-author line, title, Markdown summary, event color, and Axum Development footer.
-Progress updates use gold, merged PRs use green, and releases use blue. PR and
-release titles link to their GitHub source. Timestamps use the merge/publication
-time where available, or the current time for manual updates. The webhook's
-configured avatar remains the posting identity.
+Each new update is a compact rich embed modeled on the Lakeside Medical CAD
+development posts: **Development Update • Feature**, a short summary, a GitHub
+line with available branch/commit/source links, then status and optional
+validation. The webhook's configured name/avatar provide the posting identity;
+there is no duplicate author banner or footer inside the card.
+
+Manual updates offer title, summary, status, validation, and optional feature
+branch/commit inputs. In-development posts use purple, ready-for-testing and
+merged-PR posts green, blocked posts yellow, and releases blue. Colors represent
+the supplied/known status rather than inferring test success from a merge.
+
+For merged PRs, use `## Summary` (or `## Discord summary`) and `## Validation`
+in the PR body. A plain `Validation: ...` paragraph also works. Without a summary
+section, only the first non-heading paragraph is used; the rest of the PR body
+stays on GitHub. Validation is omitted when not explicitly reported. Release
+notes follow the same summary/validation rules, and titles link to their source.
+"GitHub release published" describes the release event, not a server deployment.
 
 Titles and descriptions are clipped independently to Discord's 256- and
-4096-character limits, conservatively counting UTF-16 units for emoji. The
-single embed stays below the combined 6000-character text limit. Longer notes
+4096-character limits, conservatively counting UTF-16 units for emoji. Summaries
+are additionally capped at 1200 units and validation at 600 to keep cards short.
+The single embed stays below the combined 6000-character text limit. Longer notes
 remain available through the source link. Existing Discord messages are not
 edited; merge this change and run the manual workflow to send an embed test.
 

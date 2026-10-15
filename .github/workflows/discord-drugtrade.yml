@@ -8,10 +8,31 @@ on:
     types: [published]
   workflow_dispatch:
     inputs:
+      title:
+        description: Feature name in the development-update title
+        default: Drug Trade Framework
+        type: string
       message:
-        description: Update to post in the drug-trade thread
+        description: Short plain-language development summary
         required: true
         default: 'Axum Discord integration test: drug-trade thread routing is working.'
+        type: string
+      status:
+        description: Current development status
+        default: In development
+        type: choice
+        options:
+          - In development
+          - Ready for testing
+          - Blocked
+      validation:
+        description: Optional tests or verification performed
+        type: string
+      branch:
+        description: Optional feature branch being described
+        type: string
+      commit:
+        description: Optional commit SHA for this update
         type: string
       dry_run:
         description: Preview without sending to Discord
