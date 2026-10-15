@@ -1,0 +1,8 @@
+GameProject {
+ ID "ProjectAxum"
+ GUID "4E6001DE6EAF45D9"
+ TITLE "Project Axum"
+ Dependencies {
+  "59636E668EA37AD7" "58D0FB3206B6F859"
+ }
+}
