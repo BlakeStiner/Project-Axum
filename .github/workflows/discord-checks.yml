@@ -2,7 +2,7 @@ name: Check Discord Integration
 
 on:
   push:
-    branches: [main, codex/discord-drugtrade-updates]
+    branches: [main, codex/discord-drugtrade-updates, 'codex/drug-trade-**']
     paths:
       - '.github/scripts/discord_updates.py'
       - '.github/tests/test_discord_updates.py'

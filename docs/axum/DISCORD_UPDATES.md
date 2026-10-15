@@ -64,6 +64,13 @@ edited; merge this change and run the manual workflow to send an embed test.
 
 ## Automatic routing
 
+- Every push to a branch beginning `codex/drug-trade-` posts one development
+  embed, including the foundation branch while its PR is still a draft. A push
+  containing several commits produces one card with the latest five subjects,
+  the destination SHA and a compare link. New branches and force pushes also
+  post; branch deletions and tags do not. This notification does not claim tests
+  passed or that anything was deployed. Existing merge/release announcements
+  remain separate events.
 - A same-repository PR merged into `main` posts when its branch starts with
   `codex/drug-trade-` **or** it has label `area:drug-trade`. Put the human-readable
   change summary and validation in the PR body; these become the Discord update.
@@ -71,7 +78,7 @@ edited; merge this change and run the manual workflow to send an embed test.
   example `drugtrade-v0.1.0`. Release notes become the message body.
 - A manual run posts the entered progress update, including design decisions
   or test results. The default message is explicitly an integration test.
-- Other branches, unrelated releases, unmerged PRs, and fork PRs do not post.
+- Other branches, unrelated releases, unmerged PR events, and fork PRs do not post.
   The initial setup PR itself uses `codex/discord-drugtrade-updates`, so merging
   it does not automatically announce itself in the drug-trade thread.
 
@@ -81,8 +88,12 @@ destinations explicitly rather than sending every project event to one thread.
 
 ## Sender behavior
 
-The workflow executes the sender from the trusted default branch; PR bodies
-and manual messages are treated as data. Tests run separately without secrets.
+Push notifications execute the sender at the exact pushed SHA on the repository's
+drug-trade branch, so they work before the feature is merged. Only trusted
+repository writers should push to those branches. PR/release/manual notifications
+continue to execute the sender from the default branch; PR bodies, commit messages
+and manual messages are treated as data, never interpolated into shell commands.
+Tests run separately without secrets.
 Embeds suppress mentions, retain the GitHub source link, and truncate long
 notes to fit Discord limits. No inventory or server credentials are involved.
 
@@ -92,6 +103,13 @@ Reruns of the same Actions run are blocked from posting; after a failure, inspec
 the Discord thread before starting a fresh manual run. There is no persistent
 cross-run delivery ledger, so a separately dispatched run can post the same
 text again. Never interpret posting success as gameplay validation.
+
+The workflow must exist on each drug-trade branch receiving pushes. Create new
+drug-trade branches from the updated foundation or merge these workflow changes
+into older branches. Restoring the workflow does not replay historical pushes.
+Notification runs use separate concurrency groups per run and are not cancelled
+by later pushes. GitHub's own skip-CI directives and platform event limits still
+apply; avoid skip directives when an automatic push announcement is expected.
 
 HTTP 400/404 usually requires checking IDs and the webhook's parent channel;
 403 requires checking permissions or a locked thread. If a webhook URL is

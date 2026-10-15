@@ -28,7 +28,63 @@ def merged_pr(**changes):
     return {"action": "closed", "repository": {"full_name": "BlakeStiner/Project-Axum"}, "pull_request": pr}
 
 
+def branch_push(**changes):
+    event = {
+        "repository": {"full_name": "BlakeStiner/Project-Axum", "html_url": "https://github.com/BlakeStiner/Project-Axum"},
+        "ref": "refs/heads/codex/drug-trade-foundation", "deleted": False,
+        "before": "a" * 40, "after": "b" * 40,
+        "commits": [{"message": "Add buyer appointments\n\nInternal implementation details."}],
+        "head_commit": {"message": "Add buyer appointments\n\nInternal implementation details."},
+    }
+    event.update(changes)
+    return event
+
+
 class DiscordUpdatesTests(unittest.TestCase):
+    def test_push_embed_links_exact_revision_and_does_not_claim_validation(self):
+        payload = sender.build_payload("push", branch_push())
+        embed = payload["embeds"][0]
+        self.assertEqual(embed["title"], "Development Update • Add buyer appointments")
+        self.assertIn("• Add buyer appointments", embed["description"])
+        self.assertNotIn("Internal implementation", embed["description"])
+        self.assertIn("Branch `codex/drug-trade-foundation`", embed["description"])
+        self.assertIn("Commit [bbbbbbb]", embed["description"])
+        self.assertTrue(embed["url"].endswith("/compare/" + "a" * 40 + "..." + "b" * 40))
+        self.assertIn("In development", embed["description"])
+        self.assertIn("Tests and deployment are not confirmed", embed["description"])
+        self.assertNotIn("**Validation**", embed["description"])
+        self.assertEqual(payload["allowed_mentions"], {"parse": []})
+
+    def test_push_scope_excludes_deletions_unrelated_branches_and_tags(self):
+        for changes in ({"deleted": True}, {"ref": "refs/heads/main"}, {"ref": "refs/heads/codex/terrain"}, {"ref": "refs/tags/codex/drug-trade-tag"}):
+            with self.subTest(changes=changes):
+                self.assertIsNone(sender.build_payload("push", branch_push(**changes)))
+        for sha in ("0" * 40, "bad", ""):
+            with self.subTest(sha=sha), self.assertRaises(sender.NotificationError):
+                sender.build_payload("push", branch_push(after=sha))
+
+    def test_push_is_one_bounded_embed_per_push_with_latest_five_subjects(self):
+        commits = [{"message": f"Change {n} " + "😀" * 600} for n in range(20)]
+        payload = sender.build_payload("push", branch_push(commits=commits, head_commit=commits[-1]))
+        self.assertEqual(len(payload["embeds"]), 1)
+        embed = payload["embeds"][0]
+        self.assertIn("Latest five commits", embed["description"])
+        self.assertNotIn("Change 14", embed["description"])
+        self.assertIn("Change 19", embed["description"])
+        self.assertLessEqual(len(embed["title"].encode("utf-16-le")) // 2, 256)
+        self.assertLessEqual(len(embed["description"].encode("utf-16-le")) // 2, 4096)
+
+    def test_creation_and_empty_or_forced_pushes_still_have_revision_links(self):
+        for changes in ({"before": "0" * 40}, {"commits": [], "head_commit": None}, {"forced": True, "commits": []}):
+            with self.subTest(changes=changes):
+                embed = sender.build_payload("push", branch_push(**changes))["embeds"][0]
+                self.assertIn("Commit [bbbbbbb]", embed["description"])
+                self.assertIn("**GitHub**", embed["description"])
+                if changes.get("forced"):
+                    self.assertIn("force push", embed["description"])
+                if changes.get("before") == "0" * 40:
+                    self.assertTrue(embed["url"].endswith("/commit/" + "b" * 40))
+
     def test_only_merged_scoped_same_repository_prs_post(self):
         self.assertIn("Development Update • Improve buyer meetings", sender.build_payload("pull_request", merged_pr())["embeds"][0]["title"])
         self.assertIsNone(sender.build_payload("pull_request", merged_pr(merged=False)))
