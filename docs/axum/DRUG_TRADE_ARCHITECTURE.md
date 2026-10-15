@@ -48,6 +48,13 @@ The phone is an in-game interface backed by server-owned records. It does not
 require real SMS, Discord, an external messaging service, or a complete phone
 simulation. A simple contacts/conversation screen is sufficient initially.
 
+The owner's preferred starting point is now an **RPPhone adaptation** for the
+shared Axum phone. Reuse suitable presentation/navigation while keeping Axum's
+server-owned contacts and appointment services. See the [phone starting-point
+decision](PHONE_STARTING_POINT.md) for preliminary findings, APL provenance,
+dependency boundaries and the first Workbench proof. Runtime compatibility is
+not established yet.
+
 1. An eligible contact has a limited product need and spending budget.
 2. The player requests an order. The server offers quantity, total payment,
    meeting category, broad travel region, and an appointment window.
