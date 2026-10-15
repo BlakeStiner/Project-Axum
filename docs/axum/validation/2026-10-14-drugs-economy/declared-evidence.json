@@ -1,0 +1,617 @@
+{
+  "stack": "Declared",
+  "utc": "2026-10-15T04:59:05.1555284Z",
+  "engine": "1.8.0.13",
+  "branch": "codex/drug-trade-foundation",
+  "head": "c3ddfcdcb6ec49c7ffafdfcfea61b8ebb5e5174d",
+  "probe": "4E6001DE6EAF45DB",
+  "packages": [
+    {
+      "id": "692677B5062F640E",
+      "version": "0.1.62",
+      "source": "C:\\Users\\grave\\OneDrive\\Documents\\My Games\\ArmaReforger\\addons\\DrugsEconomy_692677B5062F640E",
+      "sha256": "D49EF8DD5FB31B967FD7C1980077E6A0459420B636BF9BAFFC6C1E1BD4E5C03F",
+      "bytes": 635729249
+    },
+    {
+      "id": "5D6EBC81EB1842EF",
+      "version": "0.6.18",
+      "source": "C:\\Users\\grave\\OneDrive\\Documents\\My Games\\ArmaReforger\\addons\\EnfusionPersistenceFramework_5D6EBC81EB1842EF",
+      "sha256": "B5E1B521B59DC2581EAAE302437B71B1216C91C2F8B645337D83ED8F0A068B40",
+      "bytes": 87484
+    },
+    {
+      "id": "5D6EA74A94173EDF",
+      "version": "0.6.10",
+      "source": "C:\\Users\\grave\\OneDrive\\Documents\\My Games\\ArmaReforger\\addons\\EnfusionDatabaseFramework_5D6EA74A94173EDF",
+      "sha256": "7C8D923ACCE714D058C279A779E5383D4A1306D3C040ED12F1FE602943F12C8A",
+      "bytes": 44435
+    }
+  ],
+  "sources": [
+    {
+      "path": "axum/ProjectAxum.gproj",
+      "sha256": "E22C7CE6A8545F503E6150BE8A3EE030851928AA9BA9834F2346ACB74CF73FC5"
+    },
+    {
+      "path": "axum/Scripts/Game/Axum/DrugTrade/AX_TradeService.c",
+      "sha256": "2A63E18681C1293A53BEF376C2FC4F620DCE248CBFFAD27C80C7A8FC4B8E9AF4"
+    },
+    {
+      "path": "axum/Scripts/Game/Axum/DrugTrade/AX_TradeTypes.c",
+      "sha256": "95DE195C46D7540813FD93F8FE88CAE0B95476E3D5A73166828A32679D288D6C"
+    },
+    {
+      "path": "axum-tests/ProjectAxum.Tests.gproj",
+      "sha256": "4CA4B9E5036DEB72D5C315B6B8E3AD0EB94A7E0770B7A6F6454986F44DF64D17"
+    },
+    {
+      "path": "axum-tests/Scripts/Game/Axum/AX_TradeCoreTests.c",
+      "sha256": "7281AE402FA6468CFE17A447BB1FF4826BDE0664E0046B85519F78419B1E850C"
+    },
+    {
+      "path": "src/EveronLife.gproj",
+      "sha256": "83A59C3E7CAAA7861B7635F802606C32D3BD7A75C2ECB8B9C29498E2326C44B0"
+    },
+    {
+      "path": "src/Assets/Props/GreenScreen/GreenScreen.et",
+      "sha256": "5839A787AF50DFDD70DC8DB3787DAB44878F439FED74F002D4F43FBE0C2C6621"
+    },
+    {
+      "path": "src/Configs/Core/EditorManagerCore.conf",
+      "sha256": "D99FAEB52D8AD6AA45F71528D7194053DA57CED4721A580D94D92D43136562FA"
+    },
+    {
+      "path": "src/Configs/Inventory/InventoryNavigationBar.conf",
+      "sha256": "7CAF63F54FE4630D7E5038382A4A3A960A409F2C33848CAAB336D8B876A4A7F6"
+    },
+    {
+      "path": "src/Configs/NameTags/NametagRoleplay.conf",
+      "sha256": "86D9804585B49AE68103E93C499C1EC892969EF9225EF219396E118DB9014FD7"
+    },
+    {
+      "path": "src/Configs/System/chimeraInputCommon.conf",
+      "sha256": "4DF1983B03F6A8C4B75A8776DCE363BC8AC0B20C818CD3F4958E3E59545E1A0E"
+    },
+    {
+      "path": "src/Configs/System/chimeraMenus.conf",
+      "sha256": "F6168644214B27F529B9FF7C449E5EF185F9AF20DC42240D993D0CEA52852C70"
+    },
+    {
+      "path": "src/Configs/System/keyBindingMenu.conf",
+      "sha256": "54B8832C5354234D2FD97E683957529474C8E7610C9AB6410C121441310AFEDF"
+    },
+    {
+      "path": "src/Configs/Vehicles/VehicleSettings.conf",
+      "sha256": "B867D7000C55E3987C306A1C6EF9C7F4F3A468D62B64E4A8DD49361950368426"
+    },
+    {
+      "path": "src/Language/everonlife_localization.en_us.conf",
+      "sha256": "901CC7C8C147480C8B8EAC038D5268E026579E1CBBC65025E8A907B14F1DCFB8"
+    },
+    {
+      "path": "src/Missions/EveronLifeGameMode.conf",
+      "sha256": "A6259295D03EB20BA43F974433BE429EE68FE702A3FDC1A21D1C56B516823E0D"
+    },
+    {
+      "path": "src/Prefabs/Characters/Core/Character_Base.et",
+      "sha256": "5DAB9A8D721EFB3511BE61BB46472154B0D193ABD20651E0A4B97BA5B0C849C8"
+    },
+    {
+      "path": "src/Prefabs/Characters/Core/Character_Roleplay.et",
+      "sha256": "C938328E4009F829DBEF06353B3CD2676F74BCC9E0F945BE5186E77816A21C51"
+    },
+    {
+      "path": "src/Prefabs/Characters/Core/Npc_Base.et",
+      "sha256": "70960A3656DFC0B2D067AA601F24C7CA0D296D15E95406B6CC12328DD9828825"
+    },
+    {
+      "path": "src/Prefabs/Characters/Core/PlayerControllerRoleplayMP.et",
+      "sha256": "8DA456FFA1C772FB95B2729E1A522F12F062970FA85F163E262F37D506D1668C"
+    },
+    {
+      "path": "src/Prefabs/Characters/Npcs/Npc_Default_01.et",
+      "sha256": "B3566F6733F49FB947F57B7458DAC275525E52370AD276872414F5004666F890"
+    },
+    {
+      "path": "src/Prefabs/Characters/Presets/Asian_Male_02.et",
+      "sha256": "D1D04464A6A8698C46B67CC745D36DE0C0CE76480E8A1B331D3F37DD2B967650"
+    },
+    {
+      "path": "src/Prefabs/Characters/Presets/Black_Male_02.et",
+      "sha256": "3FD26B85EFEDB03CCC7F678F45FA513C5EFAD5C96E3E6D30FD5857624A24082A"
+    },
+    {
+      "path": "src/Prefabs/Characters/Presets/White_Male_01.et",
+      "sha256": "0E210878CC833D95AFCB8E88EC9D9B2D6251A4199AED97036CCCC4B640197288"
+    },
+    {
+      "path": "src/Prefabs/Items/Core/ConsumeableItem_Base.et",
+      "sha256": "A7CF6A44692E3CC2E6D6B4C3F3369048656EA635F90EE1739E895B461FB8230B"
+    },
+    {
+      "path": "src/Prefabs/Items/Core/HandCarryItem_Base.et",
+      "sha256": "53DB8D75E58D5BB7E3EA60578BBBA45532A8C832445D63FC0E7D5E837F839ED2"
+    },
+    {
+      "path": "src/Prefabs/Items/Core/InteractableItem_Base.et",
+      "sha256": "775BEF3BC61F823AE1E147E423739BD9D618FE5D9500E9E4DEC26C7C32A03877"
+    },
+    {
+      "path": "src/Prefabs/Items/Core/RoleplayItem_Base.et",
+      "sha256": "C94A991C99A80BA218156EDE6572C050495A17332EBE33E9D68581CB47C688A6"
+    },
+    {
+      "path": "src/Prefabs/Items/Currencies/MoneyStack.et",
+      "sha256": "B6A77E96F426615D80C7D4E9261DEB2E1E71BD97BC55BF791FA2A275E4A4B20B"
+    },
+    {
+      "path": "src/Prefabs/Items/Drinks/AppleJuice.et",
+      "sha256": "6D64E3B4D88190A05B8604FDC260BD4CADA4A7113F61D876533122CC54228617"
+    },
+    {
+      "path": "src/Prefabs/Items/Drinks/Drink_Base.et",
+      "sha256": "18A7598C4B52C85E98548D21C66189B5C9D847FC88AA84E1EAC245985E7902EF"
+    },
+    {
+      "path": "src/Prefabs/Items/Drinks/WaterBottle.et",
+      "sha256": "F0A35ED7759E06595666AB80F3ED502D19147DA805289A68D544162995817306"
+    },
+    {
+      "path": "src/Prefabs/Items/Food/Apple.et",
+      "sha256": "4F22CE44F75D8965481C0B45C7CC1A133A75617789A073ECEE0FCF27DC3B4510"
+    },
+    {
+      "path": "src/Prefabs/Items/Food/Food_Base.et",
+      "sha256": "18A7598C4B52C85E98548D21C66189B5C9D847FC88AA84E1EAC245985E7902EF"
+    },
+    {
+      "path": "src/Prefabs/Items/Food/Plum.et",
+      "sha256": "2AC4307AA9ADE6F1A136F27DF2269B37DFB4552C9DA4E733EF92CA3684616B43"
+    },
+    {
+      "path": "src/Prefabs/Items/Food/RowanBerries.et",
+      "sha256": "332137BC8F6C474B4BE4AFF85C9CF52B7B7A9F0E2F6A0DD8D85151213F5755C1"
+    },
+    {
+      "path": "src/Prefabs/Items/Food/Tomato.et",
+      "sha256": "DDFEDAD5ABE7A9281A3BB5FF93EFA46A7C7CEF5D30909E6AD39C64D81BC2E043"
+    },
+    {
+      "path": "src/Prefabs/Items/Resources/Brick.et",
+      "sha256": "8D82CA9B0A33F7972032AE5486FA76F9D986A4F109A13B4E970465303459F1BC"
+    },
+    {
+      "path": "src/Prefabs/Items/Resources/CementBag.et",
+      "sha256": "4AACE101CB2ECC5A6913D07C20FBAC478E81CA275694B00BFB2BE13DCD4C2079"
+    },
+    {
+      "path": "src/Prefabs/Items/Resources/GravelBag.et",
+      "sha256": "15025BCFFD00BDA583A0D0604657A24CF270B33274955F4E73635F9B63862AFE"
+    },
+    {
+      "path": "src/Prefabs/Items/Resources/Sandbag.et",
+      "sha256": "0373979467FC5A7A56C2F483C84E20FFC7BD6A5EE91A11B0C3952193C5CAC0BA"
+    },
+    {
+      "path": "src/Prefabs/MP/Modes/Roleplay/GameMode_Roleplay.et",
+      "sha256": "710778E2FBC86784084A5834A5FD15D68C21E92EEBE9C90F197A585040D87E1A"
+    },
+    {
+      "path": "src/Prefabs/MP/Spawn/SpawnPoint_LIFE.et",
+      "sha256": "2D654F82C11C910417CA46D1F622A50339C41992ECAC33611F1DBBFF2C23EAA4"
+    },
+    {
+      "path": "src/Prefabs/Processor/AppleJuicer.et",
+      "sha256": "655B8D5D4A6AB9C5F430D79AEF4DE1F7B9E896460603BF22463BC7C3FE452FF1"
+    },
+    {
+      "path": "src/Prefabs/Processor/ItemProcessor_Base.et",
+      "sha256": "9590B10BE60B012F3598028FCE87D8DC0425EAB94F63B2326219E2B4761313DC"
+    },
+    {
+      "path": "src/Prefabs/Processor/Sawmill.et",
+      "sha256": "92ED0E5A1173C9354231B873DF7D30C8F6B014C4D28E71AC0FA3C152BD63AED1"
+    },
+    {
+      "path": "src/Prefabs/Props/Construction/CementPile.et",
+      "sha256": "E5F522C3F5C1206CA212F5F1462093A0B09A6E39DFBE2EE172DEFBD1DFEA01CF"
+    },
+    {
+      "path": "src/Prefabs/Props/Construction/GravelPile_01_large.et",
+      "sha256": "736C7135E9CA69505188DD0496E71833B35B70C29C3D5517C74F06E341619DF3"
+    },
+    {
+      "path": "src/Prefabs/Props/Construction/GravelPile_01_medium.et",
+      "sha256": "1BB8A4771C660766EE1C6CC736CD2E7E9755494F6571D9CE2DDFAFBCE0FCBE21"
+    },
+    {
+      "path": "src/Prefabs/Props/Construction/SandPile_01.et",
+      "sha256": "E3092EAFF0796F2A7708CCA4B2989062A92A63A1D15E7F6C8CB7A28B6CA8C9B9"
+    },
+    {
+      "path": "src/Prefabs/Resources/Mining/CopperBar.et",
+      "sha256": "F073B130BFC4D91F653D9EEAFEF1F09AE9739BCAE28859001A64C9FF2CECA6B7"
+    },
+    {
+      "path": "src/Prefabs/Resources/Mining/CopperNugget.et",
+      "sha256": "67E6AE8A5BA9D3663ED46619EF1B980818C2D88182D4B22B5538EE9682115694"
+    },
+    {
+      "path": "src/Prefabs/Resources/Mining/CopperOre.et",
+      "sha256": "F4F50C6ED427C6C54DD422FE0C9C59CB9A3DB1FC5191398263DC97A63F155251"
+    },
+    {
+      "path": "src/Prefabs/Resources/Mining/GoldBar.et",
+      "sha256": "462646B1728CF23CDF96607F667217443FD6DDB3E31870AABDF003D262FCA20C"
+    },
+    {
+      "path": "src/Prefabs/Resources/Mining/GoldNugget.et",
+      "sha256": "2B20473C03CD4CB68F4E7F7DE7F8A1DA772EB842E6991B1A28AF81AA56FA999E"
+    },
+    {
+      "path": "src/Prefabs/Resources/Mining/GoldOre.et",
+      "sha256": "388DBF7799DCAC3B64FCCDBAE4008757055169B4F1AA5C70E38A56E6505D66B8"
+    },
+    {
+      "path": "src/Prefabs/Resources/Mining/IronBar.et",
+      "sha256": "9C66DB254279D9AEA27B8C81339B180ACDB42ED27F75D6E2EC2A5D7991ECE98D"
+    },
+    {
+      "path": "src/Prefabs/Resources/Mining/IronNugget.et",
+      "sha256": "3F2C52312EC59C68DD0889CDF83D4EADC4BB97808FE34B8C28787DE8845274DB"
+    },
+    {
+      "path": "src/Prefabs/Resources/Mining/IronOre.et",
+      "sha256": "570EA3B3967FD1CDE5022519242AADAEE3AD1BCBF4C1813D0F1FFBE44E519024"
+    },
+    {
+      "path": "src/Prefabs/Resources/WoodCutting/CuttableTree_Base.et",
+      "sha256": "04F46004A18B421B24D31AE47C57EEBB979AC10FD92F37B6ADFE87C3324D70F7"
+    },
+    {
+      "path": "src/Prefabs/Resources/WoodCutting/CuttableTree_Dst_Base.et",
+      "sha256": "2A87CC0A6BA7E44D79CEDAFB0BE68BA2FCD3D5308F9C5A836BA66FADBFEF1122"
+    },
+    {
+      "path": "src/Prefabs/Resources/WoodCutting/WoodKindling.et",
+      "sha256": "F6AB65DD2B92D182B744535807690079A77EFE427487DA5A9BD28430E6942214"
+    },
+    {
+      "path": "src/Prefabs/Resources/WoodCutting/WoodLog_01_Small.et",
+      "sha256": "94813270FC810461AB4B2262A79B1175B5121906A1199432EFC0771084FB61ED"
+    },
+    {
+      "path": "src/Prefabs/Resources/WoodCutting/WoodPlank.et",
+      "sha256": "901A50ED7579B7FC1C459104CF824A4ECFEB6B6DEFA4A9BA0C65DAA05887535B"
+    },
+    {
+      "path": "src/Prefabs/Resources/WoodCutting/Pinus_Sylvestris/CuttableTree_Pinus_Sylvestris_2f_Dst.et",
+      "sha256": "623DCB8C78B072605166E36CECA38112181004AA4EFE78FDAE49FEB6B49F4C8C"
+    },
+    {
+      "path": "src/Prefabs/Resources/WoodCutting/Pinus_Sylvestris/CuttableTree_Pinus_Sylvestris_2f.et",
+      "sha256": "E0844EF5481EB89F7529AACC226CC780B78805E0082E846219F8C9B1FC68F685"
+    },
+    {
+      "path": "src/Prefabs/Resources/WoodCutting/Pinus_Sylvestris/CuttableTree_Pinus_Sylvestris_Stump_01.et",
+      "sha256": "BADA80DAC670CBEE0E77CF9D9F141A7E1CF1D4CDD660EB567FD7C588D0124624"
+    },
+    {
+      "path": "src/Prefabs/Structures/Industrial/Houses/ConcretePlant_E_01.et",
+      "sha256": "430DFC8E2D9945673271A9B61338377961D494E676522AA18A34EF3456766C05"
+    },
+    {
+      "path": "src/Prefabs/Tools/Tool_Base.et",
+      "sha256": "04727607F7F43B8461B54A2546DED9628CEEA08BB83045B28FD69A682BCD25A5"
+    },
+    {
+      "path": "src/Prefabs/Tools/Axe/Axe.et",
+      "sha256": "D85969684BE9F5EDBFCB36C65E6F9ADBF29FD0802350A77A896BA6B51B8FD780"
+    },
+    {
+      "path": "src/Prefabs/Vegetation/Tree/t_malus_domestica_2s.et",
+      "sha256": "6A8AABB9074B80202DEF02413B4EB912E77802B42514B351C98CB1E9C2780C10"
+    },
+    {
+      "path": "src/Prefabs/Vegetation/Tree/t_prunus_domestica_2s.et",
+      "sha256": "D655762C4349912161D294D32F079FF216685B78128CD0364EF18B5B3AA23E39"
+    },
+    {
+      "path": "src/Prefabs/Vehicles/Core/Vehicle_Base.et",
+      "sha256": "CA690E09198991272F1AE2392BFAD7F31B347EFE3B5F91D300CFBC48CA42A509"
+    },
+    {
+      "path": "src/Prefabs/Vehicles/LicensePlate/LicensePlate.et",
+      "sha256": "341CCE52C13EC8BC21ECEFE99AC4882147AF8801E894FE7F431124AFDE4D6A18"
+    },
+    {
+      "path": "src/Prefabs/VFX/WoodCutting/WoodImpactEmitter_Small.et",
+      "sha256": "5E281D5DB32830AB86AE86E2A4AF33427452A12537AF9B828545822D9CBDD80B"
+    },
+    {
+      "path": "src/Scripts/Game/Components/InventorySystem/EL_InventoryStorageManagerComponent.c",
+      "sha256": "E5090800F20ED31A85E0D3845057C4F2923C3ACA5C3CAF44F716EDC9496E33F5"
+    },
+    {
+      "path": "src/Scripts/Game/Components/InventorySystem/EL_RestrictedInventoryStorageComponent.c",
+      "sha256": "746393A0C74A815D7111A0AF5E7096FF7AEB1274B9DB581D46FA73E2FD7F2C5A"
+    },
+    {
+      "path": "src/Scripts/Game/Components/InventorySystem/EL_TraderManager.c",
+      "sha256": "9B273B83F63A64AD152AB391F72F09EC1E72A85E9456B3F257D1045DB89EC290"
+    },
+    {
+      "path": "src/Scripts/Game/Components/Vehicle/EL_LicensePlateManagerComponent.c",
+      "sha256": "789198B5FA516E8C1D70894A0BC3F257F84601F0FDEB3D14BF6093F730FF5FF0"
+    },
+    {
+      "path": "src/Scripts/Game/Configs/EL_VehicleSettings.c",
+      "sha256": "97EC38A21489C6C7A7271982E0CE2543532749B542C30F5DD7964F650825F23F"
+    },
+    {
+      "path": "src/Scripts/Game/Core/EL_BaseContainerCustomTitleFieldEnum.c",
+      "sha256": "556CB37807EEFC512FB57ED4C091642272EFDBD62FCF7A0FC3DC93D6D233E25E"
+    },
+    {
+      "path": "src/Scripts/Game/Core/EL_BaseContainerrUtils.c",
+      "sha256": "6151E377FA8AC96BB74F8D05F8CBCDDA5740968F91A85A1AC9C4DBC6D5C4ACE7"
+    },
+    {
+      "path": "src/Scripts/Game/Core/EL_BitFlags.c",
+      "sha256": "90CF8E61838148ED59FBCC431DC2785FA214FE34A3336BDA5E292495EF4C51C6"
+    },
+    {
+      "path": "src/Scripts/Game/Core/EL_Component.c",
+      "sha256": "ADBA243C3A7AEE2D0F707611B9D4E79139638335C107A8BFE9014C359C4B32EE"
+    },
+    {
+      "path": "src/Scripts/Game/Core/EL_ComponentData.c",
+      "sha256": "3967A88B60017B1F0921D7C9856DEDD6DE56FE08B5B16D5D5F22334647165F94"
+    },
+    {
+      "path": "src/Scripts/Game/Core/EL_FormatUtils.c",
+      "sha256": "160970E3ECE0C60BF0E60388F7421351D421DED7879CD65E810F53D5DB9FDDCB"
+    },
+    {
+      "path": "src/Scripts/Game/Core/EL_GameModeRoleplay.c",
+      "sha256": "64756554A91836FC4DFFBD96499B0A11835D2581CD6BF3D402366ECFD1102E3B"
+    },
+    {
+      "path": "src/Scripts/Game/Core/EL_InventoryUtils.c",
+      "sha256": "72569DD92415579ECD83104EE74414277E1E1D5171E4DC178AB5964C3390F999"
+    },
+    {
+      "path": "src/Scripts/Game/Core/EL_NetworkUtils.c",
+      "sha256": "3904CF97996558207170746A02D35199FBAD8F73899866FD98ACD39964F560E6"
+    },
+    {
+      "path": "src/Scripts/Game/Core/EL_UIInfoUtils.c",
+      "sha256": "94CD3ED67DC34E6738C57C459B906717A184F5B6C0F0B2D734CB64E4BAA9BFD7"
+    },
+    {
+      "path": "src/Scripts/Game/Core/EL_Utils.c",
+      "sha256": "7C042E5840894B413496638C2644780A74E1ED2DA4F5AF62B96A0B2D006E4C61"
+    },
+    {
+      "path": "src/Scripts/Game/Core/Npcs/EL_NpcBaseEntity.c",
+      "sha256": "C606FDE1562BBEF85176F4527C938509263440B4B92D9570C6C8B4D3DC543840"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Account/EL_PlayerAccount.c",
+      "sha256": "66AFF5312C0BBE7683B935AEED90FE2FB9F46D31CF66D0DB10F8338D18787107"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Account/EL_PlayerAccountManager.c",
+      "sha256": "0F219A90AD6541E0F627B434B208F9D831A47E0B2743B1733FC88A0E946E666C"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Account/Persistence/EL_PlayerAccountSaveData.c",
+      "sha256": "CDB323E6EDA6EF02FC16A47B63A9943349631719A3A6A1759B6936A085C54CA3"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Character/Inventory/InventoryConstants.c",
+      "sha256": "B8A02F7162BFD3542157A4DDE7E578D91CB0489245FE87BA1DE208366512B737"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Character/Inventory/HandCarry/EL_HandCarryComponent.c",
+      "sha256": "55C2AAAC7A9F557DEE8BDF381F9684958BA2792FA5589812E47B38353908C946"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Character/Inventory/HandCarry/EL_HandInventoryStorageComponent.c",
+      "sha256": "A8C6E4A84D66C6950E035035A75C5FC3113DAB0C84BB2354BEBFD7AFC8E2604D"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Character/Inventory/HandCarry/SCR_CharacterControllerComponent.c",
+      "sha256": "C5C508786CF0FE5150C0C890444F597321462897CA236EABD5ADF615475D99EA"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Character/Inventory/HandCarry/SCR_GadgetManagerComponent.c",
+      "sha256": "AD11AEC5A22C6AFD2CD8A712D55D38FE845212EC6618411C31A31CD02CC0059F"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Character/Inventory/HandCarry/SCR_InventoryAction.c",
+      "sha256": "C294CC0D4B6708422FCE43D29034C18AE50377EF1CD59442FED32927CE2C4AE1"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Character/Inventory/HandCarry/SCR_InventoryStorageManagerComponent.c",
+      "sha256": "5DFA22C171B0817B5019C59B8648CAF0AF18DF6C4961E6F4F77ECA9EE6599EE9"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Character/Inventory/HandCarry/SCR_InventoryStoragesListUI.c",
+      "sha256": "E28483D1ABBFDD6FA1B92310164EA74DC32CF7FD393234E9C33EBEDD65F2F5CE"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Character/Spawning/EL_DefaultLoadoutItem.c",
+      "sha256": "DBED288852D151FD179F37D8825A7E57213528C0AD572E65EE3B9F6DC362011A"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Character/Spawning/EL_SpawnLogic.c",
+      "sha256": "102A72F6C88C97D7BA48D6C445C3D68E6808E124624BA934D57782DB9A93EB31"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Gathering/EL_GatherAction.c",
+      "sha256": "19B3F8FCE2AD2B436EE2E749C439386A8599FF5A26407262DC4AE464B21F0A07"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/LicensePlate/EL_LicensePlateGeneratorBase.c",
+      "sha256": "4B2CC0ED3F94F6D93FC76259E77491F292D85ADF63B95A2749D3DA416A534ED9"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/LicensePlate/EL_LicensePlateGeneratorGeneric.c",
+      "sha256": "C709AA8FD75B477DC53BD78E3C75B481CF12E0A115D42BC7C221E6B5BB637024"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/LicensePlate/EL_LicensePlateManager.c",
+      "sha256": "A58AD6CB35177D1BF4D422481C8F1312D1A720916CBA8525F1D5F80B66868673"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Money/EL_MoneyUtils.c",
+      "sha256": "87CDCB7FD9A6FB8F5B9A6F93D4C0D71237D88C498DD14E67EB9D275605145DA5"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Processing/EL_ProcessAction.c",
+      "sha256": "5560D48256CB65256B6A85372D1BC783049AEB906D962D9285B5047DFE47B048"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Quantity/ChimeraMenuPreset.c",
+      "sha256": "C64944F3D1C17B5AADF0122142EEB6005A6AF22523EA67C2A9C865C55E0E4A8B"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Quantity/EL_DefaultLoadoutItemQuantityComponent.c",
+      "sha256": "FA16CBFE2997AF3841625E4FA1FF5A27067C42A7706E236DA0CAA5A7BFBE9839"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Quantity/EL_InventoryUtils.c",
+      "sha256": "C26D074EEA5A40E1FF716424EC4182DC255A71B8781A1EE5A619AE654E7A8356"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Quantity/EL_QuantityComponent.c",
+      "sha256": "C4F2BE3DC48916D083C8153C20D496B09825A36FD458902F2E440F256005F0C6"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Quantity/EL_SplitQuantityDialog.c",
+      "sha256": "F9D379B23BA3B696E7658DD7A6048086C57C273F718603F68E753A1148CD2D59"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Quantity/SCR_InvCallBack.c",
+      "sha256": "717C83B71F56D3E19481B6FB44FDADAA88F7739C5B90AD8479BC32269E7EC2FD"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Quantity/SCR_InventoryMenuUI.c",
+      "sha256": "50966271F5D905DA807622FB69EBD8BB74B90D3383E6BC8FAF0BC4BD5A5B0653"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Quantity/SCR_InventorySlotUI.c",
+      "sha256": "19FAC9BFA763F4C7F3A6AE66A7D09A06B02EA0766FB1565BD74A50556C1EEA28"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Quantity/SCR_InventoryStorageBaseUI.c",
+      "sha256": "73181CFC08A6E625B4484F52982C58CD803651FE977A7B48851C4DE170484C38"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Quantity/SCR_InventoryStorageManagerComponent.c",
+      "sha256": "C9FCBA4A03584F7B48B75D9A6F695883BDDC6557BB051F7BB9E23A17C2ABF907"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Quantity/ScriptedInventoryStorageManagerComponent.c",
+      "sha256": "E6C7B3E9B627A18BE55836CDE76D7FA8633AAB2975176E19A1D6A8645C1ECD15"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Quantity/Persistence/EL_QuantityComponentSaveData.c",
+      "sha256": "879FD4A70CFA682906093CC9F9D33AFD1103AFF08D075782C6683E9B0E4A308A"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Resources/EL_DestructibleResourceComponent.c",
+      "sha256": "933E4E083C5354204990822A2D8AC03E2292F8F9BF5A5AE79E04FAA58A3D1D86"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Resources/EL_DestructibleResourceHitZone.c",
+      "sha256": "B5F86EDD73D2612612C7866FE956E5E283F321973C21810803527500C856800F"
+    },
+    {
+      "path": "src/Scripts/Game/Feature/Trader/EL_OpenTraderAction.c",
+      "sha256": "A3717B2A64D10EEC416A0B704D08A4D575728F66BF77C0058E33C59E616AE495"
+    },
+    {
+      "path": "src/Scripts/Game/HUD/EL_BetaHud.c",
+      "sha256": "56CD73177F2375E75B2E57413AE3804F337687E33964BF14E33B4911D2828A48"
+    },
+    {
+      "path": "src/Scripts/Game/UI/Components/EL_ThinSliderWidget.c",
+      "sha256": "E65647243BE85CE3CA915154B5124A7EA7739A753DB9F04B4686726951B4E47D"
+    },
+    {
+      "path": "src/Scripts/Game/UI/Inventory/SCR_InventoryMenuUIPatch.c",
+      "sha256": "E66828B1770F8DDBFA1975F14C181C77A4BE385FF29DA8181A62315A2188696A"
+    },
+    {
+      "path": "src/Scripts/Game/Vehicle/EL_LicensePlateEntity.c",
+      "sha256": "2CB80D2B3CA1E65ABE68B0C90570B7B6F3730502EBD15AB46BB0E80B89BC4B5D"
+    },
+    {
+      "path": "src/Scripts/Game/World/EL_ChangeTimeAction.c",
+      "sha256": "F9402FAFFE2FA2E4702EE217308FEDF3310127561A14A621BAE54D3AA3768336"
+    },
+    {
+      "path": "src/Scripts/Game/World/EL_ChangeWeatherAction.c",
+      "sha256": "150588B47ACFB621061B2F7A0D97065B27CB9DBEDA804BC9FAFAA907F7616585"
+    },
+    {
+      "path": "src/UI/Layouts/HUD/Beta/Beta.layout",
+      "sha256": "E5D8106824BA178F97D3FB67A09E4A8D6DA93B90B19EE4761F8A5F4C4B9DD43B"
+    },
+    {
+      "path": "src/UI/Layouts/HUD/VON/VoNOverlay.layout",
+      "sha256": "8C764F629A5869038D9763EC534A85ECFCCA437D88A55A32ABC00545CD6FF144"
+    },
+    {
+      "path": "src/UI/Layouts/LicensePlate/EL_LicensePlatePlate.layout",
+      "sha256": "FB194B20AE9A2045B991DDD51F59B7BA534CE7C3D3D6B6B5DFE6598A87E59E83"
+    },
+    {
+      "path": "src/UI/Layouts/LicensePlate/LicensePlate.layout",
+      "sha256": "E5B6B70A1E82A1602F70829689BAD7F5B4E8E2C5BFF60863207F0E984C2C51EF"
+    },
+    {
+      "path": "src/UI/Layouts/Menus/Inventory/InventoryItemSlot.layout",
+      "sha256": "E3A0AA9C842892312CCD282B01BD348A4B2DF99A306ABC5ACBB8AD1124033F7F"
+    },
+    {
+      "path": "src/UI/Layouts/Menus/Inventory/SplitQuantityDialog.layout",
+      "sha256": "71F22DE2E38B196485ACC9F436F8809B00CF9BD59E9DFAF9D46E8564AE99D9A0"
+    },
+    {
+      "path": "src/UI/Layouts/WidgetLibrary/ThinSliderWidget.layout",
+      "sha256": "F8A057CD1FDB1F7E08476DCB5DFDD52C7FFAFF09569A961FFE11B8688E377F09"
+    },
+    {
+      "path": "compat\\drugs-economy/ProjectAxum.DrugsEconomyProbe.gproj",
+      "sha256": "FD4EB7D019D25E829C8035D74F0C833A6FBF74A03CA4BBFF3D3BE0B1A7D0FE16"
+    },
+    {
+      "path": "compat\\drugs-economy/Scripts/Game/AX_DrugsEconomyResourceTests.c",
+      "sha256": "DEF3C166A489081CE458808EE5C4C1B9CDF17EB22E2920ECBF57B812CCBEE7BB"
+    }
+  ],
+  "suites": [
+    {
+      "name": "AX_TradeCoreSuite",
+      "expected": 11,
+      "result": "PASS",
+      "profile": "C:\\Codex Projects\\Reforger Server\\Project-Axum\\.local\\drugs-economy-compat\\declared-20261015-045905-a25ce9\\AX_TradeCoreSuite",
+      "cases": 11,
+      "junit": "C:\\Codex Projects\\Reforger Server\\Project-Axum\\.local\\drugs-economy-compat\\declared-20261015-045905-a25ce9\\AX_TradeCoreSuite\\logs\\logs_2026-10-14_22-59-15\\junit.xml"
+    },
+    {
+      "name": "AX_DrugsEconomyResourceSuite",
+      "expected": 1,
+      "result": "PASS",
+      "profile": "C:\\Codex Projects\\Reforger Server\\Project-Axum\\.local\\drugs-economy-compat\\declared-20261015-045905-a25ce9\\AX_DrugsEconomyResourceSuite",
+      "cases": 1,
+      "junit": "C:\\Codex Projects\\Reforger Server\\Project-Axum\\.local\\drugs-economy-compat\\declared-20261015-045905-a25ce9\\AX_DrugsEconomyResourceSuite\\logs\\logs_2026-10-14_22-59-21\\junit.xml"
+    }
+  ],
+  "result": "PASS",
+  "limitation": "Headless compile/domain/resource resolution only; no rendered UI, spawned gameplay, network authorization, persistence or settlement fault injection."
+}

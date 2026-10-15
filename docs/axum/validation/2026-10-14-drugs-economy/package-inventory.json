@@ -1,0 +1,1027 @@
+[
+  {
+    "path": "Assets/Props/Cannabis Extract/Source/bud.xob",
+    "bytes": 10872365,
+    "compressed_bytes": 10872365
+  },
+  {
+    "path": "Assets/Props/Cannabis Extract/Source/bud_u1_v1.edds",
+    "bytes": 89478772,
+    "compressed_bytes": 89478772
+  },
+  {
+    "path": "Assets/Props/Cannabis Extract/Source/Cannabis.xob",
+    "bytes": 861415,
+    "compressed_bytes": 861415
+  },
+  {
+    "path": "Assets/Props/Cannabis Extract/Source/Cannabis_Normals.edds",
+    "bytes": 7624898,
+    "compressed_bytes": 7624898
+  },
+  {
+    "path": "Assets/Props/Cannabis Extract/Source/Cannabis_Texture.edds",
+    "bytes": 7973958,
+    "compressed_bytes": 7973958
+  },
+  {
+    "path": "Assets/Props/Cannabis Extract/Source/Data/Material.emat",
+    "bytes": 219,
+    "compressed_bytes": 219
+  },
+  {
+    "path": "Assets/Props/Cannabis Extract/Source/Data/Material_u1_v1.emat",
+    "bytes": 15,
+    "compressed_bytes": 15
+  },
+  {
+    "path": "Assets/Props/Cannabis Extract/Source/Extract_texture.edds",
+    "bytes": 5592676,
+    "compressed_bytes": 5592676
+  },
+  {
+    "path": "Assets/Props/Cannabis Extract/Source/Extract_texture.xob",
+    "bytes": 40106821,
+    "compressed_bytes": 40106821
+  },
+  {
+    "path": "Assets/Props/Cannabis Extract/Source/weed_bud_ao.edds",
+    "bytes": 699300,
+    "compressed_bytes": 699300
+  },
+  {
+    "path": "Assets/Props/Cannabis Extract/Source/weed_bud_height.edds",
+    "bytes": 984593,
+    "compressed_bytes": 984593
+  },
+  {
+    "path": "Assets/Props/Cannabis Extract/Source/weed_bud_normal.edds",
+    "bytes": 699280,
+    "compressed_bytes": 699280
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/796b3b0283794320bc74bbccf8578115.fbx.xob",
+    "bytes": 9243,
+    "compressed_bytes": 9243
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Data/CarboardBox_low.emat",
+    "bytes": 15,
+    "compressed_bytes": 15
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Data/CrateA_lp.emat",
+    "bytes": 15,
+    "compressed_bytes": 15
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Data/CrateB_lp.emat",
+    "bytes": 15,
+    "compressed_bytes": 15
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Data/Material.emat",
+    "bytes": 324,
+    "compressed_bytes": 324
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Data/Material_#51.emat",
+    "bytes": 99,
+    "compressed_bytes": 99
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Data/Pallet_lp.emat",
+    "bytes": 15,
+    "compressed_bytes": 15
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Data/Prop_Weed_SmallBag_01.emat",
+    "bytes": 105,
+    "compressed_bytes": 105
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Data/prop_ziplock_weed_01prop_ziplock_weed_01a.emat",
+    "bytes": 125,
+    "compressed_bytes": 125
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Data/Weed.emat",
+    "bytes": 172,
+    "compressed_bytes": 172
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Data/Weed_Bale.emat",
+    "bytes": 206,
+    "compressed_bytes": 206
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Data/Ziploc.emat",
+    "bytes": 178,
+    "compressed_bytes": 178
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Finel_skethfab.xob",
+    "bytes": 4857276,
+    "compressed_bytes": 4857276
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/PlantWorld_texture.edds",
+    "bytes": 5592676,
+    "compressed_bytes": 5592676
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/PlantWorld_texture.xob",
+    "bytes": 45249018,
+    "compressed_bytes": 45249018
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/PlantWorld_texture_metallic.edds",
+    "bytes": 3465261,
+    "compressed_bytes": 3465261
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/PlantWorld_texture_normal.edds",
+    "bytes": 2027700,
+    "compressed_bytes": 2027700
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/PlantWorld_texture_roughness.edds",
+    "bytes": 2612561,
+    "compressed_bytes": 2612561
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/prop_weed_smallbag_01.edds",
+    "bytes": 349780,
+    "compressed_bytes": 349780
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/prop_ziplock_weed_01prop_ziplock_weed_01a.edds",
+    "bytes": 43948,
+    "compressed_bytes": 43948
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Small Weed Bag.xob",
+    "bytes": 23105,
+    "compressed_bytes": 23105
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/vil_p_crate06_d.edds",
+    "bytes": 1398364,
+    "compressed_bytes": 1398364
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/vil_p_crate06_n.edds",
+    "bytes": 1398364,
+    "compressed_bytes": 1398364
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Weed Bale N.edds",
+    "bytes": 244653,
+    "compressed_bytes": 244653
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Weed Bale.edds",
+    "bytes": 257100,
+    "compressed_bytes": 257100
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Weed Brick2.xob",
+    "bytes": 13619,
+    "compressed_bytes": 13619
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Weed Normal.edds",
+    "bytes": 229320,
+    "compressed_bytes": 229320
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Weed.edds",
+    "bytes": 87628,
+    "compressed_bytes": 87628
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/WeedBag2.xob",
+    "bytes": 19875,
+    "compressed_bytes": 19875
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Ziplock Normal.edds",
+    "bytes": 33056,
+    "compressed_bytes": 33056
+  },
+  {
+    "path": "Assets/Props/Cannabis Plant/Source/Ziplock.edds",
+    "bytes": 11172,
+    "compressed_bytes": 11172
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 100/Source/Data/Dollar_Bill_Texture.emat",
+    "bytes": 104,
+    "compressed_bytes": 104
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 100/Source/dolar_100_texture.edds",
+    "bytes": 17792240,
+    "compressed_bytes": 17792240
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 100/Source/Dollar Bill - 100.xob",
+    "bytes": 774,
+    "compressed_bytes": 774
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 1000/Source/1000MXN_Billete.edds",
+    "bytes": 2621892,
+    "compressed_bytes": 2621892
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 1000/Source/Billete_1000.xob",
+    "bytes": 5055858,
+    "compressed_bytes": 5055858
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 1000/Source/Data/Billete_1000_MXN.emat",
+    "bytes": 154,
+    "compressed_bytes": 154
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 1000/Source/Data/Dollar_Bill_Texture.emat",
+    "bytes": 185,
+    "compressed_bytes": 185
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 1000/Source/dolar_1000.edds",
+    "bytes": 1112480,
+    "compressed_bytes": 1112480
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 1000/Source/dolar_1000_texture.edds",
+    "bytes": 15219076,
+    "compressed_bytes": 15219076
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 1000/Source/dolar_1000_texture2.edds",
+    "bytes": 15600059,
+    "compressed_bytes": 15600059
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 1000/Source/Dollar Bill - 1000.xob",
+    "bytes": 775,
+    "compressed_bytes": 775
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 200/Source/200MXN_Billete.edds",
+    "bytes": 2621892,
+    "compressed_bytes": 2621892
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 200/Source/Billete_200.xob",
+    "bytes": 5055966,
+    "compressed_bytes": 5055966
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 200/Source/Data/Billete_200_MXN.emat",
+    "bytes": 152,
+    "compressed_bytes": 152
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 200/Source/Data/Dollar_Bill_Texture.emat",
+    "bytes": 182,
+    "compressed_bytes": 182
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 200/Source/dolar_200.edds",
+    "bytes": 1052900,
+    "compressed_bytes": 1052900
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 200/Source/dolar_200_texture.edds",
+    "bytes": 17486862,
+    "compressed_bytes": 17486862
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 200/Source/Dollar Bill - 200.xob",
+    "bytes": 774,
+    "compressed_bytes": 774
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 500/Source/500MXN_Billete.edds",
+    "bytes": 2621892,
+    "compressed_bytes": 2621892
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 500/Source/Billete_500.xob",
+    "bytes": 5055966,
+    "compressed_bytes": 5055966
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 500/Source/Data/Billete_500_MXN.emat",
+    "bytes": 152,
+    "compressed_bytes": 152
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 500/Source/Data/Dollar_Bill_Texture.emat",
+    "bytes": 182,
+    "compressed_bytes": 182
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 500/Source/dolar_500.edds",
+    "bytes": 1065466,
+    "compressed_bytes": 1065466
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 500/Source/dolar_500_texture.edds",
+    "bytes": 16404299,
+    "compressed_bytes": 16404299
+  },
+  {
+    "path": "Assets/Props/Currency/Bill 500/Source/Dollar Bill - 500.xob",
+    "bytes": 774,
+    "compressed_bytes": 774
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Cardboard_boxes_1l_Metallic.edds",
+    "bytes": 92682,
+    "compressed_bytes": 92682
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Cardboard_boxes_1_BaseColor.edds",
+    "bytes": 14627298,
+    "compressed_bytes": 14627298
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Cardboard_boxes_1_Normal.edds",
+    "bytes": 6650826,
+    "compressed_bytes": 6650826
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Cardboard_boxes_1_Roughness.edds",
+    "bytes": 11371028,
+    "compressed_bytes": 11371028
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Data/1_dollar.emat",
+    "bytes": 15,
+    "compressed_bytes": 15
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Data/Cardboard_Box_Mat.emat",
+    "bytes": 107,
+    "compressed_bytes": 107
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Data/crate_tpage_dm.emat",
+    "bytes": 15,
+    "compressed_bytes": 15
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Data/dollarbills.emat",
+    "bytes": 15,
+    "compressed_bytes": 15
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Data/drugpackage2.emat",
+    "bytes": 92,
+    "compressed_bytes": 92
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Data/handle.emat",
+    "bytes": 97,
+    "compressed_bytes": 97
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Data/latch.emat",
+    "bytes": 96,
+    "compressed_bytes": 96
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Data/Material.emat",
+    "bytes": 335,
+    "compressed_bytes": 335
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Data/Military_chest.emat",
+    "bytes": 105,
+    "compressed_bytes": 105
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Data/Weed1.emat",
+    "bytes": 15,
+    "compressed_bytes": 15
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Data/Weed_Trim.emat",
+    "bytes": 15,
+    "compressed_bytes": 15
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Data/wood_decal.emat",
+    "bytes": 15,
+    "compressed_bytes": 15
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Data/Wrapping.emat",
+    "bytes": 15,
+    "compressed_bytes": 15
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Drug Pack.xob",
+    "bytes": 3073,
+    "compressed_bytes": 3073
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/drugpackage2.edds",
+    "bytes": 567573,
+    "compressed_bytes": 567573
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/drugpackage2_n.edds",
+    "bytes": 175028,
+    "compressed_bytes": 175028
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/handle_Base_color.edds",
+    "bytes": 2386221,
+    "compressed_bytes": 2386221
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/handle_Mixed_AO.edds",
+    "bytes": 1010222,
+    "compressed_bytes": 1010222
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/handle_Normal.edds",
+    "bytes": 11954,
+    "compressed_bytes": 11954
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/handle_Roughness.edds",
+    "bytes": 2242384,
+    "compressed_bytes": 2242384
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/latch_Base_color.edds",
+    "bytes": 2425687,
+    "compressed_bytes": 2425687
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/latch_Metallic.edds",
+    "bytes": 1309739,
+    "compressed_bytes": 1309739
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/latch_Mixed_AO.edds",
+    "bytes": 1142992,
+    "compressed_bytes": 1142992
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/latch_Normal.edds",
+    "bytes": 460626,
+    "compressed_bytes": 460626
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/latch_Roughness.edds",
+    "bytes": 1109362,
+    "compressed_bytes": 1109362
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Military Chest.xob",
+    "bytes": 410892,
+    "compressed_bytes": 410892
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Military chest_Base_color.edds",
+    "bytes": 3035996,
+    "compressed_bytes": 3035996
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Military chest_Metallic.edds",
+    "bytes": 706007,
+    "compressed_bytes": 706007
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Military chest_Mixed_AO.edds",
+    "bytes": 1319597,
+    "compressed_bytes": 1319597
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Military chest_Normal.edds",
+    "bytes": 438853,
+    "compressed_bytes": 438853
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Military chest_Roughness.edds",
+    "bytes": 3174275,
+    "compressed_bytes": 3174275
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Military Equipment Storage Locker.xob",
+    "bytes": 21862,
+    "compressed_bytes": 21862
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Poliigon_MetalPaintedMatte_7037_AmbientOcc.edds",
+    "bytes": 98361,
+    "compressed_bytes": 98361
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Poliigon_MetalPaintedMatte_7037_BaseColor.edds",
+    "bytes": 473349,
+    "compressed_bytes": 473349
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Poliigon_MetalPaintedMatte_7037_Normal.edds",
+    "bytes": 436978,
+    "compressed_bytes": 436978
+  },
+  {
+    "path": "Assets/Props/Decoration/Source/Showcase_CB_boxes.xob",
+    "bytes": 32496,
+    "compressed_bytes": 32496
+  },
+  {
+    "path": "Assets/Props/Locker/Source/Data/Locker_Equip_01_alpha.emat",
+    "bytes": 180,
+    "compressed_bytes": 180
+  },
+  {
+    "path": "Assets/Props/Locker/Source/Data/Locker_Equip_01_body.emat",
+    "bytes": 254,
+    "compressed_bytes": 254
+  },
+  {
+    "path": "Assets/Props/Locker/Source/Locker_Equipment.xob",
+    "bytes": 147644,
+    "compressed_bytes": 147644
+  },
+  {
+    "path": "Assets/Props/Locker/Source/locker_Equip_alpha.edds",
+    "bytes": 961413,
+    "compressed_bytes": 961413
+  },
+  {
+    "path": "Assets/Props/Locker/Source/locker_Equip_AO.edds",
+    "bytes": 8064948,
+    "compressed_bytes": 8064948
+  },
+  {
+    "path": "Assets/Props/Locker/Source/locker_Equip_color.edds",
+    "bytes": 15083142,
+    "compressed_bytes": 15083142
+  },
+  {
+    "path": "Assets/Props/Locker/Source/locker_Equip_metallic.edds",
+    "bytes": 10801901,
+    "compressed_bytes": 10801901
+  },
+  {
+    "path": "Assets/Props/Locker/Source/locker_Equip_normal.edds",
+    "bytes": 4103889,
+    "compressed_bytes": 4103889
+  },
+  {
+    "path": "Assets/Props/Locker/Source/locker_Equip_roughness.edds",
+    "bytes": 13764733,
+    "compressed_bytes": 13764733
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/cajas_prueba.xob",
+    "bytes": 4192132,
+    "compressed_bytes": 4192132
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/CarboardBox_low_CarboardBox_low_Normal.edds",
+    "bytes": 2730716,
+    "compressed_bytes": 2730716
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/CarboardBox_low_CarboardBox_low_Roughness.edds",
+    "bytes": 8098229,
+    "compressed_bytes": 8098229
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/CreateA_low_CrateA_lp_BaseColor.edds",
+    "bytes": 14537087,
+    "compressed_bytes": 14537087
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/CreateA_low_CrateA_lp_Metallic.edds",
+    "bytes": 206554,
+    "compressed_bytes": 206554
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/CreateA_low_CrateA_lp_Normal.edds",
+    "bytes": 4051995,
+    "compressed_bytes": 4051995
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/CreateA_low_CrateA_lp_Roughness.edds",
+    "bytes": 12591397,
+    "compressed_bytes": 12591397
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/CreateB_low_CrateB_lp_BaseColor.edds",
+    "bytes": 13327074,
+    "compressed_bytes": 13327074
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/CreateB_low_CrateB_lp_Metallic.edds",
+    "bytes": 345612,
+    "compressed_bytes": 345612
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/CreateB_low_CrateB_lp_Normal.edds",
+    "bytes": 3780828,
+    "compressed_bytes": 3780828
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/CreateB_low_CrateB_lp_Roughness.edds",
+    "bytes": 8119022,
+    "compressed_bytes": 8119022
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Data/CarboardBox_low.emat",
+    "bytes": 115,
+    "compressed_bytes": 115
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Data/CrateA_lp.emat",
+    "bytes": 116,
+    "compressed_bytes": 116
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Data/CrateB_lp.emat",
+    "bytes": 116,
+    "compressed_bytes": 116
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Data/foam.emat",
+    "bytes": 143,
+    "compressed_bytes": 143
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Data/handle.emat",
+    "bytes": 123,
+    "compressed_bytes": 123
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Data/lambert1.emat",
+    "bytes": 101,
+    "compressed_bytes": 101
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Data/lid.emat",
+    "bytes": 120,
+    "compressed_bytes": 120
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Data/main.emat",
+    "bytes": 121,
+    "compressed_bytes": 121
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Data/Pallet_lp.emat",
+    "bytes": 116,
+    "compressed_bytes": 116
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/ME_rifle-bag_foam_AlbedoTransparency.edds",
+    "bytes": 543449,
+    "compressed_bytes": 543449
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/ME_rifle-bag_foam_Normal.edds",
+    "bytes": 377330,
+    "compressed_bytes": 377330
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/ME_rifle-bag_handle_AlbedoTransparency.edds",
+    "bytes": 597880,
+    "compressed_bytes": 597880
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/ME_rifle-bag_handle_Normal.edds",
+    "bytes": 1083693,
+    "compressed_bytes": 1083693
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/ME_rifle-bag_lid_AlbedoTransparency.edds",
+    "bytes": 45080,
+    "compressed_bytes": 45080
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/ME_rifle-bag_lid_Normal.edds",
+    "bytes": 1285850,
+    "compressed_bytes": 1285850
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/ME_rifle-bag_main_AlbedoTransparency.edds",
+    "bytes": 23547,
+    "compressed_bytes": 23547
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/ME_rifle-bag_main_Normal.edds",
+    "bytes": 827057,
+    "compressed_bytes": 827057
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Pallete_low_Pallet_lp_BaseColor.edds",
+    "bytes": 22369900,
+    "compressed_bytes": 22369900
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Pallete_low_Pallet_lp_Metallic.edds",
+    "bytes": 102576,
+    "compressed_bytes": 102576
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Pallete_low_Pallet_lp_Normal.edds",
+    "bytes": 6590903,
+    "compressed_bytes": 6590903
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Pallete_low_Pallet_lp_Roughness.edds",
+    "bytes": 12529598,
+    "compressed_bytes": 12529598
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/radio.xob",
+    "bytes": 626116,
+    "compressed_bytes": 626116
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/Rifle-Case-Box.xob",
+    "bytes": 5157613,
+    "compressed_bytes": 5157613
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/white_Base_Color.edds",
+    "bytes": 10544959,
+    "compressed_bytes": 10544959
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/white_Emissive.edds",
+    "bytes": 259065,
+    "compressed_bytes": 259065
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/white_Metallic.edds",
+    "bytes": 3810664,
+    "compressed_bytes": 3810664
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/white_Mixed_AO.edds",
+    "bytes": 6594107,
+    "compressed_bytes": 6594107
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/white_Normal_DirectX.edds",
+    "bytes": 14065995,
+    "compressed_bytes": 14065995
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/white_Roughness.edds",
+    "bytes": 9659208,
+    "compressed_bytes": 9659208
+  },
+  {
+    "path": "Assets/Props/Military Assets/Source/_low_CarboardBox_low_BaseColor.edds",
+    "bytes": 16295917,
+    "compressed_bytes": 16295917
+  },
+  {
+    "path": "Configs/System/chimeraMenus.conf",
+    "bytes": 170,
+    "compressed_bytes": 170
+  },
+  {
+    "path": "Documentation/DE_CannabisSystem_Instructions.c",
+    "bytes": 7561,
+    "compressed_bytes": 2360
+  },
+  {
+    "path": "Documentation/DE_LockerSystem_Instructions.c",
+    "bytes": 7502,
+    "compressed_bytes": 2384
+  },
+  {
+    "path": "Documentation/DE_ShopSystem_Instructions.c",
+    "bytes": 7456,
+    "compressed_bytes": 2468
+  },
+  {
+    "path": "Missions/DE_Economy_Test.conf",
+    "bytes": 344,
+    "compressed_bytes": 344
+  },
+  {
+    "path": "Prefabs/Examples/BlackMarket_Example.et",
+    "bytes": 12296,
+    "compressed_bytes": 12296
+  },
+  {
+    "path": "Prefabs/Examples/CannabisSellPoint_Example.et",
+    "bytes": 16141,
+    "compressed_bytes": 16141
+  },
+  {
+    "path": "Prefabs/Examples/FactionLocker_Example.et",
+    "bytes": 2477,
+    "compressed_bytes": 2477
+  },
+  {
+    "path": "Prefabs/Examples/GovermentConfiscatePoint_Example.et",
+    "bytes": 6376,
+    "compressed_bytes": 6376
+  },
+  {
+    "path": "Prefabs/Examples/MilitaryShop_Example.et",
+    "bytes": 5971,
+    "compressed_bytes": 5971
+  },
+  {
+    "path": "Prefabs/Items/Currency/Bill_100.et",
+    "bytes": 1264,
+    "compressed_bytes": 1264
+  },
+  {
+    "path": "Prefabs/Items/Currency/Bill_1000.et",
+    "bytes": 1217,
+    "compressed_bytes": 1217
+  },
+  {
+    "path": "Prefabs/Items/Currency/Bill_200.et",
+    "bytes": 1362,
+    "compressed_bytes": 1362
+  },
+  {
+    "path": "Prefabs/Items/Currency/Bill_500.et",
+    "bytes": 1264,
+    "compressed_bytes": 1264
+  },
+  {
+    "path": "Prefabs/Items/Drugs/CannabisExtract.et",
+    "bytes": 1148,
+    "compressed_bytes": 1148
+  },
+  {
+    "path": "Prefabs/World/Market/PalletAmmo_01_Soviet.et",
+    "bytes": 143,
+    "compressed_bytes": 143
+  },
+  {
+    "path": "Prefabs/World/Market/TableOld_01.et",
+    "bytes": 158,
+    "compressed_bytes": 158
+  },
+  {
+    "path": "Prefabs/World/Plants/CannabisPlantSpawnPoint.et",
+    "bytes": 242,
+    "compressed_bytes": 242
+  },
+  {
+    "path": "Prefabs/World/Plants/CannabisPlantSpawnZone.et",
+    "bytes": 152,
+    "compressed_bytes": 152
+  },
+  {
+    "path": "Prefabs/World/Plants/CannabisPlant_Mature.et",
+    "bytes": 804,
+    "compressed_bytes": 804
+  },
+  {
+    "path": "Scripts/Game/Items/DE_CannabisPureInventoryItemComponent.c",
+    "bytes": 1254,
+    "compressed_bytes": 488
+  },
+  {
+    "path": "Scripts/Game/Items/DE_CashBillInventoryItemComponent.c",
+    "bytes": 1415,
+    "compressed_bytes": 541
+  },
+  {
+    "path": "Scripts/Game/Locker/DE_FactionLockerComponent.c",
+    "bytes": 7814,
+    "compressed_bytes": 1711
+  },
+  {
+    "path": "Scripts/Game/Locker/DE_FactionLockerLogger.c",
+    "bytes": 1883,
+    "compressed_bytes": 585
+  },
+  {
+    "path": "Scripts/Game/Locker/DE_StorageSaveData.c",
+    "bytes": 158,
+    "compressed_bytes": 158
+  },
+  {
+    "path": "Scripts/Game/Plants/DE_CannabisPlantSpawnPointComponent.c",
+    "bytes": 1494,
+    "compressed_bytes": 655
+  },
+  {
+    "path": "Scripts/Game/Plants/DE_CannabisZoneSpawnerComponent.c",
+    "bytes": 9509,
+    "compressed_bytes": 2103
+  },
+  {
+    "path": "Scripts/Game/UI/BlackMarketMenu.c",
+    "bytes": 515,
+    "compressed_bytes": 515
+  },
+  {
+    "path": "Scripts/Game/UI/DE_ModdedChimeraMenu.c",
+    "bytes": 59,
+    "compressed_bytes": 59
+  },
+  {
+    "path": "Scripts/Game/UI/NEW_BlackMarketMenu.c",
+    "bytes": 24363,
+    "compressed_bytes": 4639
+  },
+  {
+    "path": "Scripts/Game/UserActions/DE_BlackMarketCatalog.c",
+    "bytes": 618,
+    "compressed_bytes": 618
+  },
+  {
+    "path": "Scripts/Game/UserActions/DE_BlackMarketComponent.c",
+    "bytes": 33497,
+    "compressed_bytes": 5933
+  },
+  {
+    "path": "Scripts/Game/UserActions/DE_BlackMarketContext.c",
+    "bytes": 3679,
+    "compressed_bytes": 886
+  },
+  {
+    "path": "Scripts/Game/UserActions/DE_BlackMarketPurchaseLine.c",
+    "bytes": 236,
+    "compressed_bytes": 236
+  },
+  {
+    "path": "Scripts/Game/UserActions/DE_BlackMarketPurchaseResult.c",
+    "bytes": 350,
+    "compressed_bytes": 350
+  },
+  {
+    "path": "Scripts/Game/UserActions/DE_CannabisHarvestAction.c",
+    "bytes": 2765,
+    "compressed_bytes": 922
+  },
+  {
+    "path": "Scripts/Game/UserActions/DE_MilitaryShopCatalog.c",
+    "bytes": 619,
+    "compressed_bytes": 619
+  },
+  {
+    "path": "Scripts/Game/UserActions/DE_OpenBlackMarketAction.c",
+    "bytes": 4036,
+    "compressed_bytes": 1167
+  },
+  {
+    "path": "Scripts/Game/UserActions/DE_OpenFactionLockerAction.c",
+    "bytes": 1212,
+    "compressed_bytes": 484
+  },
+  {
+    "path": "Scripts/Game/UserActions/DE_SellCannabisAllAction.c",
+    "bytes": 12038,
+    "compressed_bytes": 2555
+  },
+  {
+    "path": "Scripts/Game/UserActions/DE_ShopCatalogBase.c",
+    "bytes": 936,
+    "compressed_bytes": 936
+  },
+  {
+    "path": "UI/Layouts/Markets/Layouts/BM_Categories.layout",
+    "bytes": 5754,
+    "compressed_bytes": 724
+  },
+  {
+    "path": "UI/Layouts/Markets/Layouts/BM_Header.layout",
+    "bytes": 1548,
+    "compressed_bytes": 495
+  },
+  {
+    "path": "UI/Layouts/Markets/Layouts/BM_ItemRow.layout",
+    "bytes": 8112,
+    "compressed_bytes": 1352
+  },
+  {
+    "path": "UI/Layouts/Markets/Layouts/BM_Main.layout",
+    "bytes": 21104,
+    "compressed_bytes": 2430
+  },
+  {
+    "path": "World/DrugsEconomy.ent",
+    "bytes": 61,
+    "compressed_bytes": 61
+  },
+  {
+    "path": "World/DrugsEconomy_Layers/default.layer",
+    "bytes": 4549,
+    "compressed_bytes": 1559
+  }
+]

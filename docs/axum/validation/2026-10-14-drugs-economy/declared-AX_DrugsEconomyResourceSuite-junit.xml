@@ -1,0 +1,5 @@
+<testsuites time="1.528736" timestamp="2026-10-15T04:59:24.160Z">
+	<testsuite name="AX_DrugsEconomyResourceSuite" tests="1" time="0.003827" timestamp="2026-10-15T04:59:25.684Z">
+		<testcase classname="AX_DrugsEconomyResourceSuite" name="AX_DrugsEconomyResourceTest" time="0.003517" />
+	</testsuite>
+</testsuites>

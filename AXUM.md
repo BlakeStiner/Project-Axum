@@ -13,5 +13,10 @@ Implementation has started with the [appointment core](docs/axum/DRUG_TRADE_CORE
 finite buyer reservations, region-aware meeting selection, order state, and
 settlement boundaries, verified by native Enforce tests in `axum-tests/`.
 
+The [Drugs Economy assessment](docs/axum/DRUGS_ECONOMY_ASSESSMENT.md) evaluates
+optional visuals/UI and records isolated compatibility results. Its
+[`compat/drugs-economy/`](compat/drugs-economy/README.md) probe does not change
+the active EveronLife baseline or adopt its payment code.
+
 The root README and existing framework documentation are retained upstream
 material. Axum-specific development instructions live under `docs/axum/`.
