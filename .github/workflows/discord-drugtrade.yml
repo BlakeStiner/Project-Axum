@@ -1,6 +1,8 @@
 name: Discord - Drug Trade Updates
 
 on:
+  push:
+    branches: ['codex/drug-trade-**']
   pull_request:
     branches: [main]
     types: [closed]
@@ -49,6 +51,9 @@ concurrency:
 jobs:
   notify:
     if: >-
+      (github.event_name == 'push' &&
+       github.event.deleted == false &&
+       startsWith(github.ref, 'refs/heads/codex/drug-trade-')) ||
       (github.event_name == 'pull_request' &&
        github.event.pull_request.merged == true &&
        github.event.pull_request.head.repo.full_name == github.repository &&
@@ -59,10 +64,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Check out trusted default-branch sender
+      - name: Check out sender for this event
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
-          ref: ${{ github.event.repository.default_branch }}
+          # Pushes execute the sender at that exact repository branch commit.
+          # PR/release/manual events keep using the trusted default branch.
+          ref: ${{ github.event_name == 'push' && github.sha || github.event.repository.default_branch }}
           persist-credentials: false
           submodules: false
       - name: Post update

@@ -1,0 +1,45 @@
+{
+  "tests": 11,
+  "scope": "Native headless domain tests with fake environment and settlement ports",
+  "local_date": "2026-10-14",
+  "source_hashes": [
+    {
+      "sha256": "48be78b7df0ab0a115c6e17d52bd444eff54e227ac3d6cb7a5e1d3d8f87cc642",
+      "path": "axum/ProjectAxum.gproj"
+    },
+    {
+      "sha256": "2a76caa50088e1011c8d8075aea633ee4dfd1be88a52d826e436a459cab13f2d",
+      "path": "src/EveronLife.gproj"
+    },
+    {
+      "sha256": "95de195c46d7540813fd93f8fe88cae0b95476e3d5a73166828a32679d288d6c",
+      "path": "axum/Scripts/Game/Axum/DrugTrade/AX_TradeTypes.c"
+    },
+    {
+      "sha256": "2a63e18681c1293a53bef376c2fc4f620dce248cbffad27c80c7a8fc4b8e9af4",
+      "path": "axum/Scripts/Game/Axum/DrugTrade/AX_TradeService.c"
+    },
+    {
+      "sha256": "4ca4b9e5036deb72d5c315b6b8e3ad0eb94a7e0770b7a6f6454986f44df64d17",
+      "path": "axum-tests/ProjectAxum.Tests.gproj"
+    },
+    {
+      "sha256": "7281ae402fa6468cfe17a447bb1ff4826bde0664e0046b85519f78419b1e850c",
+      "path": "axum-tests/Scripts/Game/Axum/AX_TradeCoreTests.c"
+    },
+    {
+      "sha256": "5a5496462ecc51694c0477f314bb9bcd57a08b303227654bbb8762299df7e0b8",
+      "path": "tools/Invoke-TradeCoreTests.ps1"
+    }
+  ],
+  "errors": 0,
+  "failures": 0,
+  "suite": "AX_TradeCoreSuite",
+  "skipped": 0,
+  "executable": "ArmaReforgerServerDiag.exe",
+  "verified_at_utc": "2026-10-15T04:48:40Z",
+  "epf_commit": "cbf255fd8448e1c2235859797c70e1464ebe896f",
+  "version": "1.8.0.13",
+  "edf_commit": "9a92e9a3aad75704f6d35bf543563f373a731a1a",
+  "hash_normalization": "UTF-8 without BOM, CRLF normalized to LF"
+}

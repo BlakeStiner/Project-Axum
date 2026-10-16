@@ -1,0 +1,1070 @@
+// Adapted phone shell from RPPhone 0.0.58 by NewbKodii. APL; see ../NOTICE.md.
+FrameWidgetClass {
+ Name "AX_PhoneRoot"
+ {
+ FrameWidgetClass "{4E6001DE6EAF4780}" {
+ Name "AX_PhoneShell"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4781}" {
+ Anchor 1 1 1 1
+ PositionX -420
+ OffsetLeft -420
+ PositionY -800
+ OffsetTop -800
+ SizeX 380
+ OffsetRight 40
+ SizeY 760
+ OffsetBottom 40
+}
+ {
+ ImageWidgetClass "{4E6001DE6EAF4760}" {
+ Name "RPPhoneFrame"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4761}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 380
+ OffsetRight -380
+ SizeY 760
+ OffsetBottom -760
+}
+ Texture "{4E6001DE6EAF4602}ThirdParty/RPPhone/Assets/phone.edds"
+ Size 380 760
+}
+PanelWidgetClass "{4E6001DE6EAF4762}" {
+ Name "Screen"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4763}" {
+ Anchor 0 0 0 0
+ PositionX 18
+ OffsetLeft 18
+ PositionY 46
+ OffsetTop 46
+ SizeX 344
+ OffsetRight -362
+ SizeY 682
+ OffsetBottom -728
+}
+ Color 0.025 0.04 0.06 1
+ style full
+}
+TextWidgetClass "{4E6001DE6EAF4764}" {
+ Name "AX_PageTitle"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4765}" {
+ Anchor 0 0 0 0
+ PositionX 32
+ OffsetLeft 32
+ PositionY 62
+ OffsetTop 62
+ SizeX 240
+ OffsetRight -272
+ SizeY 42
+ OffsetBottom -104
+}
+ Color 0.92 0.95 0.97 1
+ Text "AXUM"
+ "Font Size" 27
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ButtonWidgetClass "{4E6001DE6EAF4766}" {
+ Name "AX_Close"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4767}" {
+ Anchor 0 0 0 0
+ PositionX 286
+ OffsetLeft 286
+ PositionY 64
+ OffsetTop 64
+ SizeX 62
+ OffsetRight -348
+ SizeY 36
+ OffsetBottom -100
+}
+ style blank
+ components {
+ SCR_ButtonTextComponent "{4E6001DE6EAF4768}" { m_sText "X" m_BackgroundDefault 0.10 0.14 0.18 1 m_BackgroundHovered 0.16 0.38 0.32 1 m_BackgroundClicked 0.18 0.50 0.38 1 }
+ }
+ {
+ FrameWidgetClass "{4E6001DE6EAF476D}" {
+ Name "Content"
+ Slot FrameWidgetSlot "{4E6001DE6EAF476E}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 62
+ OffsetRight -62
+ SizeY 36
+ OffsetBottom -36
+}
+
+ {
+PanelWidgetClass "{4E6001DE6EAF4769}" {
+ Name "Background"
+ Slot FrameWidgetSlot "{4E6001DE6EAF476A}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 62
+ OffsetRight -62
+ SizeY 36
+ OffsetBottom -36
+}
+ Color 0.10 0.14 0.18 1
+ style full
+}
+TextWidgetClass "{4E6001DE6EAF476B}" {
+ Name "Text"
+ Slot FrameWidgetSlot "{4E6001DE6EAF476C}" {
+ Anchor 0 0 0 0
+ PositionX 10
+ OffsetLeft 10
+ PositionY 0
+ OffsetTop 0
+ SizeX 42
+ OffsetRight -52
+ SizeY 36
+ OffsetBottom -36
+}
+ Color 0.92 0.95 0.97 1
+ Text "X"
+ "Font Size" 20
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ }
+}
+ }
+}
+PanelWidgetClass "{4E6001DE6EAF476F}" {
+ Name "Divider"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4770}" {
+ Anchor 0 0 0 0
+ PositionX 32
+ OffsetLeft 32
+ PositionY 111
+ OffsetTop 111
+ SizeX 316
+ OffsetRight -348
+ SizeY 2
+ OffsetBottom -113
+}
+ Color 0.14 0.43 0.33 1
+ style full
+}
+FrameWidgetClass "{4E6001DE6EAF4771}" {
+ Name "AX_HomePage"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4772}" {
+ Anchor 0 0 0 0
+ PositionX 32
+ OffsetLeft 32
+ PositionY 126
+ OffsetTop 126
+ SizeX 316
+ OffsetRight -348
+ SizeY 555
+ OffsetBottom -681
+}
+
+ {
+TextWidgetClass "{4E6001DE6EAF4700}" {
+ Name "Welcome"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4701}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 316
+ OffsetRight -316
+ SizeY 48
+ OffsetBottom -48
+}
+ Color 0.92 0.95 0.97 1
+ Text "Your county. Your connections."
+ "Font Size" 23
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ImageWidgetClass "{4E6001DE6EAF4702}" {
+ Name "TradeIcon"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4703}" {
+ Anchor 0 0 0 0
+ PositionX 8
+ OffsetLeft 8
+ PositionY 86
+ OffsetTop 86
+ SizeX 58
+ OffsetRight -66
+ SizeY 58
+ OffsetBottom -144
+}
+ Texture "{4E6001DE6EAF4603}ThirdParty/RPPhone/Assets/Msg.edds"
+ Size 58 58
+}
+ButtonWidgetClass "{4E6001DE6EAF4704}" {
+ Name "AX_DrugApp"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4705}" {
+ Anchor 0 0 0 0
+ PositionX 80
+ OffsetLeft 80
+ PositionY 90
+ OffsetTop 90
+ SizeX 236
+ OffsetRight -316
+ SizeY 52
+ OffsetBottom -142
+}
+ style blank
+ components {
+ SCR_ButtonTextComponent "{4E6001DE6EAF4706}" { m_sText "Street trade" m_BackgroundDefault 0.08 0.32 0.25 1 m_BackgroundHovered 0.16 0.38 0.32 1 m_BackgroundClicked 0.18 0.50 0.38 1 }
+ }
+ {
+ FrameWidgetClass "{4E6001DE6EAF470B}" {
+ Name "Content"
+ Slot FrameWidgetSlot "{4E6001DE6EAF470C}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 236
+ OffsetRight -236
+ SizeY 52
+ OffsetBottom -52
+}
+
+ {
+PanelWidgetClass "{4E6001DE6EAF4707}" {
+ Name "Background"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4708}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 236
+ OffsetRight -236
+ SizeY 52
+ OffsetBottom -52
+}
+ Color 0.08 0.32 0.25 1
+ style full
+}
+TextWidgetClass "{4E6001DE6EAF4709}" {
+ Name "Text"
+ Slot FrameWidgetSlot "{4E6001DE6EAF470A}" {
+ Anchor 0 0 0 0
+ PositionX 10
+ OffsetLeft 10
+ PositionY 0
+ OffsetTop 0
+ SizeX 216
+ OffsetRight -226
+ SizeY 52
+ OffsetBottom -52
+}
+ Color 0.92 0.95 0.97 1
+ Text "Street trade"
+ "Font Size" 20
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ }
+}
+ }
+}
+TextWidgetClass "{4E6001DE6EAF470D}" {
+ Name "TradeDescription"
+ Slot FrameWidgetSlot "{4E6001DE6EAF470E}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 165
+ OffsetTop 165
+ SizeX 316
+ OffsetRight -316
+ SizeY 65
+ OffsetBottom -230
+}
+ Color 0.92 0.95 0.97 1
+ Text "Contacts, offers and private meetings."
+ "Font Size" 20
+ Wrap 1
+ "Vertical Alignment" Center
+}
+TextWidgetClass "{4E6001DE6EAF470F}" {
+ Name "PreviewInfo"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4710}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 415
+ OffsetTop 415
+ SizeX 316
+ OffsetRight -316
+ SizeY 65
+ OffsetBottom -480
+}
+ Color 0.55 0.64 0.69 1
+ Text "Development preview. No goods or money are exchanged."
+ "Font Size" 17
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ }
+}
+FrameWidgetClass "{4E6001DE6EAF4773}" {
+ Name "AX_ContactsPage"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4774}" {
+ Anchor 0 0 0 0
+ PositionX 32
+ OffsetLeft 32
+ PositionY 126
+ OffsetTop 126
+ SizeX 316
+ OffsetRight -348
+ SizeY 555
+ OffsetBottom -681
+}
+ "Is Visible" 0
+ {
+TextWidgetClass "{4E6001DE6EAF4711}" {
+ Name "AX_ContactsInfo"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4712}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 316
+ OffsetRight -316
+ SizeY 70
+ OffsetBottom -70
+}
+ Color 0.92 0.95 0.97 1
+ Text "Arrange a private meeting."
+ "Font Size" 20
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ButtonWidgetClass "{4E6001DE6EAF4713}" {
+ Name "AX_Contact0"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4714}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 100
+ OffsetTop 100
+ SizeX 316
+ OffsetRight -316
+ SizeY 65
+ OffsetBottom -165
+}
+ style blank
+ components {
+ SCR_ButtonTextComponent "{4E6001DE6EAF4715}" { m_sText "Eli  /  local orders" m_BackgroundDefault 0.08 0.32 0.25 1 m_BackgroundHovered 0.16 0.38 0.32 1 m_BackgroundClicked 0.18 0.50 0.38 1 }
+ }
+ {
+ FrameWidgetClass "{4E6001DE6EAF471A}" {
+ Name "Content"
+ Slot FrameWidgetSlot "{4E6001DE6EAF471B}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 316
+ OffsetRight -316
+ SizeY 65
+ OffsetBottom -65
+}
+
+ {
+PanelWidgetClass "{4E6001DE6EAF4716}" {
+ Name "Background"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4717}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 316
+ OffsetRight -316
+ SizeY 65
+ OffsetBottom -65
+}
+ Color 0.08 0.32 0.25 1
+ style full
+}
+TextWidgetClass "{4E6001DE6EAF4718}" {
+ Name "Text"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4719}" {
+ Anchor 0 0 0 0
+ PositionX 10
+ OffsetLeft 10
+ PositionY 0
+ OffsetTop 0
+ SizeX 296
+ OffsetRight -306
+ SizeY 65
+ OffsetBottom -65
+}
+ Color 0.92 0.95 0.97 1
+ Text "Eli  /  local orders"
+ "Font Size" 20
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ }
+}
+ }
+}
+ButtonWidgetClass "{4E6001DE6EAF471C}" {
+ Name "AX_Contact1"
+ Slot FrameWidgetSlot "{4E6001DE6EAF471D}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 185
+ OffsetTop 185
+ SizeX 316
+ OffsetRight -316
+ SizeY 65
+ OffsetBottom -250
+}
+ style blank
+ components {
+ SCR_ButtonTextComponent "{4E6001DE6EAF471E}" { m_sText "Morgan  /  larger orders" m_BackgroundDefault 0.10 0.14 0.18 1 m_BackgroundHovered 0.16 0.38 0.32 1 m_BackgroundClicked 0.18 0.50 0.38 1 }
+ }
+ {
+ FrameWidgetClass "{4E6001DE6EAF4723}" {
+ Name "Content"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4724}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 316
+ OffsetRight -316
+ SizeY 65
+ OffsetBottom -65
+}
+
+ {
+PanelWidgetClass "{4E6001DE6EAF471F}" {
+ Name "Background"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4720}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 316
+ OffsetRight -316
+ SizeY 65
+ OffsetBottom -65
+}
+ Color 0.10 0.14 0.18 1
+ style full
+}
+TextWidgetClass "{4E6001DE6EAF4721}" {
+ Name "Text"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4722}" {
+ Anchor 0 0 0 0
+ PositionX 10
+ OffsetLeft 10
+ PositionY 0
+ OffsetTop 0
+ SizeX 296
+ OffsetRight -306
+ SizeY 65
+ OffsetBottom -65
+}
+ Color 0.92 0.95 0.97 1
+ Text "Morgan  /  larger orders"
+ "Font Size" 20
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ }
+}
+ }
+}
+TextWidgetClass "{4E6001DE6EAF4725}" {
+ Name "ContactHelp"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4726}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 300
+ OffsetTop 300
+ SizeX 316
+ OffsetRight -316
+ SizeY 80
+ OffsetBottom -380
+}
+ Color 0.92 0.95 0.97 1
+ Text "Choose a contact to start a conversation."
+ "Font Size" 20
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ }
+}
+FrameWidgetClass "{4E6001DE6EAF4775}" {
+ Name "AX_ThreadPage"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4776}" {
+ Anchor 0 0 0 0
+ PositionX 32
+ OffsetLeft 32
+ PositionY 119
+ OffsetTop 119
+ SizeX 316
+ OffsetRight -348
+ SizeY 560
+ OffsetBottom -679
+}
+ "Is Visible" 0
+ {
+ScrollLayoutWidgetClass "{4E6001DE6EAF4727}" {
+ Name "AX_Scroll"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4728}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 316
+ OffsetRight -316
+ SizeY 230
+ OffsetBottom -230
+}
+ {
+ TextWidgetClass "{4E6001DE6EAF4729}" {
+ Name "AX_Conversation"
+ Slot AlignableSlot "{4E6001DE6EAF472A}" { HorizontalAlign 3 VerticalAlign 0 }
+ Text ""
+ "Font Size" 18
+ Wrap 1
+ }
+ }
+}
+ButtonWidgetClass "{4E6001DE6EAF472B}" {
+ Name "AX_Minus"
+ Slot FrameWidgetSlot "{4E6001DE6EAF472C}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 240
+ OffsetTop 240
+ SizeX 50
+ OffsetRight -50
+ SizeY 40
+ OffsetBottom -280
+}
+ style blank
+ components {
+ SCR_ButtonTextComponent "{4E6001DE6EAF472D}" { m_sText "-" m_BackgroundDefault 0.10 0.14 0.18 1 m_BackgroundHovered 0.16 0.38 0.32 1 m_BackgroundClicked 0.18 0.50 0.38 1 }
+ }
+ {
+ FrameWidgetClass "{4E6001DE6EAF4732}" {
+ Name "Content"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4733}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 50
+ OffsetRight -50
+ SizeY 40
+ OffsetBottom -40
+}
+
+ {
+PanelWidgetClass "{4E6001DE6EAF472E}" {
+ Name "Background"
+ Slot FrameWidgetSlot "{4E6001DE6EAF472F}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 50
+ OffsetRight -50
+ SizeY 40
+ OffsetBottom -40
+}
+ Color 0.10 0.14 0.18 1
+ style full
+}
+TextWidgetClass "{4E6001DE6EAF4730}" {
+ Name "Text"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4731}" {
+ Anchor 0 0 0 0
+ PositionX 10
+ OffsetLeft 10
+ PositionY 0
+ OffsetTop 0
+ SizeX 30
+ OffsetRight -40
+ SizeY 40
+ OffsetBottom -40
+}
+ Color 0.92 0.95 0.97 1
+ Text "-"
+ "Font Size" 20
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ }
+}
+ }
+}
+TextWidgetClass "{4E6001DE6EAF4734}" {
+ Name "AX_Quantity"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4735}" {
+ Anchor 0 0 0 0
+ PositionX 60
+ OffsetLeft 60
+ PositionY 240
+ OffsetTop 240
+ SizeX 196
+ OffsetRight -256
+ SizeY 40
+ OffsetBottom -280
+}
+ Color 0.92 0.95 0.97 1
+ Text "1 packages"
+ "Font Size" 21
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ButtonWidgetClass "{4E6001DE6EAF4736}" {
+ Name "AX_Plus"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4737}" {
+ Anchor 0 0 0 0
+ PositionX 266
+ OffsetLeft 266
+ PositionY 240
+ OffsetTop 240
+ SizeX 50
+ OffsetRight -316
+ SizeY 40
+ OffsetBottom -280
+}
+ style blank
+ components {
+ SCR_ButtonTextComponent "{4E6001DE6EAF4738}" { m_sText "+" m_BackgroundDefault 0.10 0.14 0.18 1 m_BackgroundHovered 0.16 0.38 0.32 1 m_BackgroundClicked 0.18 0.50 0.38 1 }
+ }
+ {
+ FrameWidgetClass "{4E6001DE6EAF473D}" {
+ Name "Content"
+ Slot FrameWidgetSlot "{4E6001DE6EAF473E}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 50
+ OffsetRight -50
+ SizeY 40
+ OffsetBottom -40
+}
+
+ {
+PanelWidgetClass "{4E6001DE6EAF4739}" {
+ Name "Background"
+ Slot FrameWidgetSlot "{4E6001DE6EAF473A}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 50
+ OffsetRight -50
+ SizeY 40
+ OffsetBottom -40
+}
+ Color 0.10 0.14 0.18 1
+ style full
+}
+TextWidgetClass "{4E6001DE6EAF473B}" {
+ Name "Text"
+ Slot FrameWidgetSlot "{4E6001DE6EAF473C}" {
+ Anchor 0 0 0 0
+ PositionX 10
+ OffsetLeft 10
+ PositionY 0
+ OffsetTop 0
+ SizeX 30
+ OffsetRight -40
+ SizeY 40
+ OffsetBottom -40
+}
+ Color 0.92 0.95 0.97 1
+ Text "+"
+ "Font Size" 20
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ }
+}
+ }
+}
+TextWidgetClass "{4E6001DE6EAF473F}" {
+ Name "AX_Price"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4740}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 283
+ OffsetTop 283
+ SizeX 316
+ OffsetRight -316
+ SizeY 30
+ OffsetBottom -313
+}
+ Color 0.55 0.79 0.70 1
+ Text "$100 per package"
+ "Font Size" 17
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ButtonWidgetClass "{4E6001DE6EAF4741}" {
+ Name "AX_Request"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4742}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 320
+ OffsetTop 320
+ SizeX 154
+ OffsetRight -154
+ SizeY 44
+ OffsetBottom -364
+}
+ style blank
+ components {
+ SCR_ButtonTextComponent "{4E6001DE6EAF4743}" { m_sText "Request offer" m_BackgroundDefault 0.08 0.32 0.25 1 m_BackgroundHovered 0.16 0.38 0.32 1 m_BackgroundClicked 0.18 0.50 0.38 1 }
+ }
+ {
+ FrameWidgetClass "{4E6001DE6EAF4748}" {
+ Name "Content"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4749}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 154
+ OffsetRight -154
+ SizeY 44
+ OffsetBottom -44
+}
+
+ {
+PanelWidgetClass "{4E6001DE6EAF4744}" {
+ Name "Background"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4745}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 154
+ OffsetRight -154
+ SizeY 44
+ OffsetBottom -44
+}
+ Color 0.08 0.32 0.25 1
+ style full
+}
+TextWidgetClass "{4E6001DE6EAF4746}" {
+ Name "Text"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4747}" {
+ Anchor 0 0 0 0
+ PositionX 10
+ OffsetLeft 10
+ PositionY 0
+ OffsetTop 0
+ SizeX 134
+ OffsetRight -144
+ SizeY 44
+ OffsetBottom -44
+}
+ Color 0.92 0.95 0.97 1
+ Text "Request offer"
+ "Font Size" 20
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ }
+}
+ }
+}
+ButtonWidgetClass "{4E6001DE6EAF474A}" {
+ Name "AX_Accept"
+ Slot FrameWidgetSlot "{4E6001DE6EAF474B}" {
+ Anchor 0 0 0 0
+ PositionX 162
+ OffsetLeft 162
+ PositionY 320
+ OffsetTop 320
+ SizeX 154
+ OffsetRight -316
+ SizeY 44
+ OffsetBottom -364
+}
+ style blank
+ components {
+ SCR_ButtonTextComponent "{4E6001DE6EAF474C}" { m_sText "Accept meeting" m_BackgroundDefault 0.08 0.32 0.25 1 m_BackgroundHovered 0.16 0.38 0.32 1 m_BackgroundClicked 0.18 0.50 0.38 1 }
+ }
+ {
+ FrameWidgetClass "{4E6001DE6EAF4751}" {
+ Name "Content"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4752}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 154
+ OffsetRight -154
+ SizeY 44
+ OffsetBottom -44
+}
+
+ {
+PanelWidgetClass "{4E6001DE6EAF474D}" {
+ Name "Background"
+ Slot FrameWidgetSlot "{4E6001DE6EAF474E}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 154
+ OffsetRight -154
+ SizeY 44
+ OffsetBottom -44
+}
+ Color 0.08 0.32 0.25 1
+ style full
+}
+TextWidgetClass "{4E6001DE6EAF474F}" {
+ Name "Text"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4750}" {
+ Anchor 0 0 0 0
+ PositionX 10
+ OffsetLeft 10
+ PositionY 0
+ OffsetTop 0
+ SizeX 134
+ OffsetRight -144
+ SizeY 44
+ OffsetBottom -44
+}
+ Color 0.92 0.95 0.97 1
+ Text "Accept meeting"
+ "Font Size" 20
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ }
+}
+ }
+}
+TextWidgetClass "{4E6001DE6EAF4753}" {
+ Name "AX_Notice"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4754}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 369
+ OffsetTop 369
+ SizeX 316
+ OffsetRight -316
+ SizeY 50
+ OffsetBottom -419
+}
+ Color 0.65 0.80 0.91 1
+ Text ""
+ "Font Size" 17
+ Wrap 1
+ "Vertical Alignment" Center
+}
+TextWidgetClass "{4E6001DE6EAF4755}" {
+ Name "AX_Meeting"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4756}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 423
+ OffsetTop 423
+ SizeX 316
+ OffsetRight -316
+ SizeY 85
+ OffsetBottom -508
+}
+ Color 0.92 0.95 0.97 1
+ Text "No active meeting."
+ "Font Size" 17
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ButtonWidgetClass "{4E6001DE6EAF4757}" {
+ Name "AX_Cancel"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4758}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 515
+ OffsetTop 515
+ SizeX 316
+ OffsetRight -316
+ SizeY 40
+ OffsetBottom -555
+}
+ style blank
+ components {
+ SCR_ButtonTextComponent "{4E6001DE6EAF4759}" { m_sText "Cancel meeting" m_BackgroundDefault 0.10 0.14 0.18 1 m_BackgroundHovered 0.16 0.38 0.32 1 m_BackgroundClicked 0.18 0.50 0.38 1 }
+ }
+ {
+ FrameWidgetClass "{4E6001DE6EAF475E}" {
+ Name "Content"
+ Slot FrameWidgetSlot "{4E6001DE6EAF475F}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 316
+ OffsetRight -316
+ SizeY 40
+ OffsetBottom -40
+}
+
+ {
+PanelWidgetClass "{4E6001DE6EAF475A}" {
+ Name "Background"
+ Slot FrameWidgetSlot "{4E6001DE6EAF475B}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 316
+ OffsetRight -316
+ SizeY 40
+ OffsetBottom -40
+}
+ Color 0.10 0.14 0.18 1
+ style full
+}
+TextWidgetClass "{4E6001DE6EAF475C}" {
+ Name "Text"
+ Slot FrameWidgetSlot "{4E6001DE6EAF475D}" {
+ Anchor 0 0 0 0
+ PositionX 10
+ OffsetLeft 10
+ PositionY 0
+ OffsetTop 0
+ SizeX 296
+ OffsetRight -306
+ SizeY 40
+ OffsetBottom -40
+}
+ Color 0.92 0.95 0.97 1
+ Text "Cancel meeting"
+ "Font Size" 20
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ }
+}
+ }
+}
+ }
+}
+ButtonWidgetClass "{4E6001DE6EAF4777}" {
+ Name "AX_Home"
+ Slot FrameWidgetSlot "{4E6001DE6EAF4778}" {
+ Anchor 0 0 0 0
+ PositionX 32
+ OffsetLeft 32
+ PositionY 689
+ OffsetTop 689
+ SizeX 316
+ OffsetRight -348
+ SizeY 38
+ OffsetBottom -727
+}
+ style blank
+ components {
+ SCR_ButtonTextComponent "{4E6001DE6EAF4779}" { m_sText "Home" m_BackgroundDefault 0.10 0.14 0.18 1 m_BackgroundHovered 0.16 0.38 0.32 1 m_BackgroundClicked 0.18 0.50 0.38 1 }
+ }
+ {
+ FrameWidgetClass "{4E6001DE6EAF477E}" {
+ Name "Content"
+ Slot FrameWidgetSlot "{4E6001DE6EAF477F}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 316
+ OffsetRight -316
+ SizeY 38
+ OffsetBottom -38
+}
+
+ {
+PanelWidgetClass "{4E6001DE6EAF477A}" {
+ Name "Background"
+ Slot FrameWidgetSlot "{4E6001DE6EAF477B}" {
+ Anchor 0 0 0 0
+ PositionX 0
+ OffsetLeft 0
+ PositionY 0
+ OffsetTop 0
+ SizeX 316
+ OffsetRight -316
+ SizeY 38
+ OffsetBottom -38
+}
+ Color 0.10 0.14 0.18 1
+ style full
+}
+TextWidgetClass "{4E6001DE6EAF477C}" {
+ Name "Text"
+ Slot FrameWidgetSlot "{4E6001DE6EAF477D}" {
+ Anchor 0 0 0 0
+ PositionX 10
+ OffsetLeft 10
+ PositionY 0
+ OffsetTop 0
+ SizeX 296
+ OffsetRight -306
+ SizeY 38
+ OffsetBottom -38
+}
+ Color 0.92 0.95 0.97 1
+ Text "Home"
+ "Font Size" 20
+ Wrap 1
+ "Vertical Alignment" Center
+}
+ }
+}
+ }
+}
+ }
+ }
+ }
+}

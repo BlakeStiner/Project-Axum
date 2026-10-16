@@ -1,0 +1,507 @@
+[
+  {
+    "name": "EnfusionPersistenceFramework",
+    "id": "5D6EBC81EB1842EF",
+    "version": "0.6.18",
+    "archive_sha256": "b5e1b521b59dc2581eaae302437b71b1216c91c2f8b645337d83ed8f0a068b40",
+    "normalized_comparison": "UTF-8, BOM removed, CRLF normalized to LF; no other whitespace changes",
+    "pinned_script_count": 64,
+    "packaged_script_count": 64,
+    "same": 64,
+    "changed": [],
+    "added": [],
+    "removed": [],
+    "manifest": [
+      {
+        "path": "Scripts/Game/Components/EPF_BaseInventoryStorageComponentSaveData.c",
+        "normalized_sha256": "926b703b9e46ce8517892b364d1554691a2600cd40435b9f5078d2c7e6926330",
+        "pinned_normalized_sha256": "926b703b9e46ce8517892b364d1554691a2600cd40435b9f5078d2c7e6926330"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_BaseLightManagerComponentSaveData.c",
+        "normalized_sha256": "ddd4bac81a7f4a39c2a4b76e78728d3e99c4c9c06b89c184e5bddb771d25040c",
+        "pinned_normalized_sha256": "ddd4bac81a7f4a39c2a4b76e78728d3e99c4c9c06b89c184e5bddb771d25040c"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_BaseMagazineComponentSaveData.c",
+        "normalized_sha256": "e453f59438ca4685f9738fe7fab5819fd2a76933433d99c104627ab35ead306b",
+        "pinned_normalized_sha256": "e453f59438ca4685f9738fe7fab5819fd2a76933433d99c104627ab35ead306b"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_BaseMuzzleComponentSaveData.c",
+        "normalized_sha256": "67849a41c3894e97a4830ae0341c8d0d67b6c0f850149f5423949df3b7433cfb",
+        "pinned_normalized_sha256": "67849a41c3894e97a4830ae0341c8d0d67b6c0f850149f5423949df3b7433cfb"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_BaseSlotComponentSaveData.c",
+        "normalized_sha256": "323c3c882a4fae5cbbb50e3fdef0bbe21cf9e9c35f90c81a6ca4ddc6d6f904c1",
+        "pinned_normalized_sha256": "323c3c882a4fae5cbbb50e3fdef0bbe21cf9e9c35f90c81a6ca4ddc6d6f904c1"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_CompartmentAccessComponentSaveData.c",
+        "normalized_sha256": "13c21412ecfd1249bf741798fd3623d1f22c2a0fb8b875d7596201780763c64c",
+        "pinned_normalized_sha256": "13c21412ecfd1249bf741798fd3623d1f22c2a0fb8b875d7596201780763c64c"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_FuelManagerComponentSaveData.c",
+        "normalized_sha256": "168bc69f94d9b96127d6cefb63b80ef76d507444d23adf703d6e49b0b9b0d59d",
+        "pinned_normalized_sha256": "168bc69f94d9b96127d6cefb63b80ef76d507444d23adf703d6e49b0b9b0d59d"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_HitZoneContainerComponentSaveData.c",
+        "normalized_sha256": "9672c6113eb1c7b5b1a5c4d38d4230c8b2e97fdd09920c737b4d748e5e9cc4c3",
+        "pinned_normalized_sha256": "9672c6113eb1c7b5b1a5c4d38d4230c8b2e97fdd09920c737b4d748e5e9cc4c3"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_MuzzleComponentSaveData.c",
+        "normalized_sha256": "9af2e9d837e362bf88ac8a6f5c4462e416fc9a52e44a64de37258817a20d2bf9",
+        "pinned_normalized_sha256": "9af2e9d837e362bf88ac8a6f5c4462e416fc9a52e44a64de37258817a20d2bf9"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_MuzzleInMagComponentSaveDatae.c",
+        "normalized_sha256": "11b769a56ff8e61f70d1c14e9970f66d92c57338f717ec73e8f576c71b595422",
+        "pinned_normalized_sha256": "11b769a56ff8e61f70d1c14e9970f66d92c57338f717ec73e8f576c71b595422"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_SlotManagerComponentSaveData.c",
+        "normalized_sha256": "49d2a847118d7404bc9f000b237e36689482e24876e2aa54e8056ec615b7673c",
+        "pinned_normalized_sha256": "49d2a847118d7404bc9f000b237e36689482e24876e2aa54e8056ec615b7673c"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_TurretControllerComponentSaveData.c",
+        "normalized_sha256": "d0495949af0a973a34949ae69f3fb842e1705358c0e1100c5b8f5351b784c217",
+        "pinned_normalized_sha256": "d0495949af0a973a34949ae69f3fb842e1705358c0e1100c5b8f5351b784c217"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_VehicleControllerSaveData.c",
+        "normalized_sha256": "e03690d127a6dc58e754700d0e0060f21db90cdc2b8e03e029d41c14d4b7d254",
+        "pinned_normalized_sha256": "e03690d127a6dc58e754700d0e0060f21db90cdc2b8e03e029d41c14d4b7d254"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_WeaponAttachmentsStorageComponentSaveData.c",
+        "normalized_sha256": "1ffded6f3fd180c13e3ba6a42724e07ce6b1e5b757a723d93f41591af1bd954d",
+        "pinned_normalized_sha256": "1ffded6f3fd180c13e3ba6a42724e07ce6b1e5b757a723d93f41591af1bd954d"
+      },
+      {
+        "path": "Scripts/Game/Components/EPF_WeaponSlotComponentSaveData.c",
+        "normalized_sha256": "914fb067f544677e84b1934443851520a780028f9c6ee5c588f26a7117f294b3",
+        "pinned_normalized_sha256": "914fb067f544677e84b1934443851520a780028f9c6ee5c588f26a7117f294b3"
+      },
+      {
+        "path": "Scripts/Game/DoorManager/EPF_PersistentDoorStateFilter.c",
+        "normalized_sha256": "84dece574d7e49c4d4c601b6fbbbed70147a02cc8ba6ca18b40c38400d4211ed",
+        "pinned_normalized_sha256": "84dece574d7e49c4d4c601b6fbbbed70147a02cc8ba6ca18b40c38400d4211ed"
+      },
+      {
+        "path": "Scripts/Game/DoorManager/EPF_PersistentDoorStateManager.c",
+        "normalized_sha256": "0883e5aee619d49fc47ca4b18bb32a0c843951b637557b02c4efd217247794f7",
+        "pinned_normalized_sha256": "0883e5aee619d49fc47ca4b18bb32a0c843951b637557b02c4efd217247794f7"
+      },
+      {
+        "path": "Scripts/Game/DoorManager/EPF_PersistentDoorStateManagerComponent.c",
+        "normalized_sha256": "9781a06b5dfbc79df0b8feda6be64259386453c813579b4f62ff1fc8061546d0",
+        "pinned_normalized_sha256": "9781a06b5dfbc79df0b8feda6be64259386453c813579b4f62ff1fc8061546d0"
+      },
+      {
+        "path": "Scripts/Game/DoorManager/EPF_PersistentDoorStateManagerSaveData.c",
+        "normalized_sha256": "8b64b9b8717c4b834c1a7a42e6c34f608e6e69339103d1e7bc42f66e960cb209",
+        "pinned_normalized_sha256": "8b64b9b8717c4b834c1a7a42e6c34f608e6e69339103d1e7bc42f66e960cb209"
+      },
+      {
+        "path": "Scripts/Game/DoorManager/SCR_DoorUserAction.c",
+        "normalized_sha256": "6ddcb619ad49ba0d5b527adf05483079f6767002133956ae49963484b85bf02f",
+        "pinned_normalized_sha256": "6ddcb619ad49ba0d5b527adf05483079f6767002133956ae49963484b85bf02f"
+      },
+      {
+        "path": "Scripts/Game/Entities/Character/EPF_CharacterControllerComponentSaveData.c",
+        "normalized_sha256": "be2e4708ea2ac977e639a35aae4c099df3c97bd0563b39f81fa7d9f7b3a68147",
+        "pinned_normalized_sha256": "be2e4708ea2ac977e639a35aae4c099df3c97bd0563b39f81fa7d9f7b3a68147"
+      },
+      {
+        "path": "Scripts/Game/Entities/Character/EPF_CharacterInventoryStorageComponentSaveData.c",
+        "normalized_sha256": "916a3f3183777a167c6b643dcc2db389dff02d2266272992586c61b0b88384a3",
+        "pinned_normalized_sha256": "916a3f3183777a167c6b643dcc2db389dff02d2266272992586c61b0b88384a3"
+      },
+      {
+        "path": "Scripts/Game/Entities/Character/EPF_CharacterSaveData.c",
+        "normalized_sha256": "b1ffe8d489cf1aeff7051f3c5e91e4ec5268bba5e285a27aee940eb2875d2caa",
+        "pinned_normalized_sha256": "b1ffe8d489cf1aeff7051f3c5e91e4ec5268bba5e285a27aee940eb2875d2caa"
+      },
+      {
+        "path": "Scripts/Game/Entities/Character/SCR_CharacterInventoryStorageComponent.c",
+        "normalized_sha256": "74e054a2cc48a32a3c856b5242c8ee46c400670214440c8fc54d34c152871bbd",
+        "pinned_normalized_sha256": "74e054a2cc48a32a3c856b5242c8ee46c400670214440c8fc54d34c152871bbd"
+      },
+      {
+        "path": "Scripts/Game/Entities/EPF_ItemSaveData.c",
+        "normalized_sha256": "77cfc4d4a0caa9bbfedd21237cb5d0f69286425448e033afefc83fab95d419eb",
+        "pinned_normalized_sha256": "77cfc4d4a0caa9bbfedd21237cb5d0f69286425448e033afefc83fab95d419eb"
+      },
+      {
+        "path": "Scripts/Game/Entities/EPF_TimeAndWeatherSaveData.c",
+        "normalized_sha256": "c5ad5ae3316063237435b203641ac24e3b51ad9da33fa288cb171f329e15f6f7",
+        "pinned_normalized_sha256": "c5ad5ae3316063237435b203641ac24e3b51ad9da33fa288cb171f329e15f6f7"
+      },
+      {
+        "path": "Scripts/Game/Entities/EPF_TurretSaveData.c",
+        "normalized_sha256": "145757b69fbc448739d03a9b15dae5110ced6f802d614e0c9d11d0c2dedd03da",
+        "pinned_normalized_sha256": "145757b69fbc448739d03a9b15dae5110ced6f802d614e0c9d11d0c2dedd03da"
+      },
+      {
+        "path": "Scripts/Game/Entities/EPF_VehicleSaveData.c",
+        "normalized_sha256": "8dc4fa04ea915a3053e9acb4c253911a572184a73e58846344a683b7ff42aafa",
+        "pinned_normalized_sha256": "8dc4fa04ea915a3053e9acb4c253911a572184a73e58846344a683b7ff42aafa"
+      },
+      {
+        "path": "Scripts/Game/EPF_BaseSceneNameProxyEntity.c",
+        "normalized_sha256": "317f297d929d1e5e78c2cfe4f651f2e61423df7a3c2f82e9fec654df48b944aa",
+        "pinned_normalized_sha256": "317f297d929d1e5e78c2cfe4f651f2e61423df7a3c2f82e9fec654df48b944aa"
+      },
+      {
+        "path": "Scripts/Game/EPF_BitFlags.c",
+        "normalized_sha256": "3a859d079376d36f97a1dc5eb10e454b6a93995df08cfa9cccb37972a41c2560",
+        "pinned_normalized_sha256": "3a859d079376d36f97a1dc5eb10e454b6a93995df08cfa9cccb37972a41c2560"
+      },
+      {
+        "path": "Scripts/Game/EPF_Component.c",
+        "normalized_sha256": "a46bc0d87a5c6fe90b148a8a9a3b0187d5c56280cea4fa51a54d6e438df9659e",
+        "pinned_normalized_sha256": "a46bc0d87a5c6fe90b148a8a9a3b0187d5c56280cea4fa51a54d6e438df9659e"
+      },
+      {
+        "path": "Scripts/Game/EPF_ComponentData.c",
+        "normalized_sha256": "dc4e21cc7a897ddaa520827b8a752757fd1b5bcf30c0dd67fb0ed315c9d96db7",
+        "pinned_normalized_sha256": "dc4e21cc7a897ddaa520827b8a752757fd1b5bcf30c0dd67fb0ed315c9d96db7"
+      },
+      {
+        "path": "Scripts/Game/EPF_ComponentSaveData.c",
+        "normalized_sha256": "31e6cf2f5d617b877ca27eaf4274938b334c8274ed9020ee9cf977f373cf3346",
+        "pinned_normalized_sha256": "31e6cf2f5d617b877ca27eaf4274938b334c8274ed9020ee9cf977f373cf3346"
+      },
+      {
+        "path": "Scripts/Game/EPF_Const.c",
+        "normalized_sha256": "466d950debc07f9bf095fc248c9b387b44abd25785615c08247522a6d029d788",
+        "pinned_normalized_sha256": "466d950debc07f9bf095fc248c9b387b44abd25785615c08247522a6d029d788"
+      },
+      {
+        "path": "Scripts/Game/EPF_DbFind.c",
+        "normalized_sha256": "1d3fc6835bd5d33fdd46ce05bf37767176f2b396aa9901a286920f16470e5931",
+        "pinned_normalized_sha256": "1d3fc6835bd5d33fdd46ce05bf37767176f2b396aa9901a286920f16470e5931"
+      },
+      {
+        "path": "Scripts/Game/EPF_DeferredApplyResult.c",
+        "normalized_sha256": "49b65b364b617a5e715355f923a9c6f429363d30a62f17da3a0690b1d02a3449",
+        "pinned_normalized_sha256": "49b65b364b617a5e715355f923a9c6f429363d30a62f17da3a0690b1d02a3449"
+      },
+      {
+        "path": "Scripts/Game/EPF_EApplyResult.c",
+        "normalized_sha256": "69f66472ff0a672e12fcef34e5e11090d64d04e50f88bbbf812a8b53fc9ca7b8",
+        "pinned_normalized_sha256": "69f66472ff0a672e12fcef34e5e11090d64d04e50f88bbbf812a8b53fc9ca7b8"
+      },
+      {
+        "path": "Scripts/Game/EPF_EntitySaveData.c",
+        "normalized_sha256": "b8b247a863c6b3251d036e65a5057708348a869910ef5c29d1200ca89930e967",
+        "pinned_normalized_sha256": "b8b247a863c6b3251d036e65a5057708348a869910ef5c29d1200ca89930e967"
+      },
+      {
+        "path": "Scripts/Game/EPF_EntitySlotPrefabInfo.c",
+        "normalized_sha256": "a9f0c9f7889669cf0edb960b151306eaacde3c26c398902ef86221249b3e57d8",
+        "pinned_normalized_sha256": "a9f0c9f7889669cf0edb960b151306eaacde3c26c398902ef86221249b3e57d8"
+      },
+      {
+        "path": "Scripts/Game/EPF_EPersistenceFlags.c",
+        "normalized_sha256": "926d0d33489d1dc12420adf07a14d430526f1bee800caa955e94b1ef3213b599",
+        "pinned_normalized_sha256": "926d0d33489d1dc12420adf07a14d430526f1bee800caa955e94b1ef3213b599"
+      },
+      {
+        "path": "Scripts/Game/EPF_EReadResult.c",
+        "normalized_sha256": "f8ed96a7c0ae2e966e96951aea7b0bff7d2c854521b6d61651944ada024a31cf",
+        "pinned_normalized_sha256": "f8ed96a7c0ae2e966e96951aea7b0bff7d2c854521b6d61651944ada024a31cf"
+      },
+      {
+        "path": "Scripts/Game/EPF_ESaveType.c",
+        "normalized_sha256": "14071238c2bc544dfeb7a070e1a93eea475c4466bda0e02c7fc3440460c91650",
+        "pinned_normalized_sha256": "14071238c2bc544dfeb7a070e1a93eea475c4466bda0e02c7fc3440460c91650"
+      },
+      {
+        "path": "Scripts/Game/EPF_GlobalInventoryStorageManager.c",
+        "normalized_sha256": "818721a17306a9b25a5ad0ecff63e5b47999854864e43571da65e29da5199c24",
+        "pinned_normalized_sha256": "818721a17306a9b25a5ad0ecff63e5b47999854864e43571da65e29da5199c24"
+      },
+      {
+        "path": "Scripts/Game/EPF_MetaDataDbEntity.c",
+        "normalized_sha256": "cc622d02b1997fd3cf7799f1e9dcea998a56a9ca37a66b7a79da28b3ae5bd4e9",
+        "pinned_normalized_sha256": "cc622d02b1997fd3cf7799f1e9dcea998a56a9ca37a66b7a79da28b3ae5bd4e9"
+      },
+      {
+        "path": "Scripts/Game/EPF_NetworkUtils.c",
+        "normalized_sha256": "677df72b750118c122cc868b1b73b22f6442b1b2162fd56b0f80df0477a6e4d2",
+        "pinned_normalized_sha256": "677df72b750118c122cc868b1b73b22f6442b1b2162fd56b0f80df0477a6e4d2"
+      },
+      {
+        "path": "Scripts/Game/EPF_PersistenceComponent.c",
+        "normalized_sha256": "64eef93ce6e7aefa50b11fdd9a6efafb225f02711289521002df3d061cf57edc",
+        "pinned_normalized_sha256": "64eef93ce6e7aefa50b11fdd9a6efafb225f02711289521002df3d061cf57edc"
+      },
+      {
+        "path": "Scripts/Game/EPF_PersistenceIdGenerator.c",
+        "normalized_sha256": "be5ed49f4e3b66a6aab7edfebb040f0b1e061a2d1ef0b0af4beef2d1c9b702e6",
+        "pinned_normalized_sha256": "be5ed49f4e3b66a6aab7edfebb040f0b1e061a2d1ef0b0af4beef2d1c9b702e6"
+      },
+      {
+        "path": "Scripts/Game/EPF_PersistenceManager.c",
+        "normalized_sha256": "939c528a72ed3dfa66a8a22ccdd0777ec9fd45dda547a6d01d9aec55020d1d7f",
+        "pinned_normalized_sha256": "939c528a72ed3dfa66a8a22ccdd0777ec9fd45dda547a6d01d9aec55020d1d7f"
+      },
+      {
+        "path": "Scripts/Game/EPF_PersistenceManagerComponent.c",
+        "normalized_sha256": "5b2fdd8a1701a3ed4561ad7e5c550e7c4ec864860c72d5bdfa63b6b1335ade80",
+        "pinned_normalized_sha256": "5b2fdd8a1701a3ed4561ad7e5c550e7c4ec864860c72d5bdfa63b6b1335ade80"
+      },
+      {
+        "path": "Scripts/Game/EPF_PersistenceManagerExtensionBaseComponent.c",
+        "normalized_sha256": "e3b76113e568c947b7b2027de6efcd40a3b59e14faa221f7265420b80ba17629",
+        "pinned_normalized_sha256": "e3b76113e568c947b7b2027de6efcd40a3b59e14faa221f7265420b80ba17629"
+      },
+      {
+        "path": "Scripts/Game/EPF_PersistenceRepository.c",
+        "normalized_sha256": "2cbbf12f80cd8585c86f0a894dfbb37b428cfed5b7a69c1e30312d43df7c7055",
+        "pinned_normalized_sha256": "2cbbf12f80cd8585c86f0a894dfbb37b428cfed5b7a69c1e30312d43df7c7055"
+      },
+      {
+        "path": "Scripts/Game/EPF_PersistentRootEntityCollection.c",
+        "normalized_sha256": "464c99c9b82281f57cf28e7175cb98b3661decf4dc63d75793ed14c80a03611c",
+        "pinned_normalized_sha256": "464c99c9b82281f57cf28e7175cb98b3661decf4dc63d75793ed14c80a03611c"
+      },
+      {
+        "path": "Scripts/Game/EPF_PersistentScriptedState.c",
+        "normalized_sha256": "0f558464d79d8bd9933b4a472160e4b06e34fc503d7d237004387e0b0f479583",
+        "pinned_normalized_sha256": "0f558464d79d8bd9933b4a472160e4b06e34fc503d7d237004387e0b0f479583"
+      },
+      {
+        "path": "Scripts/Game/EPF_PersistentScriptedStateLoader.c",
+        "normalized_sha256": "ea84f6f441268c57c023f52d23258afa110a89bec28ab2a7553ed964d8372a8a",
+        "pinned_normalized_sha256": "ea84f6f441268c57c023f52d23258afa110a89bec28ab2a7553ed964d8372a8a"
+      },
+      {
+        "path": "Scripts/Game/EPF_PersistentWorldEntityLoader.c",
+        "normalized_sha256": "4f05820eaad59fdc7d771f683d32d96f9cd7ef5d01d2fbbea47352ed7b8a8cc4",
+        "pinned_normalized_sha256": "4f05820eaad59fdc7d771f683d32d96f9cd7ef5d01d2fbbea47352ed7b8a8cc4"
+      },
+      {
+        "path": "Scripts/Game/EPF_SavaDataUtils.c",
+        "normalized_sha256": "0772aed826c73b46232442f6d499c7cc95a4273a84a453a42c8b5b46ddd3008c",
+        "pinned_normalized_sha256": "0772aed826c73b46232442f6d499c7cc95a4273a84a453a42c8b5b46ddd3008c"
+      },
+      {
+        "path": "Scripts/Game/EPF_StorageChangeDetection.c",
+        "normalized_sha256": "dab2a076ac620b7674326a5c8328ecfb2a576d9e9b145bc18a48158195780542",
+        "pinned_normalized_sha256": "dab2a076ac620b7674326a5c8328ecfb2a576d9e9b145bc18a48158195780542"
+      },
+      {
+        "path": "Scripts/Game/EPF_TriggerSaveAction.c",
+        "normalized_sha256": "1a0bf98ded1bc8f63cbe89e02b63ffb6c7bdcc57de176f06949edb4f26c1bf8b",
+        "pinned_normalized_sha256": "1a0bf98ded1bc8f63cbe89e02b63ffb6c7bdcc57de176f06949edb4f26c1bf8b"
+      },
+      {
+        "path": "Scripts/Game/EPF_Utils.c",
+        "normalized_sha256": "c2691bf34c8e826e76d94f249976d3b8d405dbfd60094a6dd6313c05efa0e2ca",
+        "pinned_normalized_sha256": "c2691bf34c8e826e76d94f249976d3b8d405dbfd60094a6dd6313c05efa0e2ca"
+      },
+      {
+        "path": "Scripts/Game/EPF_WorldUtils.c",
+        "normalized_sha256": "83571d2977bed43a11054e49e27f8534c5f0cabb1635b5a1191c1a87a8779f73",
+        "pinned_normalized_sha256": "83571d2977bed43a11054e49e27f8534c5f0cabb1635b5a1191c1a87a8779f73"
+      },
+      {
+        "path": "Scripts/Game/RespawnSystem/EPF_BaseSpawnLogic.c",
+        "normalized_sha256": "5790f14f63f78ebe3e6c1ec2a5d115aa1ad0b76f1b74d59509acdb1fa0335846",
+        "pinned_normalized_sha256": "5790f14f63f78ebe3e6c1ec2a5d115aa1ad0b76f1b74d59509acdb1fa0335846"
+      },
+      {
+        "path": "Scripts/Game/RespawnSystem/EPF_BasicSpawnLogic.c",
+        "normalized_sha256": "38b8121505f0a101090677f783718a7b151b01b1647e5ac6e17df4eafc9f52ad",
+        "pinned_normalized_sha256": "38b8121505f0a101090677f783718a7b151b01b1647e5ac6e17df4eafc9f52ad"
+      },
+      {
+        "path": "Scripts/Game/RespawnSystem/EPF_SpawnPoint.c",
+        "normalized_sha256": "f82425774a89341a8470438c5d509c7f8c08b209ed660b7971966ae5076c17af",
+        "pinned_normalized_sha256": "f82425774a89341a8470438c5d509c7f8c08b209ed660b7971966ae5076c17af"
+      },
+      {
+        "path": "Scripts/Game/RespawnSystem/SCR_PlayerController.c",
+        "normalized_sha256": "7e3e110b8b5664d537f06419c19f0446af732ed295ee2b8b4c9222eede81cbd6",
+        "pinned_normalized_sha256": "7e3e110b8b5664d537f06419c19f0446af732ed295ee2b8b4c9222eede81cbd6"
+      }
+    ]
+  },
+  {
+    "name": "EnfusionDatabaseFramework",
+    "id": "5D6EA74A94173EDF",
+    "version": "0.6.10",
+    "archive_sha256": "7c8d923acce714d058c279a779e5383d4a1306d3c040ed12f1fe602943f12c8a",
+    "normalized_comparison": "UTF-8, BOM removed, CRLF normalized to LF; no other whitespace changes",
+    "pinned_script_count": 31,
+    "packaged_script_count": 31,
+    "same": 31,
+    "changed": [],
+    "added": [],
+    "removed": [],
+    "manifest": [
+      {
+        "path": "Scripts/Game/ArmaReforgerScripted.c",
+        "normalized_sha256": "426073985278c26a0c61153999b850e62e8aa5ac6d326c7ee2e59811f6d7cb1e",
+        "pinned_normalized_sha256": "426073985278c26a0c61153999b850e62e8aa5ac6d326c7ee2e59811f6d7cb1e"
+      },
+      {
+        "path": "Scripts/Game/Drivers/EDF_DbConnectionInfo.c",
+        "normalized_sha256": "1b15f375c8e3085b389b3bd958d71a0ac17f330236afa93cfec0425ef2cf22d1",
+        "pinned_normalized_sha256": "1b15f375c8e3085b389b3bd958d71a0ac17f330236afa93cfec0425ef2cf22d1"
+      },
+      {
+        "path": "Scripts/Game/Drivers/EDF_DbDriver.c",
+        "normalized_sha256": "27662a214de0b72ee3cee0117b40a564a513c581a98b8a384313da26384f6a35",
+        "pinned_normalized_sha256": "27662a214de0b72ee3cee0117b40a564a513c581a98b8a384313da26384f6a35"
+      },
+      {
+        "path": "Scripts/Game/Drivers/EDF_DbDriverBufferWrapper.c",
+        "normalized_sha256": "469388459b29c4e2782edb8f7abb8d07f6719b3f47f8eafa5e57816f335abff4",
+        "pinned_normalized_sha256": "469388459b29c4e2782edb8f7abb8d07f6719b3f47f8eafa5e57816f335abff4"
+      },
+      {
+        "path": "Scripts/Game/Drivers/InMemory/EDF_InMemoryDatabase.c",
+        "normalized_sha256": "a06c871e50a65c83e72c96c1a6c74819858f31ced57bc120614a2d2f09d6dd73",
+        "pinned_normalized_sha256": "a06c871e50a65c83e72c96c1a6c74819858f31ced57bc120614a2d2f09d6dd73"
+      },
+      {
+        "path": "Scripts/Game/Drivers/InMemory/EDF_InMemoryDbDriver.c",
+        "normalized_sha256": "de4f3bfb2dbbdf841dc02b8ee1f8ba6c938da12249acab19cb1267c5a33389b5",
+        "pinned_normalized_sha256": "de4f3bfb2dbbdf841dc02b8ee1f8ba6c938da12249acab19cb1267c5a33389b5"
+      },
+      {
+        "path": "Scripts/Game/Drivers/LocalFile/EDF_BinaryFileDbDriver.c",
+        "normalized_sha256": "779b22f4523e3a4fdad58a5b918d96ee63f2827b8e58a3b610c5f917d12b892f",
+        "pinned_normalized_sha256": "779b22f4523e3a4fdad58a5b918d96ee63f2827b8e58a3b610c5f917d12b892f"
+      },
+      {
+        "path": "Scripts/Game/Drivers/LocalFile/EDF_DbEntityCache.c",
+        "normalized_sha256": "e7b1a39d5e20c1d1a3cf087d5e26c9a124d2a27fcef28119a2c36848673521d1",
+        "pinned_normalized_sha256": "e7b1a39d5e20c1d1a3cf087d5e26c9a124d2a27fcef28119a2c36848673521d1"
+      },
+      {
+        "path": "Scripts/Game/Drivers/LocalFile/EDF_FileDbDriverBase.c",
+        "normalized_sha256": "cb72897b31682a918a17f97d0c93aa3209a60907a9c16184cca4f1f9ea3f1e2a",
+        "pinned_normalized_sha256": "cb72897b31682a918a17f97d0c93aa3209a60907a9c16184cca4f1f9ea3f1e2a"
+      },
+      {
+        "path": "Scripts/Game/Drivers/LocalFile/EDF_JsonFileDbDriver.c",
+        "normalized_sha256": "b66b9fc27fbac13f99452d22b3ef4dd33999045d1c5dd10d8d42377a4270d122",
+        "pinned_normalized_sha256": "b66b9fc27fbac13f99452d22b3ef4dd33999045d1c5dd10d8d42377a4270d122"
+      },
+      {
+        "path": "Scripts/Game/Drivers/WebProxy/EDF_MongoDbDriver.c",
+        "normalized_sha256": "3a055e453a5a39d0a11968c7da38e5b378e4fcb2ec4c9e33b1cd2c004170444b",
+        "pinned_normalized_sha256": "3a055e453a5a39d0a11968c7da38e5b378e4fcb2ec4c9e33b1cd2c004170444b"
+      },
+      {
+        "path": "Scripts/Game/Drivers/WebProxy/EDF_WebProxyDbDriverBase.c",
+        "normalized_sha256": "748d16574db8f18b91d0678f9bb1da256e6896ceb8a8605c8568e49c136ac3aa",
+        "pinned_normalized_sha256": "748d16574db8f18b91d0678f9bb1da256e6896ceb8a8605c8568e49c136ac3aa"
+      },
+      {
+        "path": "Scripts/Game/EDF_BufferedDbContext.c",
+        "normalized_sha256": "896425b1bd616024fdb54e34d98a71e02d6f75f6ecd112d18d2250453004cc3d",
+        "pinned_normalized_sha256": "896425b1bd616024fdb54e34d98a71e02d6f75f6ecd112d18d2250453004cc3d"
+      },
+      {
+        "path": "Scripts/Game/EDF_Callback.c",
+        "normalized_sha256": "8d64af2bd7487d6d104c76f27f53a0e2801864111148842b46515104e2ae7591",
+        "pinned_normalized_sha256": "8d64af2bd7487d6d104c76f27f53a0e2801864111148842b46515104e2ae7591"
+      },
+      {
+        "path": "Scripts/Game/EDF_DbContext.c",
+        "normalized_sha256": "072c55d65303eb258d1006bd8671686092679eeb583067697ca352cd298b8918",
+        "pinned_normalized_sha256": "072c55d65303eb258d1006bd8671686092679eeb583067697ca352cd298b8918"
+      },
+      {
+        "path": "Scripts/Game/EDF_DbEntity.c",
+        "normalized_sha256": "41c7325063b558a8efac09188f42db9b3acbfa4c3b4640ad9468676486e9408b",
+        "pinned_normalized_sha256": "41c7325063b558a8efac09188f42db9b3acbfa4c3b4640ad9468676486e9408b"
+      },
+      {
+        "path": "Scripts/Game/EDF_DbEntityIdGenerator.c",
+        "normalized_sha256": "5d7a723868a2fe98432501fb684a551905aa7dc63e392f8aa9d3683a000227dc",
+        "pinned_normalized_sha256": "5d7a723868a2fe98432501fb684a551905aa7dc63e392f8aa9d3683a000227dc"
+      },
+      {
+        "path": "Scripts/Game/EDF_DbEntitySorter.c",
+        "normalized_sha256": "a602dafc18e4560a1c48b619b4e70e41a5f8fa161edd263bc632cab77bcc9a57",
+        "pinned_normalized_sha256": "a602dafc18e4560a1c48b619b4e70e41a5f8fa161edd263bc632cab77bcc9a57"
+      },
+      {
+        "path": "Scripts/Game/EDF_DbEntityUtils.c",
+        "normalized_sha256": "d83595ecc6854ae5810ccb0633de6a1e30cb807cb701820b643abe65a3397055",
+        "pinned_normalized_sha256": "d83595ecc6854ae5810ccb0633de6a1e30cb807cb701820b643abe65a3397055"
+      },
+      {
+        "path": "Scripts/Game/EDF_DbFindCondition.c",
+        "normalized_sha256": "a995b40fff44f19d28d687b6918ec744d8a4fe2701a5a3bdb466a32cc15cc42c",
+        "pinned_normalized_sha256": "a995b40fff44f19d28d687b6918ec744d8a4fe2701a5a3bdb466a32cc15cc42c"
+      },
+      {
+        "path": "Scripts/Game/EDF_DbFindConditionEvaluator.c",
+        "normalized_sha256": "d94359bc24e2ec05cd3d848f4684b78f6e95d9ec2bb1481b7a32a62c18f3d6f0",
+        "pinned_normalized_sha256": "d94359bc24e2ec05cd3d848f4684b78f6e95d9ec2bb1481b7a32a62c18f3d6f0"
+      },
+      {
+        "path": "Scripts/Game/EDF_DbOperationResultTypes.c",
+        "normalized_sha256": "6623eeeb32a1b9227193add78d7fe40a3e873ad8f3b7fc313a95a5c6666b34d7",
+        "pinned_normalized_sha256": "6623eeeb32a1b9227193add78d7fe40a3e873ad8f3b7fc313a95a5c6666b34d7"
+      },
+      {
+        "path": "Scripts/Game/EDF_DbRepository.c",
+        "normalized_sha256": "26266c891a8450c834914925137f943c35f258c5f5a1bc0018519f566414eea3",
+        "pinned_normalized_sha256": "26266c891a8450c834914925137f943c35f258c5f5a1bc0018519f566414eea3"
+      },
+      {
+        "path": "Scripts/Game/EDF_DbRepositoryFactory.c",
+        "normalized_sha256": "d549179ae5d111d156fd493946ece8abe596deb77b3e0aff04bc15cd59085b85",
+        "pinned_normalized_sha256": "d549179ae5d111d156fd493946ece8abe596deb77b3e0aff04bc15cd59085b85"
+      },
+      {
+        "path": "Scripts/Game/EDF_DbRepositoryHelper.c",
+        "normalized_sha256": "7c9c0817e66982c72476d72317513861018275b0f9d4d0a236c4181f952b2332",
+        "pinned_normalized_sha256": "7c9c0817e66982c72476d72317513861018275b0f9d4d0a236c4181f952b2332"
+      },
+      {
+        "path": "Scripts/Game/EDF_HexHelper.c",
+        "normalized_sha256": "6e2f46623fc3a1a89bc08156779f8b0bb81b1adcb49b93091cb297f9832579c7",
+        "pinned_normalized_sha256": "6e2f46623fc3a1a89bc08156779f8b0bb81b1adcb49b93091cb297f9832579c7"
+      },
+      {
+        "path": "Scripts/Game/EDF_RefArrayCaster.c",
+        "normalized_sha256": "73fa68e53d166ba7328d7934b622b5593d41a4798f82fe1d5b2c3c727f8e9b02",
+        "pinned_normalized_sha256": "73fa68e53d166ba7328d7934b622b5593d41a4798f82fe1d5b2c3c727f8e9b02"
+      },
+      {
+        "path": "Scripts/Game/EDF_ReflectionUtils.c",
+        "normalized_sha256": "96027db00b73f4e44a257ec0f0d0c81ebab39640bc65d643570d798cbabc353c",
+        "pinned_normalized_sha256": "96027db00b73f4e44a257ec0f0d0c81ebab39640bc65d643570d798cbabc353c"
+      },
+      {
+        "path": "Scripts/Game/EDF_ScriptInvokerCallback.c",
+        "normalized_sha256": "36491b4745d0fb12d5f95c7dccfa34d801f1e48cc793b2dca6d64c1e31dd5040",
+        "pinned_normalized_sha256": "36491b4745d0fb12d5f95c7dccfa34d801f1e48cc793b2dca6d64c1e31dd5040"
+      },
+      {
+        "path": "Scripts/Game/SCR_BaseGameMode.c",
+        "normalized_sha256": "f5cf5bee07cbbab6e1816b371b40be77f85df30b51eba19cad3af2373b7f402f",
+        "pinned_normalized_sha256": "f5cf5bee07cbbab6e1816b371b40be77f85df30b51eba19cad3af2373b7f402f"
+      },
+      {
+        "path": "Scripts/WorkbenchGame/WorldEditor/EDF_ClearDatabasePlugin.c",
+        "normalized_sha256": "73c0fcd9217969bec9033f098cf4db85b6314b4839c15e22f055550928cb460f",
+        "pinned_normalized_sha256": "73c0fcd9217969bec9033f098cf4db85b6314b4839c15e22f055550928cb460f"
+      }
+    ]
+  }
+]

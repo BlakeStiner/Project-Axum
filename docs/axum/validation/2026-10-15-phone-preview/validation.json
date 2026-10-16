@@ -1,0 +1,123 @@
+{
+  "verified_at_utc": "2026-10-15T19:43:03.0761554Z",
+  "version": "1.8.0.13",
+  "scope": "Final native diagnostic server: 11 core and 6 phone cases pass. Owner verified readable phone UI, conversation and reserved meeting details, movement before/after F6, and stopping Play with phone open without an assertion.",
+  "suites": {
+    "AX_TradeCoreSuite": 11,
+    "AX_PhoneSuite": 6
+  },
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "outstanding": [
+    "No multiplayer, private RPC transport, restart persistence, durable recovery, NPC spawning, real goods or payment validation.",
+    "Workbench used installed Workshop baseline/framework packages; native suites used the pinned source graph.",
+    "Earlier live script reload caused an unnamed resource-leak assertion. Final normal Stop passed; arbitrary hot-reload stability is not certified."
+  ],
+  "epf_commit": "cbf255fd8448e1c2235859797c70e1464ebe896f",
+  "edf_commit": "9a92e9a3aad75704f6d35bf543563f373a731a1a",
+  "hash_normalization": "Text UTF-8 without BOM, CRLF normalized to LF; .edds exact bytes",
+  "source_hashes": [
+    {
+      "path": "axum/ProjectAxum.gproj",
+      "sha256": "48be78b7df0ab0a115c6e17d52bd444eff54e227ac3d6cb7a5e1d3d8f87cc642"
+    },
+    {
+      "path": "axum-tests/Scripts/Game/Axum/AX_PhoneTests.c",
+      "sha256": "f44ec2d532a0a0af904ed343d93a686c1353e59f7dea3b7e0f528def5766ff82"
+    },
+    {
+      "path": "tools/Invoke-TradeCoreTests.ps1",
+      "sha256": "a1a8cc05a1a03648f96ec6a1eb25217ae30f5787cf2325d388ff60dd8df90441"
+    },
+    {
+      "path": "axum/Scripts/Game/Axum/Phone/AX_DrugAppSession.c",
+      "sha256": "7d70927d7a40d64f3d4eac62437a15f0b74903aa72a38f47a94b6db47b5e0247"
+    },
+    {
+      "path": "axum/Scripts/Game/Axum/Phone/AX_PhoneController.c",
+      "sha256": "3fcc2cf31077776f93a0a934aec1a9e493968c31ba8879913b0aec66948d600d"
+    },
+    {
+      "path": "axum/Scripts/Game/Axum/Phone/AX_PhoneMenu.c",
+      "sha256": "819787ba7d2c364084356964533319c0a751e3dcd7de99195c74b0c7315b8845"
+    },
+    {
+      "path": "axum/Configs/System/chimeraInputCommon.conf",
+      "sha256": "f33b6d8faff012c180fa02b5f402725f1a9a7941a72bd588382ec4b9ffa025e3"
+    },
+    {
+      "path": "axum/Configs/System/chimeraInputCommon.conf.meta",
+      "sha256": "4a0e88148407519da7a13465e84e61179ecc649430b46d364d75b181ec58a8b7"
+    },
+    {
+      "path": "axum/Configs/System/chimeraMenus.conf",
+      "sha256": "a112de8f4eb587f4200f500bb37f5fcd54abd8bbe1865e0cce5391328fb72dae"
+    },
+    {
+      "path": "axum/Configs/System/chimeraMenus.conf.meta",
+      "sha256": "49b6f87dc1dcf0eb64a2a26f432ecf19814e4df26c7f3148c375222b34000e4a"
+    },
+    {
+      "path": "axum/ThirdParty/RPPhone/NOTICE.md",
+      "sha256": "0bf7e3000b2020199f78600be44d3c009d3aebad7be0257f1d6b8b69bfddce3d"
+    },
+    {
+      "path": "axum/ThirdParty/RPPhone/provenance.json",
+      "sha256": "98ec5443883934c21374ca9ee158be825f3209d97e72bafaeaa029b8c2fe3a25"
+    },
+    {
+      "path": "axum/ThirdParty/RPPhone/Assets/Msg.edds",
+      "sha256": "f30a44c0a76bbc1882566ca1ae7f9152e68a1ef64436e5d0879883db52fdc80c"
+    },
+    {
+      "path": "axum/ThirdParty/RPPhone/Assets/Msg.edds.meta",
+      "sha256": "15139f54659f933278fb588a1efc6b15abf4c00135b998ec23d0b94234e36afe"
+    },
+    {
+      "path": "axum/ThirdParty/RPPhone/Assets/phone.edds",
+      "sha256": "d2dcfa46163a64cf741ac8581418c7db8c81af3bb5d44ce1f9d33e67a1b88f67"
+    },
+    {
+      "path": "axum/ThirdParty/RPPhone/Assets/phone.edds.meta",
+      "sha256": "ecc57ba5859d9a2af27a4066f0298f328420afa512514263380cdf9e82b419d0"
+    },
+    {
+      "path": "axum/ThirdParty/RPPhone/UI/AX_Phone.layout",
+      "sha256": "9b2f77e6fec30c350a35a9691eedfc3130feb1b6707e103649de46497e31011e"
+    },
+    {
+      "path": "axum/ThirdParty/RPPhone/UI/AX_Phone.layout.meta",
+      "sha256": "b34b17410a9f7bceef5af5d1b9a9ccd03ff08fccb2d6a1d42c2994a0b4b45ae4"
+    }
+  ],
+  "workbench": {
+    "version": "1.8.0.13",
+    "net_api_bridge": "Connected after restart",
+    "game_module": "5816 files; WORKBENCH define; latest logged CRC 9c659c59",
+    "menu": "Resolved AX_Phone to AX_PhoneMenu and layout GUID 4E6001DE6EAF4601",
+    "input": "Resolved AX_OpenPhone to keyboard:KC_F6, InputFilterDown",
+    "phone_open_logged": "2026-10-15 19:08:21 UTC",
+    "runtime_assertion": "2026-10-15 19:08:27 UTC: GameApp.cpp:1287 Resources are leaking! Check log!",
+    "cleanup_compiled": "2026-10-15 19:09:33 UTC",
+    "play_api_caveat": "wb_play returned success but subsequent wb_state/log still showed edit mode; manual Play required.",
+    "live_geometry": "2026-10-15 19:22:49 UTC: root 1121x595, shell x=889.611 y=154.259 w=209.352 h=418.704; root/shell visible=true opacity=1.",
+    "capture_limit": "System.MakeScreenshot omitted GUI while the owner screenshot showed the phone; engine capture is not used as GUI visibility evidence. Automatic capture subsequently removed.",
+    "close_input": "Separate priority-11 context removed; phone action appended to baseline character/menu contexts. Native merged-config checks pass. After a saved restart, the owner confirmed movement works before and after F6 open/close.",
+    "restarted_input_verification": "2026-10-15 19:35:52 UTC: CharacterGeneralContext priority10 retains Inventory and adds AX_OpenPhone; CharacterMovementContext priority10 retains CharacterForward; MenuContext/MenuWithEditorContext priority50 add AX_OpenPhone and retain native refs. No AX_PhoneContext in resolved config.",
+    "owner_verified": [
+      "Phone frame, home and message icon render",
+      "Readable text",
+      "Movement before and after F6",
+      "Conversation and meeting details after offer acceptance",
+      "Stop Play with phone open: no error"
+    ],
+    "cleanup": "Temporary frame capture and layout diagnostics removed. Temporary WorkbenchGame/EnfusionMCP bridge directory absent after scoped cleanup; not included in the checkpoint."
+  },
+  "layout_regression": {
+    "reproduced": "Before explicit edge offsets: workspace 1920x1080, shell x=1920 y=1080 w=100 h=30; resource test failed.",
+    "fixed": "After explicit edge offsets: workspace 1920x1080, shell x=1500 y=280 w=380 h=760; all 6 phone cases passed.",
+    "workbench": "Layout rebuild requested after user confirmed Play stopped.",
+    "visual_result": "Owner screenshot confirmed phone/home/icon render. Owner subsequently confirmed readable text, conversation and meeting details, and movement before/after F6."
+  }
+}

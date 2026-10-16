@@ -1,0 +1,15 @@
+<testsuites time="1.480688" timestamp="2026-10-15T04:48:44.817Z">
+	<testsuite name="AX_TradeCoreSuite" tests="11" time="0.054123" timestamp="2026-10-15T04:48:46.244Z">
+		<testcase classname="AX_TradeCoreSuite" name="AX_TradeTest_CancelAndCooldown" time="0.002277" />
+		<testcase classname="AX_TradeCoreSuite" name="AX_TradeTest_DemandAndReservations" time="0.010442" />
+		<testcase classname="AX_TradeCoreSuite" name="AX_TradeTest_Expiry" time="0.002000" />
+		<testcase classname="AX_TradeCoreSuite" name="AX_TradeTest_InvalidAndCopiedState" time="0.002865" />
+		<testcase classname="AX_TradeCoreSuite" name="AX_TradeTest_NoSuitableSite" time="0.002341" />
+		<testcase classname="AX_TradeCoreSuite" name="AX_TradeTest_OneSettlement" time="0.002445" />
+		<testcase classname="AX_TradeCoreSuite" name="AX_TradeTest_OwnershipAndDistance" time="0.003256" />
+		<testcase classname="AX_TradeCoreSuite" name="AX_TradeTest_ReentrantSettlement" time="0.009278" />
+		<testcase classname="AX_TradeCoreSuite" name="AX_TradeTest_RegionSelection" time="0.006337" />
+		<testcase classname="AX_TradeCoreSuite" name="AX_TradeTest_RejectedSettlement" time="0.009534" />
+		<testcase classname="AX_TradeCoreSuite" name="AX_TradeTest_UnknownSettlement" time="0.002646" />
+	</testsuite>
+</testsuites>

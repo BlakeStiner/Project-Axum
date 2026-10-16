@@ -1,0 +1,14 @@
+Suite: AX_TradeCoreSuite
+ENGINE       : FileSystem: Adding package 'C:/Codex Projects/Reforger Server/Project-Axum/.local/drugs-economy-compat/pinned-20261015-045807-40848c/addons/DrugsEconomy/' (pak count: 1) to filesystem under name DrugsEconomy
+ENGINE       : Enfusion engine successfully created.
+Suite: AX_DrugsEconomyResourceSuite
+ENGINE       : FileSystem: Adding package 'C:/Codex Projects/Reforger Server/Project-Axum/.local/drugs-economy-compat/pinned-20261015-045807-40848c/addons/DrugsEconomy/' (pak count: 1) to filesystem under name DrugsEconomy
+ENGINE       : Enfusion engine successfully created.
+SCRIPT       : 	AX_DE_RESOURCE_OK {3AAF86FBB52B7FB1}Prefabs/Items/Drugs/CannabisExtract.et
+SCRIPT       : 	AX_DE_RESOURCE_OK {ABAD01FB5D7FC9EA}Prefabs/World/Plants/CannabisPlant_Mature.et
+SCRIPT       : 	AX_DE_RESOURCE_OK {60033EC611BD426D}Prefabs/Items/Currency/Bill_100.et
+SCRIPT       : 	AX_DE_RESOURCE_OK {2A5E837DC8C796B5}Prefabs/Items/Currency/Bill_200.et
+SCRIPT       : 	AX_DE_RESOURCE_OK {3397C82A587B73B7}Prefabs/Items/Currency/Bill_500.et
+SCRIPT       : 	AX_DE_RESOURCE_OK {2BFC5B5C40CFD82D}Prefabs/Items/Currency/Bill_1000.et
+SCRIPT       : 	AX_DE_RESOURCE_OK {33A9A03B18323BF9}UI/Layouts/Markets/Layouts/BM_ItemRow.layout
+SCRIPT       : 	AX_DE_RESOURCE_OK {D38DDB4EC9E4EED3}UI/Layouts/Markets/New2/BM_Main.layout

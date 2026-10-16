@@ -1,0 +1,8 @@
+GameProject {
+ ID "ProjectAxum.ShopSystemProbe"
+ GUID "4E6001DE6EAF45DC"
+ TITLE "Axum isolated Shop System probe - no transfers"
+ Dependencies {
+  "4E6001DE6EAF45DA" "5D2D1436D1FA5A13"
+ }
+}

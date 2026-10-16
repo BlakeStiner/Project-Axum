@@ -1,0 +1,8 @@
+GameProject {
+ ID "ProjectAxum.DrugsEconomyProbe"
+ GUID "4E6001DE6EAF45DB"
+ TITLE "Axum optional Drugs Economy compatibility probe"
+ Dependencies {
+  "4E6001DE6EAF45DA" "692677B5062F640E"
+ }
+}

@@ -1,0 +1,10 @@
+<testsuites time="1.560946" timestamp="2026-10-15T19:41:23.675Z">
+	<testsuite name="AX_PhoneSuite" tests="6" time="0.013860" timestamp="2026-10-15T19:41:25.221Z">
+		<testcase classname="AX_PhoneSuite" name="AX_PhoneTest_CancelAndRotate" time="0.001159" />
+		<testcase classname="AX_PhoneSuite" name="AX_PhoneTest_DuplicateAcceptance" time="0.001548" />
+		<testcase classname="AX_PhoneSuite" name="AX_PhoneTest_ExpiryAndClearedQuote" time="0.003715" />
+		<testcase classname="AX_PhoneSuite" name="AX_PhoneTest_InvalidAndExpiredOffer" time="0.002653" />
+		<testcase classname="AX_PhoneSuite" name="AX_PhoneTest_OfferAndBooking" time="0.001534" />
+		<testcase classname="AX_PhoneSuite" name="AX_PhoneTest_Resources" time="0.003025" />
+	</testsuite>
+</testsuites>

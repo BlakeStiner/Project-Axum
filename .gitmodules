@@ -1,0 +1,6 @@
+[submodule "dependencies/EnfusionDatabaseFramework"]
+	path = dependencies/EnfusionDatabaseFramework
+	url = https://github.com/Arkensor/EnfusionDatabaseFramework.git
+[submodule "dependencies/EnfusionPersistenceFramework"]
+	path = dependencies/EnfusionPersistenceFramework
+	url = https://github.com/Arkensor/EnfusionPersistenceFramework.git

@@ -1,0 +1,152 @@
+{
+  "localDate": "2026-10-15",
+  "utc": "2026-10-16T05:24:32.4251932Z",
+  "branch": "codex/drug-trade-foundation",
+  "baseCommit": "a3fe6ff5618922e3dd3a92b2365486ccae5cabe6",
+  "engine": "1.8.0.13",
+  "workbenchEngine": "1.8.0.13",
+  "package": {
+    "id": "5D2D1436D1FA5A13",
+    "version": "1.0.18",
+    "source": "C:\\Users\\grave\\OneDrive\\Documents\\My Games\\ArmaReforger\\addons\\ShopSystem_5D2D1436D1FA5A13",
+    "sha256": "DEED42DB95B2010AF10CE4DD51FA97D0591BD574C62A623D18C82700715A2BDC"
+  },
+  "pins": {
+    "EPF": "cbf255fd8448e1c2235859797c70e1464ebe896f",
+    "EDF": "9a92e9a3aad75704f6d35bf543563f373a731a1a"
+  },
+  "result": "PASS",
+  "resourceRegistration": "STARTUP_SCAN_COMPLETE; native suites verify actual GUID resolution",
+  "suites": [
+    {
+      "name": "AX_ShopSystemProbeSuite",
+      "expected": 4,
+      "cases": 4,
+      "result": "PASS"
+    },
+    {
+      "name": "AX_TradeCoreSuite",
+      "expected": 11,
+      "cases": 11,
+      "result": "PASS"
+    },
+    {
+      "name": "AX_PhoneSuite",
+      "expected": 6,
+      "cases": 6,
+      "result": "PASS"
+    }
+  ],
+  "sourceHashes": [
+    {
+      "path": "axum/ProjectAxum.gproj",
+      "sha256": "E22C7CE6A8545F503E6150BE8A3EE030851928AA9BA9834F2346ACB74CF73FC5"
+    },
+    {
+      "path": "axum/Configs/System/chimeraInputCommon.conf",
+      "sha256": "F33B6D8FAFF012C180FA02B5F402725F1A9A7941A72BD588382EC4B9FFA025E3"
+    },
+    {
+      "path": "axum/Configs/System/chimeraInputCommon.conf.meta",
+      "sha256": "3901C1DBA0270DD4C0F9365488235A48DEAB917F1AD516122B1C565132CEF4AE"
+    },
+    {
+      "path": "axum/Configs/System/chimeraMenus.conf",
+      "sha256": "A112DE8F4EB587F4200F500BB37F5FCD54ABD8BBE1865E0CCE5391328FB72DAE"
+    },
+    {
+      "path": "axum/Configs/System/chimeraMenus.conf.meta",
+      "sha256": "D175754C7FAA0F559A95A87C50133F7E4FF373B6253641ADAE074EDC76E43225"
+    },
+    {
+      "path": "axum/Scripts/Game/Axum/DrugTrade/AX_TradeService.c",
+      "sha256": "2A63E18681C1293A53BEF376C2FC4F620DCE248CBFFAD27C80C7A8FC4B8E9AF4"
+    },
+    {
+      "path": "axum/Scripts/Game/Axum/DrugTrade/AX_TradeTypes.c",
+      "sha256": "95DE195C46D7540813FD93F8FE88CAE0B95476E3D5A73166828A32679D288D6C"
+    },
+    {
+      "path": "axum/Scripts/Game/Axum/Phone/AX_DrugAppSession.c",
+      "sha256": "7D70927D7A40D64F3D4EAC62437A15F0B74903AA72A38F47A94B6DB47B5E0247"
+    },
+    {
+      "path": "axum/Scripts/Game/Axum/Phone/AX_PhoneController.c",
+      "sha256": "3FCC2CF31077776F93A0A934AEC1A9E493968C31BA8879913B0AEC66948D600D"
+    },
+    {
+      "path": "axum/Scripts/Game/Axum/Phone/AX_PhoneMenu.c",
+      "sha256": "819787BA7D2C364084356964533319C0A751E3DCD7DE99195C74B0C7315B8845"
+    },
+    {
+      "path": "axum/ThirdParty/RPPhone/Assets/Msg.edds.meta",
+      "sha256": "35FFDB663F643254A0B065FD95BEE827900493C34E028CF548674184B966A7C2"
+    },
+    {
+      "path": "axum/ThirdParty/RPPhone/Assets/phone.edds.meta",
+      "sha256": "03C285E376655DFC58FFCCDEA3E99F8BBCA94C1C3178D3BF14853C2FBE1163E3"
+    },
+    {
+      "path": "axum/ThirdParty/RPPhone/UI/AX_Phone.layout",
+      "sha256": "9B2F77E6FEC30C350A35A9691EEDFC3130FEB1B6707E103649DE46497E31011E"
+    },
+    {
+      "path": "axum/ThirdParty/RPPhone/UI/AX_Phone.layout.meta",
+      "sha256": "B34B17410A9F7BCEEF5AF5D1B9A9CCD03FF08FCCB2D6A1D42C2994A0B4B45AE4"
+    },
+    {
+      "path": "axum-tests/ProjectAxum.Tests.gproj",
+      "sha256": "4CA4B9E5036DEB72D5C315B6B8E3AD0EB94A7E0770B7A6F6454986F44DF64D17"
+    },
+    {
+      "path": "axum-tests/Scripts/Game/Axum/AX_PhoneTests.c",
+      "sha256": "F44EC2D532A0A0AF904ED343D93A686C1353E59F7DEA3B7E0F528DEF5766FF82"
+    },
+    {
+      "path": "axum-tests/Scripts/Game/Axum/AX_TradeCoreTests.c",
+      "sha256": "7281AE402FA6468CFE17A447BB1FF4826BDE0664E0046B85519F78419B1E850C"
+    },
+    {
+      "path": "compat\\shop-system/ProjectAxum.ShopSystemProbe.gproj",
+      "sha256": "8508A2914320CAF40460EEF011633C30ECE532F3E4A2A94BC00C4A242A13E990"
+    },
+    {
+      "path": "compat\\shop-system/Configs/System/chimeraMenus.conf",
+      "sha256": "CEB1E5B67250476D76E394F194B69A0EFC2A738139FA8C498283E070F42E6A47"
+    },
+    {
+      "path": "compat\\shop-system/Configs/System/chimeraMenus.conf.meta",
+      "sha256": "F87F74004D63A2300EC9DAB5C9CFEB04A24B635A8F629A66F081D024DF46C604"
+    },
+    {
+      "path": "compat\\shop-system/Prefabs/AX_ShopProbeBuyer.et",
+      "sha256": "33971AB193E8C3267E044D0A3AB3EA09C72A223D817F66B6D8A1DE58AAEE6826"
+    },
+    {
+      "path": "compat\\shop-system/Prefabs/AX_ShopProbeBuyer.et.meta",
+      "sha256": "2A730A940A63FDFB4A96D7CA5EAE5B79BD7BA92193B207409429E3738371B608"
+    },
+    {
+      "path": "compat\\shop-system/Scripts/Game/AX_ShopSystemProbe.c",
+      "sha256": "66D9C307CB53B59F20CBBAFAC45A16ECA2E6D1B1BAA73BF3430105F3367B06CA"
+    },
+    {
+      "path": "compat\\shop-system/Scripts/Game/AX_ShopSystemProbeTests.c",
+      "sha256": "7E95D40F33CF713249B1168EBD70667978F8C9E352BDA2310AD7FC23BB7C5A0B"
+    },
+    {
+      "path": "compat\\shop-system/UI/AX_ShopProbeHeading.layout",
+      "sha256": "40CE6A6A9B6057B329543FFEE7D0AC885A967928FF20DA2C44BCFE316B1F4840"
+    },
+    {
+      "path": "compat\\shop-system/UI/AX_ShopProbeHeading.layout.meta",
+      "sha256": "BE85FD3FB94B08E6297C00B640397A0DFCE017BF534ADD3EC00DEB5D05727740"
+    }
+  ],
+  "runnerSha256": "26DB0B2B668374D7256A3214386E4CD1B6A62BF44C3D52EAD998E7D019ED60AC",
+  "limitation": "Headless character construction, UI binding and disabled-transfer dispatch only. No graphical visibility, player interaction, AI/navigation, multiplayer authorization, real item/payment settlement or durable per-player allowances proven.",
+  "graphical": "NOT_RUN",
+  "perPlayerAllowances": "DESIGN_ONLY",
+  "realTransfers": "DISABLED",
+  "fullLocalEvidence": ".local/shop-system-compat/run-20261016-052432-e2b784/evidence.json"
+}

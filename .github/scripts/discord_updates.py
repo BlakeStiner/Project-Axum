@@ -72,6 +72,39 @@ def build_payload(event_name, event):
             raise NotificationError("The optional commit must be a 7–40 character hexadecimal Git SHA.")
         color = {"Ready for testing": 0x2E8B57, "Blocked": 0xE0AC00}.get(status, 0x5865F2)
         link_label = "Repository"
+    elif event_name == "push":
+        ref = event.get("ref", "")
+        if event.get("deleted") or not ref.startswith("refs/heads/codex/drug-trade-"):
+            return None
+        branch = ref.removeprefix("refs/heads/")
+        commit = event.get("after", "")
+        if not re.fullmatch(r"[a-fA-F0-9]{40}", commit) or commit == "0" * 40:
+            raise NotificationError("The branch push is missing a valid destination commit.")
+        commits = event.get("commits") or []
+        head = event.get("head_commit") or {}
+        # GitHub can omit the commit list for a ref update. Still announce the
+        # push once, with its destination SHA, rather than silently dropping it.
+        recent = commits[-5:] if commits else ([head] if head else [])
+        subjects = []
+        for item in recent:
+            message = str(item.get("message") or "").strip()
+            if message:
+                subjects.append("• " + clip_text(message.splitlines()[0], 160))
+        subject = str(head.get("message") or "").strip().splitlines()
+        topic = subject[0] if subject else "Drug Trade Branch Push"
+        heading = f"Development Update • {topic}"
+        body = "\n".join(subjects) or "Drug-trade branch updated. See the commit for details."
+        if len(commits) > 5:
+            body = "Latest five commits from this push:\n" + body
+        if event.get("forced"):
+            body = "Branch history updated by a force push.\n" + body
+        before = event.get("before", "")
+        if re.fullmatch(r"[a-fA-F0-9]{40}", before) and before != "0" * 40 and before != commit:
+            link, link_label = f"{repository_url}/compare/{before}...{commit}", "View push"
+        else:
+            link, link_label = f"{repository_url}/commit/{commit}", "View commit"
+        color = 0x5865F2
+        status = "In development — branch pushed. Tests and deployment are not confirmed by this notification."
     elif event_name == "pull_request":
         pr = event.get("pull_request", {})
         labels = {item.get("name") for item in pr.get("labels", [])}

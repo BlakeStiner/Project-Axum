@@ -1,0 +1,39 @@
+{
+  "name": "RPPhone visual adaptation",
+  "author": "NewbKodii",
+  "version": "0.0.58",
+  "workshop_id": "65EF7B586691A802",
+  "source": "https://reforger.armaplatform.com/workshop/65EF7B586691A802-RPPhone",
+  "source_archive_sha256": "514ef8af94b38ebf5f59a55b70bbec3e623cce00ce56d2966ad7b037aea727d2",
+  "license": "APL",
+  "license_url": "https://www.bohemia.net/en/licenses/arma-public-license",
+  "files": [
+    {
+      "source": "Assets/Textures/phone.edds",
+      "source_guid": "A7D32C78955C4C8F",
+      "path": "ThirdParty/RPPhone/Assets/phone.edds",
+      "guid": "4E6001DE6EAF4602",
+      "bytes": 1649595,
+      "sha256": "d2dcfa46163a64cf741ac8581418c7db8c81af3bb5d44ce1f9d33e67a1b88f67",
+      "modified": false
+    },
+    {
+      "source": "Assets/Textures/Msg.edds",
+      "source_guid": "AB6ED111B82DC1C5",
+      "path": "ThirdParty/RPPhone/Assets/Msg.edds",
+      "guid": "4E6001DE6EAF4603",
+      "bytes": 278944,
+      "sha256": "f30a44c0a76bbc1882566ca1ae7f9152e68a1ef64436e5d0879883db52fdc80c",
+      "modified": false
+    },
+    {
+      "source": "UI/layouts/CellPhone.layout",
+      "path": "ThirdParty/RPPhone/UI/AX_Phone.layout",
+      "guid": "4E6001DE6EAF4601",
+      "bytes": 19157,
+      "sha256": "9b2f77e6fec30c350a35a9691eedfc3130feb1b6707e103649de46497e31011e",
+      "modified": true,
+      "changes": "New Axum navigation, contacts and appointment interface; retained RPPhone phone-frame art as the visual starting point. RPPhone gameplay controllers were not copied."
+    }
+  ]
+}
