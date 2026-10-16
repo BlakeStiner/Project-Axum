@@ -1,0 +1,8 @@
+<testsuites time="1.844872" timestamp="2026-10-16T05:24:45.786Z">
+	<testsuite name="AX_ShopSystemProbeSuite" tests="4" time="0.425542" timestamp="2026-10-16T05:24:47.206Z">
+		<testcase classname="AX_ShopSystemProbeSuite" name="AX_ShopProbeTest_MenuBinding" time="0.395392" />
+		<testcase classname="AX_ShopSystemProbeSuite" name="AX_ShopProbeTest_NpcCatalog" time="0.008252" />
+		<testcase classname="AX_ShopSystemProbeSuite" name="AX_ShopProbeTest_Resources" time="0.013403" />
+		<testcase classname="AX_ShopSystemProbeSuite" name="AX_ShopProbeTest_TransfersBlocked" time="0.008282" />
+	</testsuite>
+</testsuites>

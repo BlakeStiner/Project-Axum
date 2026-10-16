@@ -1,0 +1,36 @@
+FrameWidgetClass {
+ Name "AX_ProbeHeadingRoot"
+ Slot FrameWidgetSlot {
+  Anchor 0 0 0 0
+  OffsetLeft 40
+  OffsetTop 20
+  OffsetRight -900
+  OffsetBottom -88
+ }
+ {
+  PanelWidgetClass {
+   Name "AX_ProbeHeadingBackground"
+   Slot FrameWidgetSlot {
+    Anchor 0 0 1 1
+    OffsetLeft 0
+    OffsetTop 0
+    OffsetRight 0
+    OffsetBottom 0
+   }
+   Color 0.04 0.05 0.06 1
+  }
+  TextWidgetClass {
+   Name "AX_ProbeHeading"
+   Slot FrameWidgetSlot {
+    Anchor 0 0 1 1
+    OffsetLeft 12
+    OffsetTop 12
+    OffsetRight 12
+    OffsetBottom 12
+   }
+   Color 1 1 1 1
+   Text "Buyer preview - no transfers"
+   FontSize 26
+  }
+ }
+}

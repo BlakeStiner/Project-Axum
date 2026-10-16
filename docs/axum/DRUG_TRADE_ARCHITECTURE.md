@@ -42,6 +42,45 @@ production-first rule: no infinite source/sink or fixed buy-drive-sell route.
 Customer payments come from an explicit, tunable economy allocation, recorded
 as external demand, rather than unexplained cash on every spawned NPC.
 
+## Product lanes and player sales allowances
+
+_Owner direction, 2026-10-15: local dealers accept joints; larger bulk buyers
+accept packaged bricks. The requested per-user limit is a sales allowance for
+each player, separate from the number of concurrent appointments._
+
+| Lane | Accepted product | Allowance unit | Encounter |
+|---|---|---|---|
+| Local dealers | Joints | Individual joint items | Local land appointment |
+| Bulk buyers | Packaged bricks | Packaged brick items | Bulk land appointment first; forest/offshore as validated |
+
+Each lane has a configurable per-player sales allowance and refill policy.
+Exact quantities, timing, prices and progression requirements remain unset.
+Changing contacts or spawning another buyer must not create a fresh allowance
+for the same lane. Joints and bricks are distinct item identities; the shop
+must not substitute one for the other. This decision does not define production
+recipes, conversion ratios or finished item prefabs.
+
+The authoritative service must resolve a stable player identity rather than a
+session player ID, NPC ID or phone instance. Account-to-character mapping is an
+adapter decision to verify before enabling limits; reconnecting or recreating
+the phone must not replenish them. Persist allowance balances, refill state
+and outstanding reservations. A shared economy funding cap can remain a
+separate server control; it is not the player's allowance.
+
+Acceptance reserves units from that player's lane allowance. Completion spends
+the reservation once; cancellation, expiry or a definite pre-transfer failure
+restores it once. An uncertain settlement retains its reservation for recovery.
+Refills must account for outstanding reservations so a delayed completion and
+refill cannot overspend the allowance. Site reservations and occupancy checks
+remain shared across players even when their sales allowances are independent.
+
+The current core has a product ID per contact, shared per-contact demand/budget
+within each service, and one active appointment per character. It does not yet
+implement these durable per-player lane allowances or joint/brick inventory
+integration. The phone still uses sealed test packages. Add independent-player,
+cross-contact, reconnect/refill, cancellation and recovery tests before claiming
+the allowance model is implemented.
+
 ## Contacts and appointments
 
 The phone is an in-game interface backed by server-owned records. It does not
@@ -90,6 +129,50 @@ or AI piloting in the first version. The selected boat must pass replication,
 boarding/interaction, cargo, collision, stability, and cleanup tests. If it
 cannot support a reliable interaction, offshore orders remain disabled while
 land orders work. An NPC must not simply stand on the water.
+
+## Authored locations while the map is unfinished
+
+_Owner direction, 2026-10-15: use set meeting locations; the final map is still
+under construction. The accepted encounter workflow uses a temporary NPC with
+a Shop System interface for the reserved order._
+
+Rotation means choosing between authored locations for successive appointments.
+Once confirmed, a meeting stays at its reserved location. Buyers do not choose
+arbitrary terrain coordinates or move between locations during the appointment.
+
+Build and test the land encounter in the existing debug world first. The phone
+preview currently registers three placeholder sites in `AX_DrugAppSession`;
+these are booking fixtures, not verified NPC spawn or navigation locations.
+Use a small temporary pool to prove booking, spawning, interaction and cleanup.
+That pool does not establish adequate variety or camping resistance for release.
+
+The encounter adapter should load a site catalog for the active world resource,
+with stable site/region IDs, display names, spawn transforms, interaction radii,
+meeting type and enabled state. Verify standing space, approach and interaction
+access before enabling a site. Keep terrain coordinates and presentation names
+in this catalog rather than adding final-map choices to contact or order logic.
+Never load debug coordinates into another world. An unconfigured world, empty
+pool or lack of usable sites returns the existing coarse availability result.
+
+As map areas become playable, author and validate a separate catalog for that
+world, then enable sites incrementally. Forest and offshore sites can follow
+the same approach after their encounter types are validated. Existing orders
+retain their accepted terms and recorded location; disable an edited site for
+new bookings and resolve affected live appointments explicitly instead of
+silently moving them. A running-map edit/recovery policy still needs validation.
+
+Shop System is the proposed interaction/presentation adapter: the appointment's
+NPC exposes the reserved product, quantity and price to its owner. Axum retains
+server authorization, finite demand/budget, settlement and recovery. Static
+inspection of the installed Shop System found that its stock interaction checks
+for buy merchandise before opening, and its default selling path removes goods
+before distributing payment and can report success after payment failure. The
+sell-only opener and checkout therefore need Axum adapters. Do not enable real
+transfers through the default selling implementation. The isolated
+[Shop System probe](../../compat/shop-system/README.md) now passes native
+headless attachment, action registration, menu binding and blocked-transfer
+checks with the pinned stack. Graphical interaction, item rows and multiplayer
+behavior remain untested. Shop System is not an active main Axum dependency.
 
 ## Preventing predictable camping
 

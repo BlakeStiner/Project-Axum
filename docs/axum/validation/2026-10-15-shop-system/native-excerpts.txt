@@ -1,0 +1,28 @@
+Selected native evidence; full logs remain under the ignored run directory.
+
+ SCRIPT       : SCRIPT       : Compiling Game scripts
+ SCRIPT       : Module: Game; loaded 5843x files; 11727x classes; used 32599K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE,ENABLE_BASE_DESTRUCTION,BUDGET_OPTIMIZATION_CHECKS,DEBUG,RESPAWN_TIMER_COMPONENT_DEBUG,DEBUG_CONFIGURABLE_DIALOGS,DISABLE_WEAPON_SWITCHING,SCRIPTED_AIM_MODIFIER_DEBUG,ADM_SHOPSYSTEM"; CRC32: 8c4e8738
+PROFILING    : Compiling Game scripts took: 2284.823600 ms
+INIT         : Creating game instance(ArmaReforgerScripted), version 1.8.0.13 built 2026-08-21 14:30:18 UTC.
+SCRIPT       : 	✅ AX_ShopProbeTest_MenuBinding: SUCCESS
+SCRIPT       : 	✅ AX_ShopProbeTest_NpcCatalog: SUCCESS
+SCRIPT       : 	✅ AX_ShopProbeTest_Resources: SUCCESS
+SCRIPT       : 	✅ AX_ShopProbeTest_TransfersBlocked: SUCCESS
+SCRIPT       : Compiling Game scripts
+      RESOURCES (E): Wrong GUID/name for resource @"{F7BA0FBF730ED134}Worlds/ShopSystemTesting.ent" in property "World"
+      RESOURCES (E): Wrong GUID/name for resource @"{A7AE6238A94895F8}UI/ShoppingCart_UI.edds" in property "m_sIcon"
+      RESOURCES (E): Wrong GUID/name for resource @"{A7AE6238A94895F8}UI/ShoppingCart_UI.edds" in property "m_sLoadingScreen"
+      RESOURCES (E): Wrong GUID/name for resource @"{A7AE6238A94895F8}UI/ShoppingCart_UI.edds" in property "m_sPreviewImage"
+ENTITY       : SpawnEntityPrefab @"{4E6001DE6EAF4710}Prefabs/AX_ShopProbeBuyer.et"
+  RPL       (W): Attempting to add an item to RplNode that is already registered in replication.
+GUI          : Creating menu 'AX_ShopProbeMenu'
+ENTITY       : SpawnEntityPrefab @"{4E6001DE6EAF4710}Prefabs/AX_ShopProbeBuyer.et"
+  RPL       (W): Attempting to add an item to RplNode that is already registered in replication.
+ENTITY       : SpawnEntityPrefab @"{4E6001DE6EAF4710}Prefabs/AX_ShopProbeBuyer.et"
+  RPL       (W): Attempting to add an item to RplNode that is already registered in replication.
+    RESOURCES (E): Wrong GUID/name for resource @"{F7BA0FBF730ED134}Worlds/ShopSystemTesting.ent" in property "World"
+    RESOURCES (E): Wrong GUID/name for resource @"{A7AE6238A94895F8}UI/ShoppingCart_UI.edds" in property "m_sIcon"
+    RESOURCES (E): Wrong GUID/name for resource @"{A7AE6238A94895F8}UI/ShoppingCart_UI.edds" in property "m_sLoadingScreen"
+    RESOURCES (E): Wrong GUID/name for resource @"{A7AE6238A94895F8}UI/ShoppingCart_UI.edds" in property "m_sPreviewImage"
+RESOURCES (E): ==== Resource leaks ====
+RESOURCES (E): ui/fonts/robotomono_msdf_28.edds   1

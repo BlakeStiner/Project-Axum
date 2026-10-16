@@ -1,0 +1,39 @@
+SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_BaseLoadout.et" {
+ ID "4E6001DE6EAF4700"
+ components {
+  AX_ShopProbeBuyerComponent "{4E6001DE6EAF4701}" {
+   m_ShopName "AXUM COMPATIBILITY PREVIEW - no transfers"
+   m_Categories {}
+   m_AdditionalMerchandise {
+    ADM_ShopMerchandise "{4E6001DE6EAF4702}" {
+     m_Merchandise ADM_MerchandiseItem "{4E6001DE6EAF4703}" {
+      m_sPrefab "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_USSR_01.et"
+      m_iMaxSellQuantity 1
+     }
+     m_BuyPayment {}
+     m_SellPayment {
+      ADM_PaymentMethodCurrency "{4E6001DE6EAF4704}" {
+       m_Quantity 1
+      }
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   ActionContexts + {
+    UserActionContext "{4E6001DE6EAF4706}" {
+     ContextName "axum-shop-probe"
+     Position PointInfo "{4E6001DE6EAF4707}" {
+      Offset 0 1 0
+     }
+     Radius 3
+    }
+   }
+   additionalActions + {
+    AX_ShopProbeAction "{4E6001DE6EAF4708}" {
+     ParentContextList { "axum-shop-probe" }
+    }
+   }
+  }
+ }
+}

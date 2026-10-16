@@ -105,6 +105,15 @@ expected suite, exactly 11 cases, and no failure/error/skip nodes.
 
 ## Next implementation steps
 
+The 2026-10-15 owner decision adds **per-player sales allowances**, with joints
+for local dealers and packaged bricks for bulk buyers. These are separate
+product lanes; changing buyers must not refresh a player's lane allowance.
+The existing per-contact demand/budget and one-active-appointment guard do not
+implement this policy. The authoritative host needs stable player identity,
+persistent allowance/reservation/refill records and the tests described in the
+[architecture](DRUG_TRADE_ARCHITECTURE.md#product-lanes-and-player-sales-allowances).
+Allowance amounts and refill timing remain configuration decisions.
+
 1. Durable order/journal repository, replay/recovery, and restart tests before
    enabling any real item/cash mutations.
 2. An authoritative game-mode host that resolves stable character identity,

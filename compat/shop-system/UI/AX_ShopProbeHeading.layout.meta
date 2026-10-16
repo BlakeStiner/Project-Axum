@@ -1,0 +1,10 @@
+MetaFileClass {
+ Name "{4E6001DE6EAF4711}UI/AX_ShopProbeHeading.layout"
+ Configurations {
+  LayoutResourceClass PC {}
+  LayoutResourceClass XBOX_ONE : PC {}
+  LayoutResourceClass XBOX_SERIES : PC {}
+  LayoutResourceClass PS4 : PC {}
+  LayoutResourceClass HEADLESS : PC {}
+ }
+}
